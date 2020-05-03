@@ -75,6 +75,8 @@
 <script src="<?php echo $sysconf['template']['dir']; ?>/default/js/custom.js"></script>
 <script src="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/js/vegas.min.js"></script>
 
+<script src="https://kit.fontawesome.com/a162f31596.js" crossorigin="anonymous"></script>
+
 <!-- Animation options
 ============================================= -->
 <?php if($sysconf['template']['run_animation']) echo '<link rel="stylesheet" type="text/css" href="'.SWB.'template/default/css/animate.min.css" />'; ?>
@@ -86,6 +88,7 @@
 <!-- Style
 ============================================= -->
 <link rel="stylesheet" type="text/css" href="<?php echo $sysconf['template']['css']; ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/vegas.min.css" />
 
 <!-- Less
