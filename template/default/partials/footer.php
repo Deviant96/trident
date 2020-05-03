@@ -41,20 +41,19 @@
 
   <div class="s-footer-content container">
     <div class="row">
-      <div class="col-lg-6 col-sm-3 col-xs-12">
-        <div class="s-footer-tagline">
-          <a href="//slims.web.id" target="_blank"><?php echo SENAYAN_VERSION; ?></a>
-        </div>
-      </div>
-      <nav class="col-lg-6 col-sm-9 col-xs-12">
-        <ul class="s-footer-menu">
+      <nav class="col-lg-12 col-sm-12 col-xs-24">
+        <ul class="s-footer-menu centeri">
           <li><a href="index.php"><?php echo __('Home'); ?></a></li>
-          <li><a target="_blank" rel="archives" href="//www.facebook.com/groups/senayan.slims">Facebook</a></li>
-          <li><a target="_blank" rel="archives" href="//www.twitter.com/#!/slims_official">Twitter</a></li>
-          <li><a target="_blank" rel="archives" href="//www.youtube.com/user/senayanslims">Youtube</a></li>
-          <li><a target="_blank" rel="archives" href="//www.github.com/slims">Github</a></li>
-          <li><a target="_blank" rel="archives" href="//www.slims.web.id/forum">Forum</a></li>
-          <li><a target="_blank" rel="archives" href="index.php?rss=true" title="RSS" class="rss" >RSS</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Fasilitas</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Koleksi Digital</a></li>
+          <li><a href="#">Jurnal Akreditasi</a></li>
+          <li><a href="#">Prosiding</a></li>
+          <li><a href="#">Kuesioner</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Penyerahan Laporan Akhir</a></li>
+          <li><a href="#">Kontak</a></li> 
         </ul>
       </nav>
     </div>
