@@ -3,19 +3,19 @@
 <div class="s-background animated fadeIn">
 
   <!-- Gradient Effect
-  ============================================= -->
+  ============================================= 
   <div class="gradients">
-    <?php if($sysconf['template']['run_gradient_animation']) : ?>
+    <?php /* if($sysconf['template']['run_gradient_animation']) : */?>
       <div class="green"></div>
       <div class="beach"></div>
       <div class="mint"></div>
       <div class="purple"></div>
       <div class="default"></div>
       <div class="pink current"></div>
-    <?php endif; ?>
-    <div class="<?php echo $sysconf['template']['default_gradient'] ?>"></div>
+    <?php /* endif; */ ?>
+    <div class="<?php /* echo $sysconf['template']['default_gradient']*/ ?>"></div>
   </div>
-
+-->
 
   <?php if($sysconf['template']['background_mode'] == 'video') : ?>
     <video loop autoplay muted>
@@ -29,9 +29,9 @@
                   $('body').vegas({
                       slides: [
                           { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/1.jpg" },
-                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/2.jpg" },
-                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/3.jpg" },
-                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/4.jpg" }
+                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/2.jpg" },
+                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/3.jpg" },
+                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/4.jpg" }
                       ],
                       firstTransition: 'fade',
                       firstTransitionDuration: 2000,
@@ -39,7 +39,7 @@
                       transitionDuration: 2500,
                       shuffle: true,
                       delay: 7000,
-                      overlay: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/overlays/04.png"
+                      /*overlay: "<?php //echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/overlays/04.png"*/
                   });
               });
           })
