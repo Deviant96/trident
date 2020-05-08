@@ -305,6 +305,75 @@ include "partials/nav.php";
       </div>
     </div>
   </section>
+    
+  <div id="weblink" class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="weblink-col">
+          <h2>Tautan Terkait</h2>
+          <ul>
+            <li><a href="https://google.com">Akademik & Kemahasiswaan</a></li>
+            <li><a href="https://google.com">AKN Demak</a></li>
+            <li><a href="https://google.com">Bidang Kerjasama</a></li>
+            <li><a href="https://google.com">IBIKK-LSK</a></li>
+            <li><a href="https://google.com">International Office</a></li>
+            <li><a href="https://google.com">Kearsipan</a></li>
+            <li><a href="https://google.com">Kemahasiswaan</a></li>
+            <li><a href="https://google.com">Keuangan</a></li>
+            <li><a href="https://google.com">Koperasi Karyawan</a></li>
+            <li><a href="https://google.com">LPSE</a></li>
+            <li><a href="https://google.com">LSP</a></li>
+            <li><a href="https://google.com">P3AI</a></li>
+            <li><a href="https://google.com">P3M</a></li>
+            <li><a href="https://google.com">Perencanaan</a></li>
+            <li><a href="https://google.com">Perpustakaan</a></li>
+            <li><a href="https://google.com">PUSDATIN</a></li>
+            <li><a href="https://google.com">Puskominfo Alumni</a></li>
+            <li><a href="https://google.com">Senat</a></li>
+            <li><a href="https://google.com">SPMI</a></li>
+            <li><a href="https://google.com">UP2B</a></li>
+            <li><a href="https://google.com">PUTOL</a></li>
+          </ul>
+        </div>
+        <div class="weblink-col">
+          <h2>Jurusan</h2>
+            <ul>
+            <li><a href="https://google.com">Teknik Sipil</a></li>
+            <li><a href="https://google.com">Teknik Elektro</a></li>
+            <li><a href="https://google.com">TIK</a></li>
+            <li><a href="https://google.com">TGP</a></li>
+            <li><a href="https://google.com">Akuntansi</a></li>
+            <li><a href="https://google.com">Administrasi Niaga</a></li>
+            <li><a href="https://google.com">Manajemen Pemasaran</a></li>
+            <li><a href="https://google.com">Bispro</a></li>
+          </ul>
+        </div>
+        <div class="weblink-col">
+          <h2>Portal Aplikasi</h2>
+          <ul>
+            <li><a href="https://google.com">Edmodo</a></li>
+            <li><a href="https://google.com">Google Classrom</a></li>
+            <li><a href="https://google.com">OPM</a></li>
+            <li><a href="https://google.com">Simpeg</a></li>
+            <li><a href="https://google.com">Simkeu</a></li>
+            <li><a href="https://google.com">Sink</a></li>
+            <li><a href="https://google.com">SIKTI</a></li>
+            <li><a href="https://google.com">SIKS</a></li>
+            <li><a href="https://google.com">Sister</a></li>
+          </ul>
+        </div>
+        <div class="weblink-col">
+          <h2>Mahasiswa</h2>
+          <ul>
+            <li><a href="https://google.com">Website Mahasiswa</a></li>
+            <li><a href="https://google.com">Email Mahasiswa</a></li>
+            <li><a href="https://google.com">Badan Eksekutif Mahasiswa</a></li>
+            <li><a href="https://google.com">Hima</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </main>
 <?php endif; ?>

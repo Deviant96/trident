@@ -2534,8 +2534,17 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
 }
 
 #weblink{
-  text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #008797;
+  font-family: "PT Sans",'Helvetica Neue',Arial,Helvetica,sans-serif;
+  text-align: left;
+  color:#FFFFFF;
+}
+
+#weblink h2{
+  color:#FFFFFF;
+  font-size:1.125em;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 #weblink ul, #kontak ul{
@@ -2545,11 +2554,31 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
 
 #weblink ul li {
   list-style-type: none;
-  color:#002e9b;
+  margin-bottom: 0.3em;
 }
 
-#weblink h3{
-  color:#717171;
+#weblink ul li a{
+  font-size: 0.813em;
+  display: inline-block;
+  line-height: 1.2em;
+  color:#FFFFFF;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.weblink-col {
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  border-left: 1px solid #007683;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#kontak{
+  background-color: #fafafa;
 }
 
 #kontak ul li {
