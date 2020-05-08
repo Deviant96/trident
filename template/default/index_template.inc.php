@@ -73,29 +73,6 @@ include "partials/nav.php";
 <?php if(isset($_GET['search']) || isset($_GET['p'])): ?>
 <section  id="content" class="s-main-page" role="main">
 
-  <!-- Search on Front Page
-  ============================================= -->
-  <div class="s-main-search">
-    <?php
-    if(isset($_GET['p'])) {
-      switch ($_GET['p']) {
-      case ''             : $page_title = __('Collections'); break;
-      case 'show_detail'  : $page_title = __("Record Detail"); break;
-      case 'member'       : $page_title = __("Member Area"); break;
-      case 'member'       : $page_title = __("Member Area"); break;
-      default             : $page_title; break; }
-    } else {
-      $page_title = __('Collections');
-    }
-    ?>
-    <h1 class="s-main-title animated fadeInUp delay1"><?php echo $page_title ?></h1>
-    <form action="index.php" method="get" autocomplete="off">
-      <input type="text" id="keyword" class="s-search animated fadeInUp delay4" name="keywords" value="" lang="<?php echo $sysconf['default_lang']; ?>" role="search">
-      <button type="submit" name="search" value="search" class="s-btn animated fadeInUp delay4"><?php echo __('Search'); ?></button>
-    </form>
-    <a href="#" class="s-search-advances" width="800" height="500" title="<?php echo __('Advanced Search') ?>"><?php echo __('Advanced Search') ?></a>
-  </div>
-
   <!-- Main
   ============================================= -->
   <div class="s-main-content container">
@@ -178,28 +155,156 @@ include "partials/nav.php";
 ============================================= -->
 <main id="content" class="s-main" role="main">
 
-    <!-- Search form
-    ============================================= -->
-    <div class="s-main-search animated fadeInUp delay1">
+  
+  <!-- Search form
+  ============================================= -->
+  <div class="s-main-search animated fadeInUp delay1">
 
-      <div id="simply-search">
+    <div id="simply-search">
 
-        <form action="index.php" method="get" autocomplete="off">
-          <h1 class="animated fadeInUp delay2"><?php echo __('SEARCH'); ?></h1>
-          <div class="marquee down">
-            <p class="s-search-info">
-            <?php echo __('start it by typing one or more keywords for title, author or subject'); ?>
-            </p>
-            <input type="text" class="s-search animated fadeInUp delay4" id="keyword" name="keywords" value="" lang="<?php echo $sysconf['default_lang']; ?>" aria-hidden="true" autocomplete="off">
-            <button type="submit" name="search" value="search" class="s-btn animated fadeInUp delay4"><?php echo __('Search'); ?></button>
-          </div>
-        </form>
-
-        <a href="#" class="s-search-advances" title="<?php echo __('Advanced Search') ?>"><?php echo __('Advanced Search') ?></a>
-
-      </div>
+      <h2>ARE YOU SEARCHING A BOOK?</h2>
+      <p class="display-4 font-weight-bold">BIGGEST LIBRARY</p>
 
     </div>
+
+  </div>
+  <!-- End of Search Form
+  ============================================= -->
+
+  <div class="container">
+    <div id="opening" class="text-md-center p-5">
+      <h2 class="font-weight-bold">Selamat Datang di Perpustakaan<br>
+      Politeknik Negeri Jakarta</h2>
+    </div>
+    <hr>
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="row p-5">
+        <div class="col">
+          <div class="card-deck">
+            <div class="card bg-transparent" style="border:0px;">
+              <i class="fas fa-gift fa-7x text-center p-3 secondary-color"></i>
+              <div class="card-body">
+                <h3 class="card-title text-center">Katalog Buku Jurusan/Prodi</h3>
+                <p class="card-text">Koleksi buku perpustakaan berdasarkan kategori jurusan/prodi.</p>
+              </div>
+            </div>
+            <div class="card bg-transparent" style="border:0px;">
+              <i class="fas fa-book fa-7x text-center p-3 secondary-color"></i>
+              <div class="card-body">
+                <h3 class="card-title text-center">OPAC</h3>
+                <p class="card-text">Katalog online pencarian koleksi perpustakaan pusat Politeknik Negeri Jakarta.</p>
+              </div>
+            </div>
+            <div class="card bg-transparent" style="border:0px;">
+              <i class="fas fa-layer-group fa-7x text-center p-3 secondary-color"></i>
+              <div class="card-body">
+                <h3 class="card-title text-center">E-Repository</h3>
+                <p class="card-text">Kumpulan artikel, jurnal, skripsi, tesis dan karya ilmiah.</p>
+              </div>
+            </div>
+            <div class="card bg-transparent" style="border:0px;">
+              <i class="fas fa-calculator fa-7x text-center p-3 secondary-color"></i>
+              <div class="card-body">
+                <h3 class="card-title text-center">Onesearch</h3>
+                <p class="card-text">Satu pintu pencarian untuk semua koleksi publik dari perpustakaan, museum, arsip, dan sumber elektronik di Indonesia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="rekap">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-3 my-auto">
+            <h3 class="text-center">Rekapitulasi Data Perpustakaan Politeknik Negeri Jakarta</h3>
+          </div>
+          <div class="col-3 centeri">
+            <div class="counter mb-5" data-count="167234">0</div>
+            <h4>Buku</h4>
+          </div>
+          <div class="col-3 centeri">
+            <div class="counter mb-5"" data-count="150">0</div>
+            <h4>Tugas Akhir</h4>
+          </div>
+          <div class="col-3 centeri">
+            <div class="counter mb-5"" data-count="2200">0</div>
+            <h4>Referensi</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="kegiatan" class="bg-light text-dark text-left">
+      <div class="container">
+        <div class="row pt-3 pb-3">
+          <div class="col-6">
+            <h2>Kegiatan</h2>
+              <h3>Kegiatan Penelusuran E-Resources</h3>
+              <ul>
+                <li><strong>Waktu</strong> : Tiap hari selasa jam 10.00 - selesai</li>
+                <li><strong>Tempat</strong> : Ruang Serbaguna Lantai Perpustakaan</li>
+                <li><strong>Kontak</strong> : Bagian informasi perpustakaan</li>
+              </ul>
+          </div>
+          <div class="col-6">
+            <h2>Jam Layanan</h2>
+            <ul>
+              <li><strong>Senin - Kamis</strong><br>Buka jam 08.00 - 19.00</li>
+              <li><strong>Jumat</strong><br>Buka jam 09.00 - 19.30<br>Istirahat Jam 11.30 - 13.00</li>
+              <li><strong>Sabtu</strong><br>Buka jam 09.00 - 14.00</li>
+              <li><strong>Minggu</strong><br>Libur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="kontak" class="text-dark pt-5 pb-3 text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <i class="fas fa-phone fa-3x float-right mt-5 secondary-color"></i>
+              </div>
+              <div class="col-9">
+                <h2>Kontak</h2>
+                <ul>
+                  <li>Address : Jl. Prof. Dr. G.A. Siwabessy, Kampus Baru UI, Depok, 16424</li>
+                  <li>Phone Number : (021) 7270036 ext 235</li>
+                  <li>Fax Number : (021) 7270036</li>
+                  <li><a href="https://twitter.com" class="btn btn-primary">Ikuti @HumasPNJ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <i class="fas fa-map fa-3x float-right mt-5 secondary-color"></i>
+              </div>
+              <div class="col-9">
+                <h2>Maps</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.67694066194!2d106.8243398!3d-6.3721401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f054fe3a0295245!2sPoliteknik%20Negeri%20Jakarta!5e0!3m2!1sid!2sid!4v1586953430597!5m2!1sid!2sid" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 <?php endif; ?>

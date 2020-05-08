@@ -77,11 +77,11 @@ a:hover {
   color: #fff;
 }
 @media only screen and (min-width: 768px) {
-  .s-main-page .s-search-advances {
+  .dv-header-search .s-search-advances {
     font-size: 12px;
     position: absolute;
     top: 70px;
-    right: 190px;
+    right: 200px;
   }
 }
 /* Header
@@ -1043,7 +1043,7 @@ keyframes coverShake 100% {
   }
 }
 .s-search {
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   border: none;
   width: 100%;
   margin: 0 auto;
@@ -1062,13 +1062,13 @@ keyframes coverShake 100% {
     font-size: 15pt;
     text-align: left;
     width: 100px;
-    border-radius: 50px 0 0 50px;
-    padding: 14px 14px 14px 28px;
+    /*border-radius: 50px 0 0 50px;
+    padding: 14px 14px 14px 28px;*/
   }
 }
 @media only screen and (min-width: 768px) {
   .s-search {
-    width: 500px;
+    width: 200px;
   }
 }
 #loginform input[type="text"],
@@ -1084,7 +1084,7 @@ keyframes coverShake 100% {
 .s-btn {
   display: list-item;
   border: none;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   background-color: #fff;
   padding: 10px;
   color: #666;
@@ -1100,10 +1100,10 @@ keyframes coverShake 100% {
   .s-btn {
     margin-right: 32px;
     width: 125px;
-    border-radius: 0 50px 50px 0;
+    /*border-radius: 0 50px 50px 0;*/
     display: inline-block;
     margin-left: -5px;
-    padding: 20px 18px 16px 18px;
+    padding: 17px 18px 12px 18px;
   }
 }
 .s-btn:hover {
@@ -2482,7 +2482,7 @@ keyframes coverUp 100% {
 
 
 .dv-intro {
-  margin-top: 15%;
+  top: 150px;
 }
 
 
