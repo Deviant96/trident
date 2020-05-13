@@ -221,13 +221,20 @@ if (!$is_member_login) {
 		echo '<div class="errorBox">'.__('Wrong Captcha Code entered, Please write the right code!').'</div>';
 	}
 	?>
-    <div class="loginInfo"><?php echo __('Please insert your member ID and password given by library system administrator. If you are library\'s member and don\'t have a password yet, please contact library staff.'); ?></div>
     <div class="loginInfo">
     <form action="index.php?p=member&destination=<?php echo $destination; ?>" method="post">
-    <div class="fieldLabel"><?php echo __('Member ID'); ?></div>
-        <div class="login_input"><input type="text" name="memberID" /></div>
-    <div class="fieldLabel marginTop"><?php echo __('Password'); ?></div>
-        <div  class="login_input"><input type="password" name="memberPassWord" /></div>
+    <div class="form-group row">
+    <label for="memberID" class="col-sm-2 col-form-label"><?php echo __('Member ID'); ?></label>
+    <div class="col-sm-6">
+    <div class="login_input"><input type="text" class="form-control" name="memberID" id="memberID"></div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="memberPassWord" class="col-sm-2 col-form-label"><?php echo __('Password'); ?></label>
+    <div class="col-sm-6">
+    <div class="login_input"><input type="password" class="form-control" name="memberPassWord" id="memberPassWord"></div>
+    </div>
+  </div>
     <!-- Captcha in form - start -->
     <div>
     <?php if ($sysconf['captcha']['member']['enable']) { ?>
@@ -249,7 +256,21 @@ if (!$is_member_login) {
     } ?>
     </div>
     <!-- Captcha in form - end -->
-    <input type="submit" name="logMeIn" value="<?php echo __('Login'); ?>" class="memberButton" />
+    <div class="form-group row">
+        <div class="col-sm-2 centeri"></div>
+        <div class="col-sm-3 centeri">
+            <input type="submit" name="logMeIn" value="<?php echo __('Login'); ?>" class="memberButton" />
+        </div>
+        <div class="col-sm-3 centeri">
+            <a href="index.php?p=form" class="memberButton"><?php echo __('Register'); ?></a>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2 centeri"></div>
+        <div class="col-sm-6 centeri">
+            <a href="index.php?p=forgot" class="memberButton"><?php echo __('Forgot Password'); ?></a>
+        </div>
+    </div>
     </form>
     </div>
     </div>

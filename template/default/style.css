@@ -1652,7 +1652,7 @@ keyframes coverUp 100% {
   padding: 5px 10px;
   background: #f2f2f2;
   color: #333;
-  width: 300px;
+  /*width: 300px;*/
 }
 .memberButton {
   padding: 2px 20px !important;
