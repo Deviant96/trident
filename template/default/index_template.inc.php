@@ -64,7 +64,7 @@ include "partials/header.php";
 
 <?php
 // Navigation
-include "partials/nav.php";
+// include "partials/nav.php";
 ?>
 
 <?php
@@ -72,6 +72,24 @@ include "partials/nav.php";
 ?>
 <?php if(isset($_GET['search']) || isset($_GET['p'])): ?>
 <section  id="content" class="s-main-page" role="main">
+
+  <!-- Search on Front Page
+  ============================================= -->
+  <div class="s-main-search container">
+    <?php
+    if(isset($_GET['p'])) {
+      switch ($_GET['p']) {
+      case ''             : $page_title = __('Collections'); break;
+      case 'show_detail'  : $page_title = __("Record Detail"); break;
+      case 'member'       : $page_title = __("Member Area"); break;
+      case 'member'       : $page_title = __("Member Area"); break;
+      default             : $page_title; break; }
+    } else {
+      $page_title = __('Collections');
+    }
+    ?>
+    <h1 class="s-main-title animated fadeInUp delay1"><?php echo $page_title ?></h1>
+  </div>
 
   <!-- Main
   ============================================= -->
@@ -81,7 +99,7 @@ include "partials/nav.php";
       <!-- Show Result
       ============================================= -->
       <div class="col-lg-8 col-sm-9 col-xs-12 animated fadeInUp delay2">
-
+      
         <?php
           // Generate Output
           // catch empty list
@@ -102,6 +120,8 @@ include "partials/nav.php";
 
         ?>
 
+      <!-- Panel samping kanan
+      ============================================= -->
       <div class="col-lg-4 col-sm-3 col-xs-12 animated fadeInUp delay4">
         <?php if(isset($_GET['search'])) : ?>
         <h2><?php echo __('Search Result'); ?></h2>
@@ -158,7 +178,7 @@ include "partials/nav.php";
   
   <!-- Search form
   ============================================= -->
-  <div class="s-main-search animated fadeInUp delay1">
+  <div class="container s-main-search animated fadeInUp delay1 text-left pb-5">
 
     <div id="simply-search">
 
@@ -225,36 +245,43 @@ include "partials/nav.php";
 
 
   <section>
-    <div class="container">
-      <div class="row p-5">
-        <div class="col">
-          <div class="card-deck">
-            <div class="card bg-transparent" style="border:0px;">
-              <i class="fas fa-gift fa-7x text-center p-3 secondary-color"></i>
-              <div class="card-body">
-                <h3 class="card-title text-center">Katalog Buku Jurusan/Prodi</h3>
-                <p class="card-text">Koleksi buku perpustakaan berdasarkan kategori jurusan/prodi.</p>
+    <div id="feature" class="bg-light text-dark">
+      <div class="container">
+        <div id="opening" class="text-md-center p-5">
+          <h2 class="font-weight-bold">Selamat Datang di Perpustakaan<br>
+          Politeknik Negeri Jakarta</h2>
+        </div>
+        <hr>
+        <div class="row p-5">
+          <div class="col">
+            <div class="card-deck">
+              <div class="card bg-transparent" style="border:0px;">
+                <i class="fas fa-gift fa-7x text-center p-3 pnj-color"></i>
+                <div class="card-body">
+                  <h3 class="card-title text-center">Katalog Buku Jurusan/Prodi</h3>
+                  <p class="card-text">Koleksi buku perpustakaan berdasarkan kategori jurusan/prodi.</p>
+                </div>
               </div>
-            </div>
-            <div class="card bg-transparent" style="border:0px;">
-              <i class="fas fa-book fa-7x text-center p-3 secondary-color"></i>
-              <div class="card-body">
-                <h3 class="card-title text-center">OPAC</h3>
-                <p class="card-text">Katalog online pencarian koleksi perpustakaan pusat Politeknik Negeri Jakarta.</p>
+              <div class="card bg-transparent" style="border:0px;">
+                <i class="fas fa-book fa-7x text-center p-3 pnj-color"></i>
+                <div class="card-body">
+                  <h3 class="card-title text-center">OPAC</h3>
+                  <p class="card-text">Katalog online pencarian koleksi perpustakaan pusat Politeknik Negeri Jakarta.</p>
+                </div>
               </div>
-            </div>
-            <div class="card bg-transparent" style="border:0px;">
-              <i class="fas fa-layer-group fa-7x text-center p-3 secondary-color"></i>
-              <div class="card-body">
-                <h3 class="card-title text-center">E-Repository</h3>
-                <p class="card-text">Kumpulan artikel, jurnal, skripsi, tesis dan karya ilmiah.</p>
+              <div class="card bg-transparent" style="border:0px;">
+                <i class="fas fa-layer-group fa-7x text-center p-3 pnj-color"></i>
+                <div class="card-body">
+                  <h3 class="card-title text-center">E-Repository</h3>
+                  <p class="card-text">Kumpulan artikel, jurnal, skripsi, tesis dan karya ilmiah.</p>
+                </div>
               </div>
-            </div>
-            <div class="card bg-transparent" style="border:0px;">
-              <i class="fas fa-calculator fa-7x text-center p-3 secondary-color"></i>
-              <div class="card-body">
-                <h3 class="card-title text-center">Onesearch</h3>
-                <p class="card-text">Satu pintu pencarian untuk semua koleksi publik dari perpustakaan, museum, arsip, dan sumber elektronik di Indonesia.</p>
+              <div class="card bg-transparent" style="border:0px;">
+                <i class="fas fa-calculator fa-7x text-center p-3 pnj-color"></i>
+                <div class="card-body">
+                  <h3 class="card-title text-center">Onesearch</h3>
+                  <p class="card-text">Satu pintu pencarian untuk semua koleksi publik dari perpustakaan, museum, arsip, dan sumber elektronik di Indonesia.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -262,7 +289,7 @@ include "partials/nav.php";
       </div>
     </div>
   </section>
-
+  
   <section>
     <div id="rekap">
       <div class="container">
@@ -293,7 +320,7 @@ include "partials/nav.php";
         <div class="row pt-3 pb-3">
           <div class="col-6">
             <h2>Kegiatan</h2>
-              <h3>Kegiatan Penelusuran E-Resources</h3>
+              <p>Kegiatan Penelusuran E-Resources</p>
               <ul>
                 <li><strong>Waktu</strong> : Tiap hari selasa jam 10.00 - selesai</li>
                 <li><strong>Tempat</strong> : Ruang Serbaguna Lantai Perpustakaan</li>
@@ -321,7 +348,7 @@ include "partials/nav.php";
           <div class="col-6">
             <div class="row">
               <div class="col-3">
-                <i class="fas fa-phone fa-3x float-right mt-5 secondary-color"></i>
+                <i class="fas fa-phone fa-3x float-right mt-5 pnj-color"></i>
               </div>
               <div class="col-9">
                 <h2>Kontak</h2>
@@ -329,7 +356,7 @@ include "partials/nav.php";
                   <li>Address : Jl. Prof. Dr. G.A. Siwabessy, Kampus Baru UI, Depok, 16424</li>
                   <li>Phone Number : (021) 7270036 ext 235</li>
                   <li>Fax Number : (021) 7270036</li>
-                  <li><a href="https://twitter.com" class="btn btn-primary">Ikuti @HumasPNJ</a></li>
+                  <li><a href="https://twitter.com" class="btn btn-primary" style="background-color:var(--color1);">Ikuti @HumasPNJ</a></li>
                 </ul>
               </div>
             </div>
@@ -337,7 +364,7 @@ include "partials/nav.php";
           <div class="col-6">
             <div class="row">
               <div class="col-3">
-                <i class="fas fa-map fa-3x float-right mt-5 secondary-color"></i>
+                <i class="fas fa-map fa-3x float-right mt-5 pnj-color"></i>
               </div>
               <div class="col-9">
                 <h2>Maps</h2>

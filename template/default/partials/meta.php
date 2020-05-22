@@ -71,9 +71,11 @@
 <script src="<?php echo JWB; ?>colorbox/jquery.colorbox-min.js"></script>
 <script src="<?php echo SWB; ?>template/default/js/jquery.jcarousel.min.js"></script>
 <script src="<?php echo $sysconf['template']['dir']; ?>/default/js/jquery.transit.min.js"></script>
-<script src="<?php echo $sysconf['template']['dir']; ?>/default/js/bootstrap.min.js"></script>
 <script src="<?php echo $sysconf['template']['dir']; ?>/default/js/custom.js"></script>
 <script src="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/js/vegas.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/a162f31596.js" crossorigin="anonymous"></script>
 
@@ -87,9 +89,9 @@
 
 <!-- Style
 ============================================= -->
-<link rel="stylesheet" type="text/css" href="<?php echo $sysconf['template']['css']; ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/vegas.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $sysconf['template']['css']; ?>" />
 
 <!-- Less
 ============================================= -->
