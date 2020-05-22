@@ -2,16 +2,6 @@
 @import "css/font-awesome.min.css";
 @import "css/font.min.css";
 @import "css/hamburgers.css";
-
-
-:root{
-  --color1:#007683;
-}
-
-.pnj-color {
-  color:var(--color1);
-}
-
 /* Scroll
  ========================================== */
 ::-webkit-scrollbar {
@@ -70,15 +60,9 @@ body {
   -webkit-text-size-adjust: none;
   font-size: 16px;
 }
-a {
-  color:var(--color1);
-}
 a,
 a:hover {
   text-decoration: none !important;
-}
-b, strong {
-  font-weight: 700;
 }
 .btn-default {
   background-color: #282828;
@@ -92,14 +76,12 @@ b, strong {
 .s-search-advances:focus {
   color: #fff;
 }
-.dv-header-search {
-  text-align: right;
-}
 @media only screen and (min-width: 768px) {
   .dv-header-search .s-search-advances {
     font-size: 12px;
     position: absolute;
-    right: 20px;
+    top: 70px;
+    right: 200px;
   }
 }
 /* Header
@@ -108,7 +90,7 @@ b, strong {
   width: 100%;
   padding: 0 50px 20px 50px;
   margin: 0;
-  top: 0;
+  top: 25px;
   color: #fff;
   -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1);
   /* older webkit */
@@ -149,7 +131,7 @@ b, strong {
 }
 .s-brand h1 {
   text-transform: uppercase;
-  font-size: 19pt;
+  font-size: 20pt;
   margin: 0;
   font-weight: lighter;
 }
@@ -1065,7 +1047,7 @@ keyframes coverShake 100% {
   border: none;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 12pt;
   text-align: center;
@@ -1103,7 +1085,7 @@ keyframes coverShake 100% {
   display: list-item;
   border: none;
   /*border-radius: 50px;*/
-  background-color: rgb(187, 187, 187);
+  background-color: #fff;
   padding: 10px;
   color: #666;
   width: 100%;
@@ -1826,7 +1808,7 @@ keyframes coverUp 100% {
 @media only screen and (min-width: 768px) {
   .s-main-page .s-main-title {
     max-width: 50%;
-    top: 40px;
+    top: 20px;
     text-align: left;
     padding-left: 50px;
   }
@@ -2493,86 +2475,6 @@ keyframes coverUp 100% {
   margin: 16px 0;
 }
 
-/*---------HIDING ARROWS IN INPUT-----------*/
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-/*-----Search Bar -----------*/
-.dv-header-search label{display: none!important;}
-input.search_bar{
-  border: none; outline: none;
-  width: 37px;
-  border-radius: 55px;
-  margin: 0 auto;
-  font-size: 1em; color: #0d2840;
-  padding: 12px 35px 12px 17px;
-  transition: all .3s cubic-bezier(0,0,.5,1.5);
-  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
-  background: rgb(255, 255, 255) url(https://i.imgur.com/seveWIw.png) no-repeat center center;
-}
-input.search_bar:focus{width: 100%; background-position: calc(100% - 35px) center}
-
-/*Removes default x in search fields (webkit only i guess)*/
-input[type=search]::-webkit-search-cancel-button{-webkit-appearance: none;}
-/*Changes the color of the placeholder*/
-::-webkit-input-placeholder{color: #0d2840; opacity: .5;}
-:-moz-placeholder{color: #0d2840; opacity: .5;}
-::-moz-placeholder{color: #0d2840; opacity: .5;}
-:-ms-input-placeholder{color: #0d2840; opacity: .5;}
-
-
-.login-btn {
-  width: 100%;
-  height: 40px;
-  display: block;
-  color: white;
-  border: 1px solid white;
-  background: linear-gradient(180deg, #00b8cc, #007683);
-  cursor: pointer;
-  transition: opacity .3s;
-}
-
-.register-btn {
-  color: #000;
-  font-size: 0.8rem;
-}
-
-
-
-
-
-/*-----Language Changer--------*/
-.flags {
-height: 32px;
-/* sağa almak için "float: right;" kullanabilirsiniz*/
-float: left;
-}
-.flags ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-.flags ul li {
-display: inline;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -2590,7 +2492,7 @@ display: inline;
 
 
 #rekap {
-  background: linear-gradient(rgba(0,118,131,.7), rgba(0,118,131,.7)), url("../img/rekap-bg.jpg");
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/rekap-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2631,24 +2533,8 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   align-items: center;
 }
 
-#menu, #feature, #kegiatan {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#menu a {
-  color:#fff;
-}
-
-#menu a:hover {
-  color:rgb(182, 182, 182);
-}
-
-#feature h3 {
-  font-weight: 600;
-}
-
 #weblink{
-  background-color: var(--color1);
+  background-color: #008797;
   font-family: "PT Sans",'Helvetica Neue',Arial,Helvetica,sans-serif;
   text-align: left;
   color:#FFFFFF;
@@ -2680,7 +2566,6 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   text-decoration: none;
 }
 
-
 .weblink-col {
   float: left;
   padding-left: 2.5%;
@@ -2699,23 +2584,4 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
 #kontak ul li {
   list-style-type: none;
   line-height: 2rem;
-}
-
-
-
-
-
-.dropdown .dropdown-menu {
-  transition: all 0.5s;
-  overflow: hidden;
-  transform-origin: top center;
-  transform: scale(1, 0);
-  display: block;
-}
-.dropdown:hover .dropdown-menu {
-  transform: scale(1);
-}
-
-.dropdown .dropdown-menu .dropdown-item {
-  color:#000!important;
 }
