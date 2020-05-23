@@ -98,47 +98,8 @@ include "partials/header.php";
 
       <!-- Show Result
       ============================================= -->
-      <div class="col-lg-8 col-sm-9 col-xs-12 animated fadeInUp delay2">
-      
-        <?php
-          // Generate Output
-          // catch empty list
-          if(strlen($main_content) == 7) {
-            echo '<h2>' . __('No Result') . '</h2><hr/><p>' . __('Please try again') . '</p>';
-          } else {
-            echo $main_content;
-          }
-
-          // Somehow we need to hack the layout
-          if(isset($_GET['search']) || (isset($_GET['p']) && $_GET['p'] != 'member')){
-            echo '</div>';
-          } else {
-            if(isset($_SESSION['mid'])) {
-              echo  '</div></div>';
-            }
-          }
-
-        ?>
-
-      <!-- Panel samping kanan
-      ============================================= -->
-      <div class="col-lg-4 col-sm-3 col-xs-12 animated fadeInUp delay4">
-        <?php if(isset($_GET['search'])) : ?>
-        <h2><?php echo __('Search Result'); ?></h2>
-        <hr>
-        <?php echo $search_result_info; ?>
-        <?php endif; ?>
-
-        <br>
-
-        <!-- If Member Logged
-        ============================================= -->
-        <h2><?php echo __('Information'); ?></h2>
-        <hr/>
-        <p><?php echo (utility::isMemberLogin()) ? $header_info : $info; ?></p>
-        <br/>
-
-        <!-- Show if clustering search is enabled
+      <div class="col-lg-12 col-sm-12 col-xs-12 animated fadeInUp delay2">
+      <!-- Show if clustering search is enabled
         ============================================= -->
         <?php
           if(isset($_GET['keywords']) && (!empty($_GET['keywords']))) :
@@ -163,7 +124,30 @@ include "partials/header.php";
 
             <?php endif; ?>
           <?php endif; ?>
-      </div>
+
+        <?php
+          // Generate Output
+          // catch empty list
+          if(strlen($main_content) == 7) {
+            echo '<h2>' . __('No Result') . '</h2><hr/><p>' . __('Please try again') . '</p>';
+          } else {
+            if(isset($_GET['search'])) : echo '<h2>'.__('Search Result').'</h2>
+            <hr>';
+            echo $search_result_info;
+            endif;
+            echo $main_content;
+          }
+
+          // Somehow we need to hack the layout
+          if(isset($_GET['search']) || (isset($_GET['p']) && $_GET['p'] != 'member')){
+            echo '</div>';
+          } else {
+            if(isset($_SESSION['mid'])) {
+              echo  '</div></div>';
+            }
+          }
+
+        ?>
     </div>
   </div>
 
