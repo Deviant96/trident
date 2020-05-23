@@ -205,7 +205,7 @@ include "partials/header.php";
             <a class="nav-link" href="index.php?p=digital_collection"><?php echo __('Digital Collection'); ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?p=journal"><?php echo __('Journal of Accreditation'); ?></a>
+            <a class="nav-link" href="index.php?p=jurnal_akreditasi"><?php echo __('Journal of Accreditation'); ?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.php?p=prosiding"><?php echo __('Proceedings'); ?></a>
