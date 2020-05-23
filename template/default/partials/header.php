@@ -38,8 +38,11 @@
       </div>
     </div>
     <div class="col-lg-2">
-    <button class="login-btn"><?php echo __('Login') ?></button>
-    <div class="register-btn">Don't have an account? <a href="#"><?php echo __('Register') ?></a></div>
+    
+    <?php echo (utility::isMemberLogin()) ? $header_info : 
+    '<button class="login-btn">'.__('Login').'</button>
+    <div class="register-btn">Dont have an account? <a href="#">'.__('Register').'</a></div>'
+    ; ?>
     </div>
   </div>
 </header>
