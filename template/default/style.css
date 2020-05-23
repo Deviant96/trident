@@ -1771,6 +1771,7 @@ keyframes coverUp 100% {
   text-align: left !important;
   border: none !important;
   box-shadow: none;
+  font-size:0.8rem;
 }
 #memberLogout {
   clear: both;
