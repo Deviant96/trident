@@ -75,7 +75,7 @@ if (isset($_POST['daftarButton'])) {
       <label for="textfield3" class="col-sm-2 col-form-label"><?php echo __('Member Name'); ?></label>
       <div class="col-sm-10">
         <div class="login_input">
-          <input type="text" class="form-control" id="textfield3" name="member_name">
+          <input type="text" class="form-control" id="textfield3" name="member_name" required>
         </div>
       </div>
     </div>
@@ -84,21 +84,9 @@ if (isset($_POST['daftarButton'])) {
       <label for="member_id" class="col-sm-2 col-form-label"><?php echo __('NIM'); ?></label>
       <div class="col-sm-10">
         <div class="login_input">
-          <input type="number" class="form-control" id="member_id" name="member_id" aria-describedby="nimHelpBlock">
+          <input type="number" class="form-control" id="member_id" name="member_id" aria-describedby="nimHelpBlock" required>
           <small id="nimHelpBlock" class="form-text text-muted">
             <?php echo __('Without period.'); ?>
-          </small>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="datepicker" class="col-sm-2 col-form-label"><?php echo __('Birthdate'); ?></label>
-      <div class="col-sm-10">
-        <div class="login_input">
-          <input type="text" class="form-control" id="datepicker" name="birth_date" aria-describedby="birthHelpBlock">
-          <small id="nirthHelpBlock" class="form-text text-muted">
-            YYYY-MM-DD
           </small>
         </div>
       </div>
@@ -180,7 +168,7 @@ if (isset($_POST['daftarButton'])) {
       <label for="inputPassword3" class="col-sm-2 col-form-label"><?php echo __('Password'); ?>*</label>
       <div class="col-sm-10">
         <div class="login_input">
-          <input type="password" class="form-control" id="inputPassword3" name="mpasswd">
+          <input type="password" class="form-control" id="inputPassword3" name="mpasswd" required>
         </div>
       </div>
     </div>
