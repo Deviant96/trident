@@ -6,10 +6,15 @@
 
 :root{
   --color1:#007683;
+  --color2:#8FD5DD;
 }
 
 .pnj-color {
   color:var(--color1);
+}
+
+.bg-secondary-color {
+  background-color: var(--color2);
 }
 
 /* Scroll
