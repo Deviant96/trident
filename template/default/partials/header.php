@@ -38,10 +38,11 @@
       </div>
     </div>
     <div class="col-lg-2">
-    
+    <!-- If Member Logged
+        ============================================= -->
     <?php echo (utility::isMemberLogin()) ? $header_info : 
-    '<button class="login-btn">'.__('Login').'</button>
-    <div class="register-btn">Dont have an account? <a href="#">'.__('Register').'</a></div>'
+    '<a href="index.php?p=member" class="btn login-btn">'.__('Member Area').'</a>
+    <div class="register-btn">Don\'t have an account? <a href="index.php?p=form">'.__('Register').'</a></div>'
     ; ?>
     </div>
   </div>
