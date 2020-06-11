@@ -2623,7 +2623,7 @@ bottom:0;
 .counter {
   width: 120px;
   height: 120px;
-  background: var(--color2);
+  background: transparent;
   border-radius: 50%;
   border: 1px solid gray;
   display: flex;
