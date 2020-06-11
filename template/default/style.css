@@ -1797,7 +1797,7 @@ keyframes coverUp 100% {
 }
 @media only screen and (min-width: 768px) {
   .s-main-page {
-    margin-top: 217px;
+    margin-top: 250px;
     min-height: 100%;
     width: 100%;
   }
@@ -1811,7 +1811,7 @@ keyframes coverUp 100% {
 }
 @media only screen and (min-width: 768px) {
   .s-main-page .s-main-search {
-    top: -95px;
+    top: -125px;
     text-align: right;
     right: 0;
     position: absolute;
