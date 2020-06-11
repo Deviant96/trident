@@ -316,7 +316,7 @@ include "partials/nav2.php";
   <div id="weblink" class="pt-5 pb-5">
     <div class="container">
       <div class="row">
-        <div class="weblink-col">
+        <div class="col-sm weblink-col mb-4">
           <h2>Tautan Terkait</h2>
           <ul>
             <li><a href="https://google.com">Akademik & Kemahasiswaan</a></li>
@@ -342,7 +342,7 @@ include "partials/nav2.php";
             <li><a href="https://google.com">PUTOL</a></li>
           </ul>
         </div>
-        <div class="weblink-col">
+        <div class="col-sm weblink-col mb-4">
           <h2>Jurusan</h2>
             <ul>
             <li><a href="https://google.com">Teknik Sipil</a></li>
@@ -355,7 +355,7 @@ include "partials/nav2.php";
             <li><a href="https://google.com">Bispro</a></li>
           </ul>
         </div>
-        <div class="weblink-col">
+        <div class="col-sm weblink-col mb-4">
           <h2>Portal Aplikasi</h2>
           <ul>
             <li><a href="https://google.com">Edmodo</a></li>
@@ -369,7 +369,7 @@ include "partials/nav2.php";
             <li><a href="https://google.com">Sister</a></li>
           </ul>
         </div>
-        <div class="weblink-col">
+        <div class="col-sm weblink-col mb-4">
           <h2>Mahasiswa</h2>
           <ul>
             <li><a href="https://google.com">Website Mahasiswa</a></li>
