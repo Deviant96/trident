@@ -112,7 +112,7 @@ if (isset($_POST['logMeIn']) && !$is_member_login) {
             if ($destination) {
                 header("location:$destination");
             } else {
-                header('Location: index.php?p=member');
+                header('Location: index.php');
             }
             exit();
         } else {
