@@ -11,7 +11,7 @@ if (!defined('INDEX_AUTH')) {
 
 
 <section>
-  <div class="mt-3 pt-3 pb-3">
+  <div class="pb-3">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -19,6 +19,10 @@ if (!defined('INDEX_AUTH')) {
           <p>
             <?php echo __('In order to compile a library quality improvement program and evaluate the performance of the UPT Library it is expected that students will fill in the questionnaire as part of the requirements for obtaining information free of problems / free of library material loans.'); ?>
           </p>
+          <p>
+            <?php echo __("Library Questionaire");?>
+          </p>
+          <a href="https://goo.gl/forms/CUKp0W1TbPexSWzf2">https://goo.gl/forms/CUKp0W1TbPexSWzf2</a>
         </div>
       </div>
     </div>
