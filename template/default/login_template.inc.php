@@ -59,16 +59,6 @@ include "partials/meta.php"; ?>
   </main>
 
   <?php
-  // Navigation
-  // =============================================
-  include "partials/nav.php"; ?>
-
-  <?php
-  // Footer
-  // =============================================
-  include "partials/footer.php"; ?>
-
-  <?php
   // Background
   // ================================================
   include "partials/bg.php"; ?>
