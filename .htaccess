@@ -26,3 +26,10 @@ DirectoryIndex index.php
   Header set X-XSS-Protection "1; mode=block"
   Header always set X-Frame-Options SAMEORIGIN
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
