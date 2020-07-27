@@ -150,8 +150,7 @@ include "partials/header.php";
 
         ?>
     </div>
-  </div>
-
+  </div>  
 </section>
 
 <?php else: ?>
@@ -160,18 +159,13 @@ include "partials/header.php";
 ============================================= -->
 <main id="content" class="s-main" role="main">
 
-  
   <!-- Search form
   ============================================= -->
   <div class="container s-main-search animated fadeInUp delay1 text-left pb-5">
-
     <div id="simply-search">
-
-      <h2>ARE YOU SEARCHING A BOOK?</h2>
-      <p class="display-4 font-weight-bold">BIGGEST LIBRARY</p>
-
+      <h2><?php echo __('ARE YOU SEARCHING A BOOK?');  ?></h2>
+      <p class="display-4 font-weight-bold"><?php echo __('BIGGEST LIBRARY');  ?></p>
     </div>
-
   </div>
   <!-- End of Search Form
   ============================================= -->
@@ -181,44 +175,53 @@ include "partials/header.php";
 include "partials/nav2.php";
 ?>
 
+  <!------------ ICON UTAMA ---------------->
   <section>
     <div id="feature" class="bg-light text-dark">
       <div class="container">
-        <div id="opening" class="text-md-center p-5">
-          <h2 class="font-weight-bold">Selamat Datang di Perpustakaan<br>
+        <div id="opening" class="text-md-center p-2">
+          <h2 class="font-weight-bold"><?php echo __('Welcome to Library of');  ?><br>
           Politeknik Negeri Jakarta</h2>
         </div>
         <hr>
-        <div class="row p-5">
+        <div class="row">
           <div class="col">
-            <div class="card-deck">
-              <div class="card bg-transparent" style="border:0px;">
-                <i class="fas fa-gift fa-7x text-center p-3 pnj-color"></i>
-                <div class="card-body">
-                  <h3 class="card-title text-center">Katalog Buku Jurusan/Prodi</h3>
-                  <p class="card-text">Koleksi buku perpustakaan berdasarkan kategori jurusan/prodi.</p>
-                </div>
+            <div class="card-deck p-2 border">
+              <div class="card bg-transparent card-hover" style="border:0px;">
+                <a href="index.php?p=katalog-buku">
+                  <i class="fas fa-bookmark fa-5x text-center p-3 pnj-color"></i>
+                  <div class="card-body">
+                    <h3 class="card-title text-center"><?php echo __('Department / Study Book Catalog');  ?></h3>
+                    <p class="card-text"><?php echo __('Collection of library books by majors / study programs.');  ?></p>
+                  </div>
+                </a>
               </div>
-              <div class="card bg-transparent" style="border:0px;">
-                <i class="fas fa-book fa-7x text-center p-3 pnj-color"></i>
-                <div class="card-body">
-                  <h3 class="card-title text-center">OPAC</h3>
-                  <p class="card-text">Katalog online pencarian koleksi perpustakaan pusat Politeknik Negeri Jakarta.</p>
-                </div>
+              <div class="card bg-transparent card-hover" style="border:0px;">
+                <a href="http://opac.perpustakaan.pnj.ac.id/">
+                  <i class="fas fa-book fa-5x text-center p-3 pnj-color"></i>
+                  <div class="card-body">
+                    <h3 class="card-title text-center">OPAC</h3>
+                    <p class="card-text"><?php echo __('Online catalog search of the central library collection Jakarta State Polytechnic.');  ?></p>
+                  </div>
+                </a>
               </div>
-              <div class="card bg-transparent" style="border:0px;">
-                <i class="fas fa-layer-group fa-7x text-center p-3 pnj-color"></i>
-                <div class="card-body">
-                  <h3 class="card-title text-center">E-Repository</h3>
-                  <p class="card-text">Kumpulan artikel, jurnal, skripsi, tesis dan karya ilmiah.</p>
-                </div>
+              <div class="card bg-transparent card-hover" style="border:0px;">
+                <a href="index.php?p=erepository">
+                  <i class="fas fa-layer-group fa-5x text-center p-3 pnj-color"></i>
+                  <div class="card-body">
+                    <h3 class="card-title text-center">E-Repository</h3>
+                    <p class="card-text"><?php echo __('A collection of articles, journals, theses, theses and scientific works.');  ?></p>
+                  </div>
+                </a>
               </div>
-              <div class="card bg-transparent" style="border:0px;">
-                <i class="fas fa-calculator fa-7x text-center p-3 pnj-color"></i>
-                <div class="card-body">
-                  <h3 class="card-title text-center">Onesearch</h3>
-                  <p class="card-text">Satu pintu pencarian untuk semua koleksi publik dari perpustakaan, museum, arsip, dan sumber elektronik di Indonesia.</p>
-                </div>
+              <div class="card bg-transparent card-hover" style="border:0px;">
+                <a href="index.php?p=elibrary">
+                  <i class="fas fa-book-reader fa-5x text-center p-3 pnj-color"></i>
+                  <div class="card-body">
+                    <h3 class="card-title text-center">E-Library</h3>
+                    <p class="card-text"><?php echo __('One door to search for all public collections from libraries, museums, archives, and electronic sources in Indonesia.');  ?></p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -226,77 +229,247 @@ include "partials/nav2.php";
       </div>
     </div>
   </section>
-  
+  <!------------ ICON UTAMA END ---------------->
+
+  <!------------ BERITA DAN POLLING ---------------->
   <section>
-    <div id="rekap">
+    <div id="berita" class="bg-light text-dark pt-3">
       <div class="container">
-        <div class="row h-100">
-          <div class="col-3 my-auto">
-            <h3 class="text-center">Rekapitulasi Data Perpustakaan Politeknik Negeri Jakarta</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <h2><?php echo __('News');  ?></h2>
+
+            <div class="card-group">
+              <?php
+                require_once LIB.'content.inc.php';
+                require_once SB.$sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/news_index_template.php';
+                
+                $keywords = null;
+                if (isset($_GET['keywords'])) {
+                  $keywords = trim($_GET['keywords']);
+                }
+                
+                $content = new Content();
+                $total = 0;
+                $content_list = $content->getContents($dbs, 3, $total, $keywords); // 3 = Total berita yang akan muncul
+                if ($total > 0) {
+                  echo '';  
+                } else {
+                  echo '<div class="alert alert-warning">'.__('Sorry, we don\'t have any news for you yet.').'</div>';  
+                }
+                
+                
+                foreach ($content_list as $c) {
+                    $summary = Content::createSummary($c['content_desc'], 300);
+                    echo news_list_tpl($c['content_title'], $c['content_path'], $c['last_update'], $summary);
+                }
+                
+                echo simbio_paging::paging($total, $sysconf['news']['num_each_page'], 5);
+              ?>
+            </div>
+
+            <nav aria-label="Page navigation example" class="p-2">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="index.php?p=news" tabindex="-1"><?php echo __('Other news');  ?></a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="col-3 centeri">
-            <div class="counter mb-5" data-count="167234">0</div>
-            <h4>Buku</h4>
-          </div>
-          <div class="col-3 centeri">
-            <div class="counter mb-5"" data-count="150">0</div>
-            <h4>Tugas Akhir</h4>
-          </div>
-          <div class="col-3 centeri">
-            <div class="counter mb-5"" data-count="2200">0</div>
-            <h4>Referensi</h4>
+          
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Polling</h2>
+                <hr>
+                <p class="card-text"><?php echo __('Are you satisfied with library services?');  ?></p><br>
+                <?php
+                if (isset($_POST['vote'])) {
+                  global $dbs;
+
+                  $option = $dbs->escape_string(trim($_POST['votechoice']));
+                  $vote_date = $dbs->escape_string(trim(date('Y-m-d H:i:s')));
+                  $ip_address = $dbs->escape_string(trim($_SERVER['REMOTE_ADDR']));
+
+                  // current password checking
+                  $_votes = sprintf("INSERT INTO votes(option_id, voted_tgl, ip)
+                    VALUES (%d, '%s', '%s')", $option, $vote_date, $ip_address);
+
+                  $dbs->query($_votes);
+                  if ($dbs->affected_rows > 0 ) {
+                    echo '<div class="infoBox">'.__("Thanks for voting!").'</div>';
+                  } else if ($dbs->error) {
+                    echo '<div class="errorBox">'.$dbs->error.'</div>';
+                  }
+                }
+                ?>
+
+                <form method="post" enctype="multipart/form-data" action="index.php">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="votechoice" id="option1" value="1" checked> <?php echo __('Yes');  ?>
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="votechoice" id="option2" value="0"> <?php echo __('No');  ?>
+                    </label>
+                  </div>
+                  <br><br>
+                  <input type="submit" name="vote" id="button" value="<?php echo __('Submit'); ?>" class="btn btn-primary btn-block" />
+                </form>
+
+                <?php
+                  $_votesql_yes = sprintf('SELECT COUNT(*) FROM votes
+                  WHERE option_id=1');
+                  $_votesql_no = sprintf('SELECT COUNT(*) FROM votes
+                      WHERE option_id=0');
+                  $_vote_yes = $dbs->query($_votesql_yes);
+                  $_vote_no = $dbs->query($_votesql_no);
+        
+                  $_voteresult_yes = $_vote_yes->fetch_row();
+                  $_voteresult_no = $_vote_no->fetch_row();
+                ?>
+                <h2><?php echo __("Result");?></h2>
+                <table>
+                <tr>
+                <td>Yes:</td>
+                <td>
+                <?php echo $_voteresult_yes[0];?>
+                </td>
+                </tr>
+                <tr>
+                <td>No:</td>
+                <td>
+                <?php echo $_voteresult_no[0];?>
+                </td>
+                </tr>
+                </table> 
+              </div>
+              <div class="card-footer">
+                <p class="text-center h5"><?php echo __('Library Service Rating');  ?></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!------------ BERITA DAN POLLING END ---------------->
 
+  <!------------ PENGUMUMAN ---------------->
+  <section>
+    <div id="pengumuman" class="bg-light pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-dark"><?php echo __('Announcement');  ?></h2>
+            
+            <div class="card-group">
+              <div class="card bg-dark text-white position-relative">
+                <img src="https://perpus.milkruby.com/images/soft-launching-web-pnj.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay overlay">
+                  <a href="https://perpus.milkruby.com/index.php?p=soft-launching-websi"><h5 class="card-title text-light">SOFT LAUNCHING WEBSITE BARU POLITEKNIK NEGERI JAKARTA</h5></a>
+                </div>
+              </div>
+              <div class="card bg-dark text-white position-relative">
+                <img src="https://perpus.milkruby.com/images/perpanjangan-edom.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay overlay">
+                  <a href="https://perpus.milkruby.com/index.php?p=perpanjangan-masa-ed"><h5 class="card-title text-light">Perpanjangan Masa Pengisian EDOM Semester Genap 2019/2020</h5></a>
+                </div>
+              </div>
+              <div class="card bg-dark text-white position-relative">
+                <img src="https://perpus.milkruby.com/images/pelantikan-pembantu-direktur.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay overlay">
+                  <a href="https://perpus.milkruby.com/index.php?p=pelantikan-pembantu-"><h5 class="card-title text-light">PELANTIKAN DAN SERAH TERIMA PARA PEMBANTU DIREKTUR DI POLITEKNIK NEGERI JAKARTA</h5></a>
+                </div>
+              </div>
+              <div class="card bg-dark text-white position-relative">
+                <img src="https://perpus.milkruby.com/images/kuliah-umum-agama.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay overlay">
+                  <a href="https://perpus.milkruby.com/index.php?p=kuliah-umum-agama"><h5 class="card-title text-light">KULIAH UMUM AGAMA ISLAM SECARA DARING</h5></a>
+                </div>
+              </div>
+            </div>
+            <!--<a class="btn btn-info mt-3 float-right text-light"><?php //echo __("Other announcements");?></a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------ PENGUMUMAN END ---------------->
+            
+  <!------------ REKAP ---------------->
+  <section>
+    <div id="rekap">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-sm-3 my-auto">
+            <h3 class="text-center"><?php echo __("Data Recapitulation of Jakarta State Polytechnic Library");?></h3>
+          </div>
+          <div class="col-sm-3 centeri">
+            <div class="counter mb-5" data-count="167234">0</div>
+            <h4><?php echo __('Book');  ?></h4>
+          </div>
+          <div class="col-sm-3 centeri">
+            <div class="counter mb-5" data-count="150">
+              <?php
+                $_ta_sql = sprintf('SELECT COUNT(*) FROM thesis');
+                $_ta_q = $dbs->query($_ta_sql);
+                $_ta_d = $_ta_q->fetch_row();
+                  echo $_ta_d[0];
+              ?>
+            </div>
+            <h4><?php echo __('Thesis');  ?></h4>
+          </div>
+          <div class="col-sm-3 centeri">
+            <div class="counter mb-5" data-count="2200">0</div>
+            <h4><?php echo __('Reference');  ?></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------ REKAP END ---------------->
+
+  <!------------ AKTIVITAS DAN JAM LAYANAN ---------------->
   <section>
     <div id="kegiatan" class="bg-light text-dark text-left">
       <div class="container">
         <div class="row pt-3 pb-3">
-          <div class="col-6">
-            <h2>Kegiatan</h2>
-              <p>Kegiatan Penelusuran E-Resources</p>
+          <div class="col-sm-6">
+            <h2><?php echo __('Activities');  ?></h2>
+              <p><?php echo __('Exploring E-Resources Activities');  ?></p>
               <ul>
-                <li><strong>Waktu</strong> : Tiap hari selasa jam 10.00 - selesai</li>
-                <li><strong>Tempat</strong> : Ruang Serbaguna Lantai Perpustakaan</li>
-                <li><strong>Kontak</strong> : Bagian informasi perpustakaan</li>
+                <li><strong><?php echo __('Time');  ?></strong> : <?php echo __('Every Teusday 10 A.M. - Done');  ?></li>
+                <li><strong><?php echo __('Place');  ?></strong> : <?php echo __('Multipurpose Room Library Floor');  ?></li>
+                <li><strong><?php echo __('Contact');  ?></strong> : <?php echo __('Library information section');  ?></li>
               </ul>
           </div>
-          <div class="col-6">
-            <h2>Jam Layanan</h2>
+          <div class="col-sm-6">
+            <h2><?php echo __('Service Hours');  ?></h2>
             <ul>
-              <li><strong>Senin - Kamis</strong><br>Buka jam 08.00 - 19.00</li>
-              <li><strong>Jumat</strong><br>Buka jam 09.00 - 19.30<br>Istirahat Jam 11.30 - 13.00</li>
-              <li><strong>Sabtu</strong><br>Buka jam 09.00 - 14.00</li>
-              <li><strong>Minggu</strong><br>Libur</li>
+                <li><span class="font-weight-bold"><?php echo __("Monday - Friday");?> -</span> 07.30 - 16.00</li>
+                <li><span class="font-weight-bold"><?php echo __("Saturday - Sunday");?> -</span> Libur</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!------------ AKTIVITAS DAN JAM LAYANAN END ---------------->
 
+  <!------------ KONTAK ---------------->
   <section>
-    <div id="kontak" class="text-dark pt-5 pb-3 text-left">
+    <div id="kontak" class="text-light pt-3 pb-3 text-left bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <div class="row">
-              <div class="col-3">
-                <i class="fas fa-phone fa-3x float-right mt-5 pnj-color"></i>
-              </div>
-              <div class="col-9">
-                <h2>Kontak</h2>
-                <ul>
-                  <li>Address : Jl. Prof. Dr. G.A. Siwabessy, Kampus Baru UI, Depok, 16424</li>
-                  <li>Phone Number : (021) 7270036 ext 235</li>
-                  <li>Fax Number : (021) 7270036</li>
-                  <li><a href="https://twitter.com" class="btn btn-primary" style="background-color:var(--color1);">Ikuti @HumasPNJ</a></li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-sm-6">
+            <h2><i class="fas fa-phone fa-2x pnj-color"></i ><?php echo __('Contact');  ?></h2>
+            <ul>
+              <li><strong><?php echo __('Address');  ?></strong> : Jl. Prof. Dr. G.A. Siwabessy, Kampus Baru UI, Depok, 16424</li>
+              <li><strong><?php echo __('Phone Number');  ?></strong> : (021) 7270036 ext 235</li>
+              <li><strong><?php echo __('Fax Number');  ?></strong> : (021) 7270036</li>
+              <li><a href="https://twitter.com" class="btn btn-primary" style="background-color:var(--color1);"><?php echo __("Follow");?> @HumasPNJ</a></li>
+            </ul>
           </div>
           <div class="col-sm-6">
             <h2><i class="fas fa-map fa-2x pnj-color"></i> <?php echo __('Maps');  ?></h2>
@@ -306,6 +479,8 @@ include "partials/nav2.php";
       </div>
     </div>
   </section>
+  <!------------ KONTAK END ---------------->
+
 
 </main>
 <?php endif; ?>
@@ -397,14 +572,8 @@ include "partials/bg.php";
   });
 
 </script>
-<script>
-  
 
-  jQuery(document).on('click', '.mega-dropdown', function(e) {
-        e.stopPropagation()
-    });
 
-  </script>
 <!-- SmartMenus jQuery plugin -->
 <script type="text/javascript" src="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/smartmenus-1.1.0/jquery.smartmenus.js"></script>
 
