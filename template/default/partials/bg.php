@@ -28,10 +28,10 @@
               $(function() {
                   $('body').vegas({
                       slides: [
-                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/1.jpg" },
-                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/2.jpg" },
-                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/3.jpg" },
-                          //{ src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/4.jpg" }
+                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/bg-1.jpeg" },
+                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/bg-2.jpeg" },
+                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/bg-3.jpeg" },
+                          { src: "<?php echo $sysconf['template']['dir'].'/'.$sysconf['template']['theme']; ?>/img/bg-4.jpeg" }
                       ],
                       firstTransition: 'fade',
                       firstTransitionDuration: 2000,
