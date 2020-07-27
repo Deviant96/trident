@@ -298,16 +298,9 @@ include "partials/nav2.php";
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col-3">
-                <i class="fas fa-map fa-3x float-right mt-5 pnj-color"></i>
-              </div>
-              <div class="col-9">
-                <h2>Maps</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.67694066194!2d106.8243398!3d-6.3721401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f054fe3a0295245!2sPoliteknik%20Negeri%20Jakarta!5e0!3m2!1sid!2sid!4v1586953430597!5m2!1sid!2sid" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-              </div>
-            </div>
+          <div class="col-sm-6">
+            <h2><i class="fas fa-map fa-2x pnj-color"></i> <?php echo __('Maps');  ?></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.67694066194!2d106.8243398!3d-6.3721401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f054fe3a0295245!2sPoliteknik%20Negeri%20Jakarta!5e0!3m2!1sid!2sid!4v1586953430597!5m2!1sid!2sid" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
       </div>
