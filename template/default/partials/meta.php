@@ -89,6 +89,10 @@
 
 <!-- Style
 ============================================= -->
+
+<!-- SmartMenus jQuery Bootstrap 4 Addon CSS -->
+<link href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/smartmenus-1.1.0/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/vegas.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo $sysconf['template']['css']; ?>" />

@@ -482,5 +482,20 @@ include "partials/bg.php";
     });
 
   </script>
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/smartmenus-1.1.0/jquery.smartmenus.js"></script>
+
+<!-- SmartMenus jQuery Bootstrap 4 Addon -->
+<script type="text/javascript" src="<?php echo SWB.'template'.DS.$sysconf['template']['theme']; ?>/css/smartmenus-1.1.0/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script>
+
+<!-- SmartMenus jQuery init -->
+<script type="text/javascript">
+	$(function() {
+		$('#main-menu').smartmenus({
+			subMenusSubOffsetX: 1,
+			subMenusSubOffsetY: -8
+		});
+	});
+</script>
 </body>
 </html>
