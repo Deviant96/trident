@@ -93,6 +93,7 @@ include "partials/header.php";
 
   <!-- Main
   ============================================= -->
+  <?php include "partials/nav2.php";  ?>
   <div class="s-main-content container">
     <div class="row">
 
