@@ -167,7 +167,7 @@ class member_logon
             WHERE m.member_id='%s'
                 AND m.mpasswd=MD5('%s')", $this->obj_db->escape_string($this->username), $this->obj_db->escape_string($this->password));
         */
-        $_sql_member_login = sprintf("SELECT m.member_id, m.member_name, m.mpasswd, m.inst_name,
+        $_sql_member_login = sprintf("SELECT m.member_id, m.member_name, m.mpasswd, m.inst_name, m.study_year,
             m.member_email, m.expire_date, m.register_date, m.is_pending,
             m.member_type_id, mt.member_type_name, mt.enable_reserve, mt.reserve_limit
             FROM member AS m LEFT JOIN mst_member_type AS mt ON m.member_type_id=mt.member_type_id
@@ -219,6 +219,7 @@ class member_logon
         $_SESSION['m_name'] = $this->user_info['member_name'];
         $_SESSION['m_email'] = $this->user_info['member_email'];
         $_SESSION['m_institution'] = $this->user_info['inst_name'];
+        $_SESSION['study_year'] = $this->user_info['study_year'];
         $_SESSION['m_logintime'] = time();
         $_SESSION['m_expire_date'] = $this->user_info['expire_date'];
         $_SESSION['m_member_type_id'] = $this->user_info['member_type_id'];
