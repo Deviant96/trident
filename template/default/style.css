@@ -3863,7 +3863,29 @@ display: block;
 .pcss3t > ul > li {
 	height: 370px;
 }
+.book-view .form-group {
+  margin-bottom:unset;
+}
+
+.book-view .book-title {
+  margin-bottom: 1rem;
+}
+
+.book-view .book-author .form-control-plaintext {
+  font-size:15px;
+  color: rgba(0, 0, 0, 0.7)!important;
+}
+
+.book-view .book-summarize {
+  font-style: italic;
+  font-family: Raleway, serif;
+  line-height: 1.6em;
+  font-size: 11pt;
+}
+
+.book-view .book-summarize p {
   display: block;
+  text-align: justify !important;
 }
 .dropdown:hover .dropdown-menu {
   transform: scale(1);
