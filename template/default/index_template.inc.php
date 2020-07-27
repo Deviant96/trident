@@ -320,13 +320,14 @@ include "partials/nav2.php";
 
 <?php
 // Advance Search
-include "partials/advsearch.php";
+//include "partials/advsearch.php";
+
 
 // Footer
-include "partials/footer.php";
+include "partials/footer.php"; 
 
 // Chat Engine
-include LIB."contents/chat.php";
+//include LIB."contents/chat.php";
 
 // Background
 include "partials/bg.php";
