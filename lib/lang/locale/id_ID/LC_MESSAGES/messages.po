@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Senayan3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 03:38+0700\n"
-"PO-Revision-Date: 2020-05-15 03:39+0700\n"
+"POT-Creation-Date: 2020-07-20 05:48+0700\n"
+"PO-Revision-Date: 2020-07-20 05:51+0700\n"
 "Last-Translator: Arif Syamsudin Budi W. <buitenzorg812@yahoo.com>\n"
 "Language-Team: Arie Nugraha; Hendro Wicaksono; Wardiyono <dicarve@yahoo.com; "
 "hendrowicaksono@yahoo.com; wynerst@gmail.com>\n"
@@ -22,20 +22,16 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/AJAX_check_id.php:21
-#, fuzzy
-#| msgid "Item Supplier"
 msgid "No ID Supplied!"
-msgstr "Penyuplai Eksemplar"
+msgstr "Tidak ada ID!"
 
 #: admin/AJAX_check_id.php:35
 msgid "ID Already exists! Please use another ID"
-msgstr ""
+msgstr "ID sudah digunakan! Gunakan ID lain"
 
 #: admin/AJAX_check_id.php:38
-#, fuzzy
-#| msgid "Available"
 msgid "ID Available"
-msgstr "Tersedia"
+msgstr "ID Tersedia"
 
 #: admin/AJAX_lookup_handler.php:77 admin/AJAX_vocabolary_control.php:78
 msgid "Add New"
@@ -53,6 +49,7 @@ msgstr ""
 
 #: admin/admin_template/default-dz/function.php:65
 #: admin/admin_template/default/function.php:69 lib/module.inc.php:40
+#: template/default/partials/nav.php:42 template/default/partials/nav2.php:44
 msgid "OPAC"
 msgstr ""
 
@@ -109,10 +106,7 @@ msgstr "Ketik dan tekan tombol Enter untuk berkirim pesan"
 msgid "Members"
 msgstr "Anggota"
 
-#: admin/chat.php:15 lib/contents/chat.php:88 sysconfig.inc.php:648
-#: template/classic-dz/part/content/nav.php:42
-#: template/classic/part/content/nav.php:42
-#: template/default-dz/partials/nav.php:10 template/default/partials/nav.php:10
+#: admin/chat.php:15 lib/contents/chat.php:88 sysconfig.inc.php:656
 #: template/lightweight/partials/nav.php:10
 msgid "Librarian"
 msgstr "Pustakawan"
@@ -439,14 +433,7 @@ msgstr "Daftar Eksemplar Keluar"
 #: admin/modules/system/module.php:151 admin/modules/system/sys_log.php:85
 #: admin/modules/system/sys_log.php:87 admin/modules/system/user_group.php:175
 #: admin/modules/system/user_group.php:177
-#: template/classic-dz/part/content/advance-search.php:71
-#: template/classic-dz/part/content/simple-search.php:26
-#: template/classic/part/content/advance-search.php:71
-#: template/classic/part/content/simple-search.php:26
-#: template/default-dz/index_template.inc.php:96
-#: template/default-dz/index_template.inc.php:197
 #: template/default/partials/advsearch.php:89
-#: template/default/partials/header.php:15
 #: template/lightweight/index_template.inc.php:94
 #: template/lightweight/index_template.inc.php:195
 msgid "Search"
@@ -481,7 +468,7 @@ msgstr "Pencarian"
 #: admin/modules/stock_take/lost_item_list.php:147
 #: lib/contents/download_current_loan.inc.php:61
 #: lib/contents/download_loan_history.inc.php:61
-#: lib/contents/member.inc.php:570 lib/contents/member.inc.php:605
+#: lib/contents/member.inc.php:538 lib/contents/member.inc.php:573
 msgid "Item Code"
 msgstr "Kode Eksemplar"
 
@@ -510,7 +497,7 @@ msgstr "Kode Eksemplar"
 #: admin/modules/reporting/customs/reserve_list.php:70
 #: admin/modules/reporting/customs/visitor_list.php:137
 #: admin/modules/reporting/customs/visitor_list.php:179
-#: lib/contents/member.inc.php:227 lib/contents/member.inc.php:513
+#: lib/contents/member.inc.php:481
 msgid "Member ID"
 msgstr "ID Anggota"
 
@@ -554,13 +541,12 @@ msgstr "ID Anggota"
 #: admin/modules/stock_take/current.php:107
 #: admin/modules/stock_take/finish.php:103
 #: admin/modules/stock_take/lost_item_list.php:148
+#: lib/contents/add-reference.inc.php:247
 #: lib/contents/download_current_loan.inc.php:62
 #: lib/contents/download_loan_history.inc.php:62
-#: lib/contents/member.inc.php:453 lib/contents/member.inc.php:571
-#: lib/contents/member.inc.php:606 lib/detail.inc.php:226
-#: template/classic-dz/part/content/advance-search.php:19
-#: template/classic/part/content/advance-search.php:19
-#: template/default/partials/advsearch.php:16
+#: lib/contents/member.inc.php:421 lib/contents/member.inc.php:539
+#: lib/contents/member.inc.php:574 lib/contents/unggah_mandiri.inc.php:247
+#: lib/detail.inc.php:226 template/default/partials/advsearch.php:16
 msgid "Title"
 msgstr "Judul"
 
@@ -577,7 +563,7 @@ msgstr "Judul"
 #: admin/modules/reporting/customs/overdued_list.php:186
 #: lib/contents/download_current_loan.inc.php:63
 #: lib/contents/download_loan_history.inc.php:63
-#: lib/contents/member.inc.php:572 lib/contents/member.inc.php:607
+#: lib/contents/member.inc.php:540 lib/contents/member.inc.php:575
 msgid "Loan Date"
 msgstr "Tanggal Pinjam"
 
@@ -592,7 +578,7 @@ msgstr "Tanggal Pinjam"
 #: admin/modules/reporting/customs/member_loan_list.php:202
 #: admin/modules/reporting/customs/overdued_list.php:186
 #: lib/contents/download_current_loan.inc.php:64
-#: lib/contents/member.inc.php:573
+#: lib/contents/member.inc.php:541
 msgid "Due Date"
 msgstr "Tanggal Harus Kembali"
 
@@ -741,12 +727,6 @@ msgstr "dalam antrian menunggu untuk dicetak."
 #: admin/modules/reporting/customs/titles_list.php:300
 #: admin/modules/stock_take/current.php:108
 #: admin/modules/stock_take/lost_item_list.php:152
-#: template/classic-dz/custom_frontpage_record.inc.php:10
-#: template/classic-dz/detail_template.php:62
-#: template/classic/custom_frontpage_record.inc.php:10
-#: template/classic/detail_template.php:62
-#: template/default-dz/custom_frontpage_record.inc.php:10
-#: template/default-dz/detail_template.php:57
 #: template/default/custom_frontpage_record.inc.php:10
 #: template/default/detail_template.php:57
 #: template/lightweight/custom_frontpage_record.inc.php:10
@@ -759,9 +739,6 @@ msgstr "No. Panggil"
 #: admin/modules/bibliography/marcexport.php:261
 #: admin/modules/bibliography/printed_card.php:375
 #: admin/modules/membership/member_card_generator.php:325
-#: template/classic-dz/visitor_template.php:57
-#: template/classic/visitor_template.php:57
-#: template/default-dz/visitor_template.php:60
 #: template/default/visitor_template.php:60
 #: template/lightweight/visitor_template.php:60
 msgid "Add"
@@ -925,7 +902,7 @@ msgstr "Sunting"
 #: admin/modules/bibliography/iframe_topic.php:137
 #: admin/modules/circulation/loan.php:141
 #: admin/modules/circulation/reserve_list.php:96
-#: lib/contents/member.inc.php:453
+#: lib/contents/member.inc.php:421
 msgid "Remove"
 msgstr "Hapus"
 
@@ -1218,14 +1195,6 @@ msgstr "Pengarang"
 #: admin/modules/reporting/customs/titles_list.php:174
 #: admin/modules/reporting/customs/titles_list.php:300
 #: admin/modules/serial_control/index.php:65
-#: template/classic-dz/custom_frontpage_record.inc.php:7
-#: template/classic-dz/detail_template.php:88
-#: template/classic-dz/part/content/advance-search.php:41
-#: template/classic/custom_frontpage_record.inc.php:7
-#: template/classic/detail_template.php:88
-#: template/classic/part/content/advance-search.php:41
-#: template/default-dz/custom_frontpage_record.inc.php:7
-#: template/default-dz/detail_template.php:87
 #: template/default/custom_frontpage_record.inc.php:7
 #: template/default/detail_template.php:87
 #: template/default/partials/advsearch.php:45
@@ -1241,10 +1210,7 @@ msgstr "ISBN/ISSN"
 #: admin/modules/master_file/submenu.php:31
 #: admin/modules/reporting/customs/titles_list.php:173
 #: admin/modules/reporting/customs/titles_list.php:299
-#: template/classic-dz/detail_template.php:67
-#: template/classic/detail_template.php:67
-#: template/default-dz/detail_template.php:64
-#: template/default/detail_template.php:64
+#: lib/contents/book-view.inc.php:91 template/default/detail_template.php:64
 #: template/lightweight/detail_template.php:64
 msgid "Publisher"
 msgstr "Penerbit"
@@ -1311,7 +1277,7 @@ msgstr "Simpan"
 #: admin/modules/system/app_user.php:307 admin/modules/system/content.php:188
 #: admin/modules/system/holiday.php:204 admin/modules/system/module.php:182
 #: admin/modules/system/user_group.php:208 lib/contents/login.inc.php:202
-#: lib/contents/member.inc.php:148
+#: lib/contents/member.inc.php:137
 msgid "Update"
 msgstr "Perbaharui"
 
@@ -1334,16 +1300,11 @@ msgstr "Tambah Data Pengarang"
 #: admin/modules/bibliography/index.php:591
 #: admin/modules/serial_control/index.php:65
 #: lib/contents/clustering.inc.php:120
-#: template/classic-dz/part/content/advance-search.php:27
-#: template/classic/part/content/advance-search.php:27
 #: template/default/partials/advsearch.php:25
 msgid "Author(s)"
 msgstr "Pengarang"
 
 #: admin/modules/bibliography/index.php:595
-#: template/classic-dz/detail_template.php:135
-#: template/classic/detail_template.php:135
-#: template/default-dz/detail_template.php:150
 #: template/default/detail_template.php:150
 #: template/lightweight/detail_template.php:150
 msgid "Statement of Responsibility"
@@ -1357,14 +1318,8 @@ msgstr ""
 "Sumber utama informasi untuk memperlihatkan siapa yang menulis, menyusun, "
 "membuat ilustrasi, atau berkontribusi dengan cara apapun."
 
-#: admin/modules/bibliography/index.php:599 lib/detail.inc.php:227
-#: template/classic-dz/custom_frontpage_record.inc.php:6
-#: template/classic-dz/detail_template.php:120
-#: template/classic/custom_frontpage_record.inc.php:6
-#: template/classic/detail_template.php:120
-#: template/default-dz/custom_frontpage_record.inc.php:6
-#: template/default-dz/detail_template.php:129
-#: template/default/custom_frontpage_record.inc.php:6
+#: admin/modules/bibliography/index.php:599 lib/contents/book-view.inc.php:77
+#: lib/detail.inc.php:227 template/default/custom_frontpage_record.inc.php:6
 #: template/default/detail_template.php:129
 #: template/lightweight/custom_frontpage_record.inc.php:6
 #: template/lightweight/detail_template.php:129
@@ -1376,9 +1331,6 @@ msgid "A version of publication having substantial changes or additions."
 msgstr "Versi publikasi yang memiliki perubahan atau penambahan vital."
 
 #: admin/modules/bibliography/index.php:601
-#: template/classic-dz/detail_template.php:130
-#: template/classic/detail_template.php:130
-#: template/default-dz/detail_template.php:143
 #: template/default/detail_template.php:143
 #: template/lightweight/detail_template.php:143
 msgid "Specific Detail Info"
@@ -1441,8 +1393,6 @@ msgstr "Total Judul"
 #: admin/modules/stock_take/lost_item_list.php:151
 #: admin/modules/stock_take/st_report.php:169
 #: lib/contents/clustering.inc.php:79
-#: template/classic-dz/part/content/advance-search.php:57
-#: template/classic/part/content/advance-search.php:57
 #: template/default/partials/advsearch.php:56
 msgid "Collection Type"
 msgstr "Tipe Koleksi"
@@ -1461,8 +1411,6 @@ msgstr "Tipe Koleksi"
 #: admin/modules/stock_take/init.php:184
 #: admin/modules/stock_take/lost_item_list.php:115
 #: admin/modules/system/sys_log.php:108
-#: template/classic-dz/part/content/advance-search.php:64
-#: template/classic/part/content/advance-search.php:64
 #: template/default/partials/advsearch.php:65
 msgid "Location"
 msgstr "Lokasi"
@@ -1493,8 +1441,6 @@ msgstr "Data Koleksi"
 #: admin/modules/stock_take/lost_item_list.php:87
 #: admin/modules/stock_take/lost_item_list.php:149
 #: lib/contents/clustering.inc.php:60
-#: template/classic-dz/part/content/advance-search.php:50
-#: template/classic/part/content/advance-search.php:50
 #: template/default/partials/advsearch.php:76
 msgid "GMD"
 msgstr "GMD"
@@ -1550,12 +1496,6 @@ msgid "Publishing Place"
 msgstr "Tempat Terbit"
 
 #: admin/modules/bibliography/index.php:709
-#: template/classic-dz/custom_frontpage_record.inc.php:8
-#: template/classic-dz/detail_template.php:76
-#: template/classic/custom_frontpage_record.inc.php:8
-#: template/classic/detail_template.php:76
-#: template/default-dz/custom_frontpage_record.inc.php:8
-#: template/default-dz/detail_template.php:73
 #: template/default/custom_frontpage_record.inc.php:8
 #: template/default/detail_template.php:73
 #: template/lightweight/custom_frontpage_record.inc.php:8
@@ -1570,12 +1510,6 @@ msgid ""
 msgstr "Deskripsi fisik publikasi, seperti lebar, tinggi, jumlah halaman, dll."
 
 #: admin/modules/bibliography/index.php:711
-#: template/classic-dz/custom_frontpage_record.inc.php:9
-#: template/classic-dz/detail_template.php:57
-#: template/classic/custom_frontpage_record.inc.php:9
-#: template/classic/detail_template.php:57
-#: template/default-dz/custom_frontpage_record.inc.php:9
-#: template/default-dz/detail_template.php:50
 #: template/default/custom_frontpage_record.inc.php:9
 #: template/default/detail_template.php:50
 #: template/lightweight/custom_frontpage_record.inc.php:9
@@ -1601,9 +1535,6 @@ msgstr "Judul Seri"
 #: admin/modules/stock_take/lost_item_list.php:79
 #: admin/modules/stock_take/lost_item_list.php:150
 #: admin/modules/stock_take/st_report.php:131
-#: template/classic-dz/detail_template.php:93
-#: template/classic/detail_template.php:93
-#: template/default-dz/detail_template.php:94
 #: template/default/detail_template.php:94
 #: template/lightweight/detail_template.php:94
 msgid "Classification"
@@ -1623,11 +1554,6 @@ msgstr "Tambah Data Subyek"
 
 #: admin/modules/bibliography/index.php:724
 #: admin/modules/serial_control/index.php:65 lib/contents/clustering.inc.php:98
-#: template/classic-dz/detail_template.php:125
-#: template/classic-dz/part/content/advance-search.php:34
-#: template/classic/detail_template.php:125
-#: template/classic/part/content/advance-search.php:34
-#: template/default-dz/detail_template.php:136
 #: template/default/detail_template.php:136
 #: template/default/partials/advsearch.php:36
 #: template/lightweight/detail_template.php:136
@@ -1644,9 +1570,6 @@ msgstr "Subyek"
 #: admin/modules/reporting/customs/class_recap.php:77
 #: admin/modules/reporting/customs/class_recap.php:136
 #: admin/modules/reporting/customs/titles_list.php:117 lib/detail.inc.php:228
-#: template/classic-dz/detail_template.php:81
-#: template/classic/detail_template.php:81
-#: template/default-dz/detail_template.php:80
 #: template/default/detail_template.php:80
 #: template/lightweight/detail_template.php:80
 msgid "Language"
@@ -1749,6 +1672,7 @@ msgid "Height:"
 msgstr "Tinggi:"
 
 #: admin/modules/bibliography/index.php:761
+#: template/default/index_template.inc.php:333
 msgid "Result"
 msgstr "Hasil"
 
@@ -1788,9 +1712,6 @@ msgstr "Tambah Lampiran"
 #: admin/modules/bibliography/index.php:773
 #: admin/modules/master_file/label.php:202
 #: admin/modules/master_file/label.php:207
-#: template/classic-dz/detail_template.php:165
-#: template/classic/detail_template.php:165
-#: template/default-dz/detail_template.php:170
 #: template/default/detail_template.php:170
 #: template/lightweight/detail_template.php:170
 msgid "File Attachment"
@@ -2404,8 +2325,6 @@ msgid "Add Subject"
 msgstr "Tambahkan Subyek"
 
 #: admin/modules/bibliography/pop_topic.php:147
-#: template/classic-dz/part/content/simple-search.php:25
-#: template/classic/part/content/simple-search.php:25
 msgid "Keyword"
 msgstr "Kata kunci"
 
@@ -2908,7 +2827,9 @@ msgstr " sudah dikembalikan pada"
 #: admin/modules/reporting/customs/overdued_list.php:71
 #: admin/modules/reporting/customs/reserve_list.php:70
 #: admin/modules/reporting/customs/reserve_list.php:127
-#: lib/contents/form.inc.php:75 lib/contents/member.inc.php:512
+#: lib/contents/add-reference.inc.php:211
+#: lib/contents/forgot_password.inc.php:104 lib/contents/form.inc.php:162
+#: lib/contents/member.inc.php:480 lib/contents/unggah_mandiri.inc.php:211
 msgid "Member Name"
 msgstr "Nama Anggota"
 
@@ -2964,9 +2885,9 @@ msgid "Are you sure want to finish current transaction?"
 msgstr "Tutup/Selesaikan Transaksi?"
 
 #: admin/modules/circulation/circulation_action.php:506
-#: lib/contents/member.inc.php:516
+#: lib/contents/member.inc.php:484
 msgid "Member Email"
-msgstr "Surel Anggota"
+msgstr "Email Anggota"
 
 #: admin/modules/circulation/circulation_action.php:507
 #: admin/modules/circulation/loan_rules.php:192
@@ -2975,12 +2896,12 @@ msgstr "Surel Anggota"
 #: admin/modules/membership/member_type.php:150
 #: admin/modules/membership/submenu.php:29
 #: admin/modules/reporting/customs/visitor_report.php:111
-#: lib/contents/member.inc.php:517
+#: lib/contents/member.inc.php:485
 msgid "Member Type"
 msgstr "Tipe Keanggotaan"
 
 #: admin/modules/circulation/circulation_action.php:510
-#: admin/modules/membership/index.php:405 lib/contents/member.inc.php:520
+#: admin/modules/membership/index.php:405 lib/contents/member.inc.php:488
 msgid "Register Date"
 msgstr "Tanggal Registrasi"
 
@@ -2993,7 +2914,7 @@ msgstr "Masa Keanggotaan sudah habis"
 #: admin/modules/membership/index.php:408
 #: admin/modules/membership/index.php:413
 #: admin/modules/membership/member_card_generator.php:224
-#: lib/contents/member.inc.php:521
+#: lib/contents/member.inc.php:489
 msgid "Expiry Date"
 msgstr "Berlaku Hingga"
 
@@ -3207,7 +3128,7 @@ msgstr "hari dengan jumlah denda"
 
 #: admin/modules/circulation/loan_list.php:178
 msgid "Send overdues notice e-mail"
-msgstr "Kirim surel  tentang informasi keterlambatan"
+msgstr "Kirim email tentang informasi keterlambatan"
 
 #: admin/modules/circulation/loan_list.php:178
 #, fuzzy
@@ -3629,6 +3550,7 @@ msgstr "Bulan"
 #: admin/modules/reporting/customs/loan_by_class.php:102
 #: admin/modules/reporting/customs/visitor_report.php:66
 #: admin/modules/reporting/customs/visitor_report_day.php:81
+#: lib/contents/book-view.inc.php:84
 msgid "Year"
 msgstr "Tahun"
 
@@ -3993,6 +3915,7 @@ msgstr "Data Tempat GAGAL Disimpan. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/place.php:128
 #: admin/modules/master_file/submenu.php:37
+#: template/default/index_template.inc.php:445
 msgid "Place"
 msgstr "Tempat"
 
@@ -4163,7 +4086,7 @@ msgstr "Kode"
 #: admin/modules/master_file/rda_cmc.php:189
 #: admin/modules/master_file/rda_cmc.php:209
 #: admin/modules/master_file/rda_cmc.php:213 lib/contents/librarian.inc.php:47
-#: sysconfig.inc.php:630
+#: sysconfig.inc.php:638
 msgid "Name"
 msgstr "Nama"
 
@@ -4180,9 +4103,6 @@ msgid "General Material Designation"
 msgstr "Format Fisik Dokumen"
 
 #: admin/modules/master_file/submenu.php:28
-#: template/classic-dz/detail_template.php:105
-#: template/classic/detail_template.php:105
-#: template/default-dz/detail_template.php:101
 #: template/default/detail_template.php:101
 #: template/lightweight/detail_template.php:101
 msgid "Content Type"
@@ -4193,9 +4113,6 @@ msgid "RDA Content Type"
 msgstr "Tipe Isi RDA"
 
 #: admin/modules/master_file/submenu.php:29
-#: template/classic-dz/detail_template.php:110
-#: template/classic/detail_template.php:110
-#: template/default-dz/detail_template.php:115
 #: template/default/detail_template.php:115
 #: template/lightweight/detail_template.php:115
 msgid "Media Type"
@@ -4206,9 +4123,6 @@ msgid "RDA Media Type"
 msgstr "Jenis Media RDA"
 
 #: admin/modules/master_file/submenu.php:30
-#: template/classic-dz/detail_template.php:115
-#: template/classic/detail_template.php:115
-#: template/default-dz/detail_template.php:122
 #: template/default/detail_template.php:122
 #: template/lightweight/detail_template.php:122
 msgid "Carrier Type"
@@ -4326,14 +4240,22 @@ msgstr "Nama Penyuplai"
 #: admin/modules/membership/index.php:430
 #: admin/modules/membership/member_card_generator.php:219
 #: admin/modules/reporting/customs/member_list.php:104
-#: lib/contents/form.inc.php:144
+#: lib/contents/contact.inc.php:18 template/default/index_template.inc.php:470
 msgid "Address"
 msgstr "Alamat"
 
 #: admin/modules/master_file/supplier.php:187
 #: admin/modules/master_file/supplier.php:211
-#: admin/modules/master_file/supplier.php:217 lib/contents/contact.inc.php:3
-#: template/default/index_template.inc.php:219
+#: admin/modules/master_file/supplier.php:217 lib/contents/contact.inc.php:2
+#: template/default/elibrary_template.inc.php:59
+#: template/default/erepository_template.inc.php:71
+#: template/default/forgot_password_template.inc.php:69
+#: template/default/index_template.inc.php:446
+#: template/default/index_template.inc.php:468
+#: template/default/member_template.inc.php:69
+#: template/default/partials/nav.php:168 template/default/partials/nav2.php:171
+#: template/default/register_template.inc.php:69
+#: template/default/unggah_mandiri_template.inc.php:42
 msgid "Contact"
 msgstr "Kontak"
 
@@ -4345,7 +4267,8 @@ msgstr "Kontak"
 #: admin/modules/reporting/customs/due_date_warning.php:156
 #: admin/modules/reporting/customs/member_loan_list.php:196
 #: admin/modules/reporting/customs/overdued_list.php:179
-#: lib/contents/form.inc.php:162
+#: lib/contents/contact.inc.php:20 lib/contents/form.inc.php:207
+#: template/default/index_template.inc.php:471
 msgid "Phone Number"
 msgstr "Nomor Telepon"
 
@@ -4353,6 +4276,7 @@ msgstr "Nomor Telepon"
 #: admin/modules/master_file/supplier.php:213
 #: admin/modules/master_file/supplier.php:219
 #: admin/modules/membership/index.php:438
+#: template/default/index_template.inc.php:472
 msgid "Fax Number"
 msgstr "Nomor Faks"
 
@@ -4525,11 +4449,7 @@ msgstr "Set Otomatis"
 #: admin/modules/reporting/customs/visitor_list.php:94
 #: admin/modules/reporting/customs/visitor_list.php:140
 #: admin/modules/reporting/customs/visitor_list.php:182
-#: lib/contents/form.inc.php:108 lib/contents/member.inc.php:524
-#: template/classic-dz/visitor_template.php:54
-#: template/classic/visitor_template.php:54
-#: template/default-dz/visitor_template.php:53
-#: template/default/visitor_template.php:53
+#: lib/contents/member.inc.php:492 template/default/visitor_template.php:53
 #: template/lightweight/visitor_template.php:53
 msgid "Institution"
 msgstr "Institusi"
@@ -4550,7 +4470,6 @@ msgstr "Institusi"
 #: admin/modules/reporting/customs/visitor_list.php:73
 #: admin/modules/reporting/customs/visitor_list.php:139
 #: admin/modules/reporting/customs/visitor_list.php:181
-#: lib/contents/form.inc.php:117
 msgid "Membership Type"
 msgstr "Tipe Keanggotaan"
 
@@ -4569,7 +4488,7 @@ msgstr "Perempuan"
 msgid "Sex"
 msgstr "Jenis Kelamin"
 
-#: admin/modules/membership/index.php:432 lib/contents/form.inc.php:153
+#: admin/modules/membership/index.php:432
 msgid "Postal Code"
 msgstr "Kode Pos"
 
@@ -4593,6 +4512,7 @@ msgstr "Tunda Keanggotaan"
 #: admin/modules/membership/index.php:476
 #: admin/modules/stock_take/finish.php:183 admin/modules/system/content.php:196
 #: admin/modules/system/index.php:229
+#: template/default/index_template.inc.php:312
 msgid "Yes"
 msgstr "Ya"
 
@@ -4620,17 +4540,18 @@ msgstr "Foto"
 #: admin/modules/reporting/customs/member_loan_list.php:196
 #: admin/modules/reporting/customs/overdued_list.php:179
 msgid "E-mail"
-msgstr "Surel"
+msgstr ""
 
 #: admin/modules/membership/index.php:518 admin/modules/system/app_user.php:373
-#: lib/contents/login.inc.php:177 lib/contents/member.inc.php:139
-#: lib/contents/member.inc.php:140 lib/contents/member.inc.php:294
+#: lib/contents/forgot_password.inc.php:122 lib/contents/login.inc.php:177
+#: lib/contents/member.inc.php:124 lib/contents/member.inc.php:126
+#: lib/contents/member.inc.php:262
 msgid "New Password"
-msgstr "Kata sandi Baru"
+msgstr "Kata Sandi Baru"
 
 #: admin/modules/membership/index.php:520 admin/modules/system/app_user.php:375
-#: lib/contents/login.inc.php:179 lib/contents/member.inc.php:143
-#: lib/contents/member.inc.php:144
+#: lib/contents/login.inc.php:179 lib/contents/member.inc.php:130
+#: lib/contents/member.inc.php:132
 msgid "Confirm New Password"
 msgstr "Konfirmasi Kata sandi Baru"
 
@@ -5260,10 +5181,8 @@ msgid "Register Date Until"
 msgstr "Tanggal Pendaftaran Hingga"
 
 #: admin/modules/reporting/customs/overdued_list.php:179
-#, fuzzy
-#| msgid "Send overdues notice e-mail"
 msgid "Send Notification e-mail"
-msgstr "Kirim surel  tentang informasi keterlambatan"
+msgstr "Kirim email notifikasi"
 
 #: admin/modules/reporting/customs/overdued_list.php:185
 msgid "day(s)"
@@ -5717,6 +5636,7 @@ msgid "Stock Take Error Logs"
 msgstr "Catatan Inventarisasi"
 
 #: admin/modules/stock_take/finish.php:124 admin/modules/system/sys_log.php:107
+#: template/default/index_template.inc.php:444
 msgid "Time"
 msgstr "Waktu"
 
@@ -6045,7 +5965,7 @@ msgstr "Tipe Keanggotaan"
 
 #: admin/modules/system/app_user.php:322 lib/contents/librarian.inc.php:49
 msgid "E-Mail"
-msgstr "Surel"
+msgstr ""
 
 #: admin/modules/system/app_user.php:332
 msgid "Social Media"
@@ -6214,6 +6134,7 @@ msgid "Content Title"
 msgstr "Judul Konten"
 
 #: admin/modules/system/content.php:195
+#: template/default/index_template.inc.php:315
 msgid "No"
 msgstr "Tidak"
 
@@ -6873,6 +6794,187 @@ msgstr "Pada"
 msgid " write"
 msgstr "tulis"
 
+#: lib/contents/add-reference.inc.php:9 lib/contents/add-reference.inc.php:177
+#: lib/contents/unggah_mandiri.inc.php:9
+#: lib/contents/unggah_mandiri.inc.php:177
+msgid "Self Upload"
+msgstr "Unggah Mandiri"
+
+#: lib/contents/add-reference.inc.php:22
+#: lib/contents/forgot_password.inc.php:98 lib/contents/form.inc.php:154
+#: lib/contents/member.inc.php:209 lib/contents/unggah_mandiri.inc.php:22
+msgid "Wrong Captcha Code entered, Please write the right code!"
+msgstr "Sandi Captcha yang diberikan SALAH! Silahkan masukkan sandi yang benar"
+
+#: lib/contents/add-reference.inc.php:109
+#: lib/contents/unggah_mandiri.inc.php:109
+msgid "Lecturer only allowed to upload journal and thesis"
+msgstr "Dosen hanya diperbolehkan upload pada jurnal dan tesis"
+
+#: lib/contents/add-reference.inc.php:117
+#: lib/contents/unggah_mandiri.inc.php:117
+msgid "File already exists"
+msgstr "File sudah ada"
+
+#: lib/contents/add-reference.inc.php:123
+#: lib/contents/unggah_mandiri.inc.php:123
+msgid "Your file is too large"
+msgstr "Ukuran berkas terlalu besar"
+
+#: lib/contents/add-reference.inc.php:129
+#: lib/contents/unggah_mandiri.inc.php:129
+msgid "Only PDF files are allowed"
+msgstr "Hanya berkas PDF diperbolehkan"
+
+#: lib/contents/add-reference.inc.php:154
+#: lib/contents/unggah_mandiri.inc.php:154
+msgid "Upload failed! Detected title with the same name in database"
+msgstr ""
+"Upload Gagal! Terdeteksi kesamaan judul Anda dengan yang ada di database"
+
+#: lib/contents/add-reference.inc.php:159
+#: lib/contents/unggah_mandiri.inc.php:159
+msgid "Upload success!"
+msgstr "Unggah berhasil!"
+
+#: lib/contents/add-reference.inc.php:167
+#: lib/contents/unggah_mandiri.inc.php:167
+msgid "Upload failed! Unknown error"
+msgstr "Upload Gagal! Error tidak diketahui"
+
+#: lib/contents/add-reference.inc.php:186
+#: lib/contents/unggah_mandiri.inc.php:186
+msgid "Choose file"
+msgstr "Pilih Berkas"
+
+#: lib/contents/add-reference.inc.php:191
+#: lib/contents/unggah_mandiri.inc.php:191
+msgid "Upload"
+msgstr "Unggah"
+
+#: lib/contents/add-reference.inc.php:205
+#: lib/contents/unggah_mandiri.inc.php:205
+msgid "Requirements for uploading files : Max size=20mb, file type=PDF"
+msgstr "Syarat untuk unggah berkas : Ukuran maks=20mb, tipe berkas=PDF"
+
+#: lib/contents/add-reference.inc.php:220
+#: lib/contents/forgot_password.inc.php:113 lib/contents/form.inc.php:171
+#: lib/contents/member.inc.php:112 lib/contents/member.inc.php:114
+#: lib/contents/member.inc.php:215 lib/contents/unggah_mandiri.inc.php:220
+msgid "NIM/NIP"
+msgstr ""
+
+#: lib/contents/add-reference.inc.php:229 lib/contents/form.inc.php:180
+#: lib/contents/unggah_mandiri.inc.php:229
+msgid "Major/Rank"
+msgstr "Jurusan/Jabatan"
+
+#: lib/contents/add-reference.inc.php:238 lib/contents/form.inc.php:198
+#: lib/contents/unggah_mandiri.inc.php:238
+msgid "Study Year"
+msgstr "Angkatan"
+
+#: lib/contents/add-reference.inc.php:259
+#: lib/contents/unggah_mandiri.inc.php:259
+msgid "Essay"
+msgstr "Skripsi/TA"
+
+#: lib/contents/add-reference.inc.php:263
+#: lib/contents/unggah_mandiri.inc.php:263
+msgid "Journal"
+msgstr "Jurnal"
+
+#: lib/contents/add-reference.inc.php:267
+#: lib/contents/unggah_mandiri.inc.php:267
+msgid "Fieldwork Report"
+msgstr "Laporan PKL"
+
+#: lib/contents/add-reference.inc.php:271
+#: lib/contents/unggah_mandiri.inc.php:271
+msgid "Event Proposal"
+msgstr "Proposal Event"
+
+#: lib/contents/add-reference.inc.php:275
+#: lib/contents/unggah_mandiri.inc.php:275
+#: template/default/index_template.inc.php:423
+msgid "Thesis"
+msgstr "Tesis"
+
+#: lib/contents/agenda-seminar.inc.php:2
+msgid "Seminar Agenda"
+msgstr "Agenda"
+
+#: lib/contents/agenda-seminar.inc.php:16
+msgid "Tidak ada agenda seminar saat ini"
+msgstr ""
+
+#: lib/contents/agenda-seminar.inc.php:17
+#: lib/contents/undangan-seminar.inc.php:17
+msgid "The seminar will be held on:"
+msgstr "Kegiatan seminar ini akan dilaksanakan pada:"
+
+#: lib/contents/agenda-seminar.inc.php:18
+#: lib/contents/undangan-seminar.inc.php:18
+msgid "Day / Date: Wednesday, September 30, 2015"
+msgstr "Hari/Tanggal : Rabu, 30 September 2015"
+
+#: lib/contents/agenda-seminar.inc.php:19
+#: lib/contents/undangan-seminar.inc.php:19
+msgid "Hours: 08.00 WIB s.d. done"
+msgstr "Jam : 08.00 WIB s.d. selesai"
+
+#: lib/contents/agenda-seminar.inc.php:20
+#: lib/contents/undangan-seminar.inc.php:20
+msgid ""
+"Place: Multipurpose Building Room (GSG) UPT Jakarta State Polytechnic Library"
+msgstr ""
+"Tempat : Ruang Gedung Serba Guna (GSG) UPT Perpustakaan Politeknik Negeri "
+"Jakarta"
+
+#: lib/contents/agenda-seminar.inc.php:21
+#: lib/contents/undangan-seminar.inc.php:21
+msgid "Download file"
+msgstr "Unduh berkas"
+
+#: lib/contents/book-view.inc.php:2
+msgid "Book View"
+msgstr "Lihat Buku"
+
+#: lib/contents/book-view.inc.php:8
+msgid "Back to search"
+msgstr "Kembali ke pencarian"
+
+#: lib/contents/book-view.inc.php:15
+msgid "Ga ada yang dicari. Balik to homepage"
+msgstr ""
+
+#: lib/contents/book-view.inc.php:29 lib/contents/elibrary.inc.php:51
+#, fuzzy
+#| msgid "No Result"
+msgid "No result found"
+msgstr "Tidak ada hasil"
+
+#: lib/contents/book-view.inc.php:60 template/default/detail_template.php:43
+#: template/lightweight/detail_template.php:43
+msgid "Detail Information"
+msgstr "Informasi Detil"
+
+#: lib/contents/book-view.inc.php:63
+msgid "Category"
+msgstr "Kategori"
+
+#: lib/contents/book-view.inc.php:98
+msgid "Date of Publication"
+msgstr "Tanggal Terbit"
+
+#: lib/contents/book-view.inc.php:105
+msgid "Added on"
+msgstr "Ditambahkan pada"
+
+#: lib/contents/book-view.inc.php:112
+msgid "Stock"
+msgstr "Stok"
+
 #: lib/contents/chat.php:68
 msgid "Chat As "
 msgstr "Berbincang sebagai"
@@ -6913,9 +7015,30 @@ msgstr "Semua Koleksi"
 msgid "All GMD/Media"
 msgstr "Semua GMD/Media"
 
-#: lib/contents/contact.inc.php:2
-msgid "Contact information and address"
+#: lib/contents/contact.inc.php:16
+#: template/lightweight/index_template.inc.php:138
+msgid "Information"
+msgstr "Informasi"
+
+#: lib/contents/contact.inc.php:19 lib/contents/form.inc.php:216
+msgid "Email"
 msgstr ""
+
+#: lib/contents/contact.inc.php:23 template/default/index_template.inc.php:450
+msgid "Service Hours"
+msgstr "Jam Layanan"
+
+#: lib/contents/contact.inc.php:25 template/default/index_template.inc.php:452
+msgid "Monday - Friday"
+msgstr "Senin - Jumat"
+
+#: lib/contents/contact.inc.php:26 template/default/index_template.inc.php:453
+msgid "Saturday - Sunday"
+msgstr "Sabtu - Minggu"
+
+#: lib/contents/contact.inc.php:30 template/default/index_template.inc.php:477
+msgid "Maps"
+msgstr "Peta"
 
 #: lib/contents/default.inc.php:153 lib/contents/default.inc.php:166
 msgid "Found <strong>{biblio_list->num_rows}</strong> from your keywords"
@@ -6940,65 +7063,216 @@ msgid "Current Loan item(s)"
 msgstr "Eksemplar Terpinjam Saat Ini"
 
 #: lib/contents/download_current_loan.inc.php:97
-#: lib/contents/member.inc.php:703
+#: lib/contents/member.inc.php:671
 msgid "Your Current Loan"
 msgstr "Pinjaman Terkini"
 
 #: lib/contents/download_loan_history.inc.php:64
-#: lib/contents/member.inc.php:608
+#: lib/contents/member.inc.php:576
 msgid "Return Date"
 msgstr "Tanggal Kembali"
 
 #: lib/contents/download_loan_history.inc.php:88
-#: lib/contents/member.inc.php:621
+#: lib/contents/member.inc.php:589
 msgid "item(s) loan history"
 msgstr "sejarah peminjaman eksemplar"
 
 #: lib/contents/download_loan_history.inc.php:97
-#: lib/contents/member.inc.php:709
+#: lib/contents/member.inc.php:677
 msgid "Your Loan History"
 msgstr "Sejarah Peminjaman Anda"
 
+#: lib/contents/elibrary.inc.php:2
+msgid "E-Library"
+msgstr "E-Library"
+
+#: lib/contents/elibrary.inc.php:11
+msgid ""
+"A collection of ebooks and books can be accessed online in pdf format by "
+"users."
+msgstr ""
+"Kumpulan ebook dan buku yang dapat diakses secara online dalam format pdf "
+"oleh pengguna."
+
+#: lib/contents/elibrary.inc.php:15
+msgid "Search for Book or E-book ..."
+msgstr "Cari buku atau e-book"
+
+#: lib/contents/elibrary.inc.php:33
+msgid "Insert a search string"
+msgstr "Masukkan kata kunci pencarian"
+
+#: lib/contents/elibrary.inc.php:77
+msgid "View Content"
+msgstr "Lihat Konten"
+
+#: lib/contents/elibrary.inc.php:78 template/default/partials/nav.php:154
+#: template/default/partials/nav2.php:157
+msgid "Download"
+msgstr "Unduh"
+
+#: lib/contents/elibrary.inc.php:79
+msgid "Uploaded on"
+msgstr "Diunggah pada"
+
+#: lib/contents/elibrary.inc.php:95
+msgid "Our Database"
+msgstr "Database Kami"
+
+#: lib/contents/elibrary.inc.php:101
+#: template/default/index_template.inc.php:412
+msgid "Book"
+msgstr "Buku"
+
+#: lib/contents/erepository.inc.php:2
+msgid "E-Repository"
+msgstr ""
+
+#: lib/contents/eresources-pnri.inc.php:2
+msgid "E-Resources PNRI"
+msgstr ""
+
+#: lib/contents/eresources-pnri.inc.php:16
+msgid ""
+"To meet the needs of visitors, the National Library of the Republic of "
+"Indonesia subscribes to various digital library materials online (e-"
+"Resources) such as journals, ebooks, and other online reference works. Web "
+"address:"
+msgstr ""
+"Untuk memenuhi kebutuhan pemustaka, Perpustakaan Nasional Republik Indonesia "
+"melanggan berbagai bahan perpustakaan digital online (e-Resources) seperti "
+"jurnal , ebook, dan karya-karya referensi online lainnya. Alamat web :"
+
+#: lib/contents/eresources-pnri.inc.php:17
+msgid ""
+"To access e-Resources services, you must be registered as a library member. "
+"Library member registration can be done online through the web address:"
+msgstr ""
+"Untuk mengakses layanan e- Resources harus terdaftar sebagai anggota "
+"perpustakaan. Pendaftaran anggota perpustakaan dapat dilakukan secara online "
+"melalui alamat web :"
+
+#: lib/contents/eresources-pnri.inc.php:18
+msgid "Hope to be useful"
+msgstr "Semoga bermanfaat"
+
+#: lib/contents/forgot_password.inc.php:48 lib/contents/member.inc.php:189
+#: lib/contents/member.inc.php:598
+msgid "Your password have been changed successfully."
+msgstr "Kata Sandi Anda sudah berhasil dirubah."
+
+#: lib/contents/forgot_password.inc.php:52 lib/contents/member.inc.php:195
+#: lib/contents/member.inc.php:603
+msgid ""
+"Password confirmation FAILED! Make sure to check undercase or uppercase "
+"letters!"
+msgstr "Konfirmasi kata sandi GAGAL! Periksa ukuran huruf yang digunakan!"
+
+#: lib/contents/forgot_password.inc.php:54 lib/contents/member.inc.php:197
+#: lib/contents/member.inc.php:605
+msgid "Password update FAILED! ERROR ON DATABASE!"
+msgstr "Perubahan kata sandi GAGAL! GALAT PADA PANGKALAN DATA!"
+
+#: lib/contents/forgot_password.inc.php:93 lib/contents/login.inc.php:167
+msgid ""
+"Your browser does not support Javascript or Javascript is disabled. "
+"Application won't run without Javascript!"
+msgstr ""
+"Peramban Anda tidak mendukung <i>Javascript</i> atau <i>Javascript</i> tidak "
+"diaktifkan. Aplikasi tidak dapat dijalankan tanpa <i>Javascript</i>!"
+
+#: lib/contents/forgot_password.inc.php:107 lib/contents/form.inc.php:165
+msgid "Please input your name"
+msgstr "Masukkan nama Anda"
+
+#: lib/contents/forgot_password.inc.php:116 lib/contents/form.inc.php:174
+msgid "Please input your NIM or NIP"
+msgstr "Masukkan NIM atau NIP"
+
+#: lib/contents/forgot_password.inc.php:125 lib/contents/form.inc.php:228
+#: lib/contents/member.inc.php:225
+msgid "Please input your password"
+msgstr "Masukkan kata sandi"
+
+#: lib/contents/forgot_password.inc.php:131 lib/contents/form.inc.php:234
+#: lib/contents/member.inc.php:266
+msgid "Confirm Password"
+msgstr "Konfirmasi Kata Sandi"
+
+#: lib/contents/forgot_password.inc.php:134 lib/contents/form.inc.php:237
+msgid "Please input your password again"
+msgstr "Masukkan kata sandi lagi"
+
+#: lib/contents/forgot_password.inc.php:162 lib/contents/member.inc.php:270
+#: lib/contents/member.inc.php:692
+msgid "Change Password"
+msgstr "Ubah Kata Sandi"
+
+#: lib/contents/forgot_password.inc.php:174 lib/contents/login.inc.php:248
+#: lib/contents/member.inc.php:756
+msgid "Library Automation Login"
+msgstr "Masuk Otomasi Perpustakaan"
+
 #: lib/contents/form.inc.php:25 lib/contents/form.inc.php:26
+#: template/default/register_template.inc.php:80
 msgid "Registration"
 msgstr "Pendaftaran"
 
-#: lib/contents/form.inc.php:70
-msgid "Online Member Registration"
-msgstr "Pendaftaran Online Anggota"
+#: lib/contents/form.inc.php:184
+msgid "Select your major/rank"
+msgstr "Pilih jurusan/jabatan Anda"
 
-#: lib/contents/form.inc.php:84
-msgid "NIM"
-msgstr "NIM"
+#: lib/contents/form.inc.php:201
+msgid "Please input your study year"
+msgstr "Masukkan angkatan Anda"
 
-#: lib/contents/form.inc.php:89
-msgid "Without period."
-msgstr "Tanpa tanda titik."
+#: lib/contents/form.inc.php:210
+msgid "Please input your phone number"
+msgstr "Masukkan nomor telepon Anda"
 
-#: lib/contents/form.inc.php:96
-msgid "Birthdate"
-msgstr "Tanggal Lahir"
+#: lib/contents/form.inc.php:219
+msgid "Please input your email"
+msgstr "Masukkan email"
 
-#: lib/contents/form.inc.php:132
-msgid "Gender"
-msgstr "Jenis Kelamin"
-
-#: lib/contents/form.inc.php:171
-msgid "Email"
-msgstr "Surel"
-
-#: lib/contents/form.inc.php:180 lib/contents/login.inc.php:212
-#: lib/contents/member.inc.php:233
+#: lib/contents/form.inc.php:225 lib/contents/login.inc.php:212
+#: lib/contents/member.inc.php:223
 msgid "Password"
 msgstr "Kata Sandi"
 
-#: lib/contents/form.inc.php:190 lib/contents/member.inc.php:265
+#: lib/contents/form.inc.php:268 lib/contents/member.inc.php:234
+#: template/default/partials/header.php:44
 msgid "Register"
 msgstr "Daftar"
 
+#: lib/contents/history.inc.php:2 template/default/partials/nav.php:16
+#: template/default/partials/nav2.php:19
+msgid "History"
+msgstr "Sejarah"
+
+#: lib/contents/history.inc.php:19
+msgid ""
+"The Jakarta State Polytechnic Library was established along with the opening "
+"of the University of Indonesia Polytechnic Education Program in 1982. Due to "
+"various physical and material limitations, a year later the UI Polytechnic "
+"library began operations. At that time the collection was limited and was a "
+"contribution to the PEDC (Polytechnic Education Development Center) "
+"contribution. Since August 27, 1998 the Polytechnic made a mistake from UI "
+"and changed its name to Jakarta State Polytechnic. Since March 2019 occupy a "
+"new building."
+msgstr ""
+"Perpustakaan Politeknik Negeri Jakarta berdiri seiring dengan dibukanya "
+"Program Pendidikan Politeknik Universitas Indonesia pada tahun 1982. Karena "
+"berbagai keterbatasan baik fisik maupun material maka setahun kemudian "
+"perpustakaan Politeknik UI memulai operasionalnya. Pada saat itu koleksinya "
+"terbatas dan merupakan bantuan atas sumbangan PEDC (Polytechnic Education "
+"Development Center). Sejak 27 Agustus 1998 Politeknik memishakan diri dari "
+"UI dan berganti nama menjadi Politeknik Negeri Jakarta. Sejak Maret 2019 "
+"menempati gedung baru."
+
 #: lib/contents/kuesioner.inc.php:2 lib/contents/kuesioner.inc.php:3
-#: lib/contents/kuesioner.inc.php:18
-#: template/default/index_template.inc.php:210
+#: lib/contents/kuesioner.inc.php:18 template/default/partials/nav.php:147
+#: template/default/partials/nav.php:149 template/default/partials/nav2.php:150
+#: template/default/partials/nav2.php:152
 msgid "Questionnaire"
 msgstr "Kuesioner"
 
@@ -7012,29 +7286,36 @@ msgstr ""
 "Dalam rangka menyusun program peningkatan mutu perpustakaan dan mengevaluasi "
 "kinerja UPT Perpustakaan dengan ini diharapkan kepada mahasiswa/i untuk "
 "mengisi kuesioner sebagai bagian dari syarat dalam mendapatkan keterangan "
-"bebas masalah/bebas pinjaman bahan pustakan."
+"bebas masalah/bebas pinjaman bahan pustaka."
 
-#: lib/contents/laporan_akhir.inc.php:2 lib/contents/laporan_akhir.inc.php:17
-msgid "Submission of Student Final Report 2019"
-msgstr "Penyerahan Laporan Akhir Mahasiswa 2019"
+#: lib/contents/kuesioner.inc.php:23
+msgid "Library Questionaire"
+msgstr "Kuesioner Perpustakaan"
 
-#: lib/contents/laporan_akhir.inc.php:3
-#: template/default/index_template.inc.php:216
+#: lib/contents/laporan-akhir-2019.inc.php:2
+#: template/default/partials/nav.php:161 template/default/partials/nav2.php:164
 msgid "Submitting Final Report"
 msgstr "Penyerahan Laporan Akhir"
 
-#: lib/contents/laporan_akhir.inc.php:18
+#: lib/contents/laporan-akhir-2019.inc.php:16
+msgid "Submission of Student Final Report 2019"
+msgstr "Penyerahan Laporan Akhir Mahasiswa 2019"
+
+#: lib/contents/laporan-akhir-2019.inc.php:17
 msgid ""
 "Students who will submit the Final Report (PKL Report / Final Project / "
 "Thesis / Thesis) 2019 at UPT Library, please complete the data independently "
-"on the following link. Charging can be done using a PC or Android phone."
+"on the following link <a href=\"https://forms."
+"gle/7PCn3YSpQwAJirCo9\">https://forms.gle/7PCn3YSpQwAJirCo9</a> . Charging "
+"can be done using a PC or Android phone."
 msgstr ""
 "Mahasiswa yang akan menyerahkan Laporan Akhir (Laporan PKL/Tugas Akhir/"
 "Skripsi/Tesis) Tahun 2019 di UPT Perpustakaan, harap melakukan pengisian "
-"data secara mandiri pada link berikut ini. Pengisian dapat dilakukan "
-"menggunakan PC atau HP Android."
+"data secara mandiri pada link berikut ini <a href=\"https://forms."
+"gle/7PCn3YSpQwAJirCo9\">https://forms.gle/7PCn3YSpQwAJirCo9</a> . Pengisian "
+"dapat dilakukan menggunakan PC atau HP Android."
 
-#: lib/contents/laporan_akhir.inc.php:19
+#: lib/contents/laporan-akhir-2019.inc.php:18
 msgid ""
 "All students who submit the 2019 Student Final Report are required to fill "
 "in the link to facilitate rediscovery and search at the UPT Library."
@@ -7043,13 +7324,13 @@ msgstr ""
 "diwajibkan mengisi pada link tersebut untuk memudahkan dalam penemuan "
 "kembali dan penelusuran di UPT Perpustakaan."
 
-#: lib/contents/laporan_akhir.inc.php:20
+#: lib/contents/laporan-akhir-2019.inc.php:19
 msgid "If you have difficulty filling it, please contact the library staff."
 msgstr ""
 "Apabila dalam pengisian mengalami kesulitan, silahkan menghubungi petugas "
 "perpustakaan."
 
-#: lib/contents/laporan_akhir.inc.php:21
+#: lib/contents/laporan-akhir-2019.inc.php:20
 msgid "Thank you for your attention."
 msgstr "Atas perhatiannya kami mengucapkan terima kasih."
 
@@ -7078,44 +7359,26 @@ msgid "Wrong Username or Password. ACCESS DENIED"
 msgstr "Nama Pengguna atau Kata Sandi Salah. AKSES DITOLAK"
 
 #: lib/contents/login.inc.php:138
-#, fuzzy
-#| msgid "Item Code can't be empty!"
 msgid "Current password can not be empty!"
-msgstr "Kode Eksemplar tidak boleh kosong!"
-
-#: lib/contents/login.inc.php:167
-msgid ""
-"Your browser does not support Javascript or Javascript is disabled. "
-"Application won't run without Javascript!"
-msgstr ""
-"Peramban Anda tidak mendukung <i>Javascript</i> atau <i>Javascript</i> tidak "
-"diaktifkan. Aplikasi tidak dapat dijalankan tanpa <i>Javascript</i>!"
+msgstr "Password saat ini tidak bisa kosong!"
 
 #: lib/contents/login.inc.php:174
-#, fuzzy
-#| msgid "Please update your password!"
 msgid "Hi {username}, please update your password!"
-msgstr "Perbarui kata kunci Anda"
+msgstr "Hi {username}, silahkan update password Anda!"
 
-#: lib/contents/login.inc.php:175 lib/contents/member.inc.php:135
-#: lib/contents/member.inc.php:136 lib/contents/member.inc.php:290
+#: lib/contents/login.inc.php:175 lib/contents/member.inc.php:118
+#: lib/contents/member.inc.php:120 lib/contents/member.inc.php:258
 msgid "Current Password"
 msgstr "Kata Sandi Terkini"
 
-#: lib/contents/login.inc.php:210 lib/contents/member.inc.php:131
-#: lib/contents/member.inc.php:132
-#, fuzzy
-#| msgid "Login Username"
+#: lib/contents/login.inc.php:210
 msgid "Username"
-msgstr "Nama masuk Pengguna"
+msgstr "Nama Pengguna"
 
-#: lib/contents/login.inc.php:235 lib/contents/member.inc.php:262
+#: lib/contents/login.inc.php:235 lib/contents/member.inc.php:231
+#: template/default/member_template.inc.php:80
 msgid "Login"
 msgstr "Masuk"
-
-#: lib/contents/login.inc.php:248
-msgid "Library Automation Login"
-msgstr "Masuk Otomasi Perpustakaan"
 
 #: lib/contents/member.inc.php:41
 msgid ""
@@ -7129,124 +7392,96 @@ msgstr ""
 msgid "Please fill your Username and Password to Login!"
 msgstr "Mohon isi Nama Pengguna dan Kata Sandi untuk Masuk!"
 
-#: lib/contents/member.inc.php:127
+#: lib/contents/member.inc.php:108
 msgid "Please update your password!"
 msgstr "Perbarui kata kunci Anda"
 
-#: lib/contents/member.inc.php:155
-msgid "Login FAILED! Wrong username or password!"
-msgstr "GAGAL Masuk! Nama Pengguna/Surel atau kata sandi salah!"
+#: lib/contents/member.inc.php:144
+msgid "Login FAILED! Wrong NIM/NIP or password!"
+msgstr "GAGAL Masuk! NIM/NIP atau kata sandi salah!"
 
-#: lib/contents/member.inc.php:200 lib/contents/member.inc.php:630
-msgid "Your password have been changed successfully."
-msgstr "Kata Sandi Anda sudah berhasil dirubah."
-
-#: lib/contents/member.inc.php:204 lib/contents/member.inc.php:633
+#: lib/contents/member.inc.php:193 lib/contents/member.inc.php:601
 msgid "Current password entered WRONG! Please insert the right password!"
 msgstr ""
 "Kata Sandi yang dimasukkan SALAH! Silahkan masukkan kata sandi yang benar!"
 
-#: lib/contents/member.inc.php:206 lib/contents/member.inc.php:635
-msgid ""
-"Password confirmation FAILED! Make sure to check undercase or uppercase "
-"letters!"
-msgstr "Konfirmasi kata sandi GAGAL! Periksa ukuran huruf yang digunakan!"
+#: lib/contents/member.inc.php:218
+msgid "Please input your NIM"
+msgstr "Masukkan NIM"
 
-#: lib/contents/member.inc.php:208 lib/contents/member.inc.php:637
-msgid "Password update FAILED! ERROR ON DATABASE!"
-msgstr "Perubahan kata sandi GAGAL! GALAT PADA PANGKALAN DATA!"
-
-#: lib/contents/member.inc.php:217
-msgid "Library Member Login"
-msgstr "Masuk Anggota Perpustakaan"
-
-#: lib/contents/member.inc.php:221
-msgid "Wrong Captcha Code entered, Please write the right code!"
-msgstr "Sandi Captcha yang diberikan SALAH! Silahkan masukkan sandi yang benar"
-
-#: lib/contents/member.inc.php:271
+#: lib/contents/member.inc.php:240
+#: template/default/forgot_password_template.inc.php:79
+#: template/default/partials/header.php:44
 msgid "Forgot Password"
-msgstr "Lupa Password"
+msgstr "Lupa Kata Sandi"
 
-#: lib/contents/member.inc.php:298
-msgid "Confirm Password"
-msgstr "Konfirmasi Kata Sandi"
-
-#: lib/contents/member.inc.php:302 lib/contents/member.inc.php:724
-msgid "Change Password"
-msgstr "Ubah Kata Sandi"
-
-#: lib/contents/member.inc.php:477
+#: lib/contents/member.inc.php:445
 msgid "Reserve title(s) on Basket"
 msgstr "Reservasi ditambahkan ke dalam Keranjang"
 
-#: lib/contents/member.inc.php:478
+#: lib/contents/member.inc.php:446
 msgid "Clear Basket"
 msgstr "Bersihkan Keranjang"
 
-#: lib/contents/member.inc.php:479
+#: lib/contents/member.inc.php:447
 msgid "Remove selected title(s) from Basket"
 msgstr "Hapus judul terpilih dari Keranjang"
 
-#: lib/contents/member.inc.php:481
+#: lib/contents/member.inc.php:449
 msgid "title(s) on basket"
 msgstr "Judul dalam keranjang"
 
-#: lib/contents/member.inc.php:503
+#: lib/contents/member.inc.php:471
 msgid "Your Membership Already EXPIRED! Please extend your membership."
 msgstr ""
 "Masa Berlaku Keanggotaan Anda sudah KEDALUWARSA! Harap perpanjang "
 "keanggotaan Anda."
 
-#: lib/contents/member.inc.php:506
+#: lib/contents/member.inc.php:474
 msgid ""
 "Membership currently in pending state, no loan transaction can be made yet."
 msgstr ""
 "Keanggotaan dalam status ditunda, tidak bisa melakukan transaksi peminjaman."
 
-#: lib/contents/member.inc.php:539
+#: lib/contents/member.inc.php:507
 msgid "OVERDUED"
 msgstr "TERLAMBAT"
 
-#: lib/contents/member.inc.php:586
+#: lib/contents/member.inc.php:554
 msgid "item(s) currently on loan"
 msgstr "eksemplar yang sedang dipinjam"
 
-#: lib/contents/member.inc.php:586
+#: lib/contents/member.inc.php:554
 #, fuzzy
 #| msgid "Your Current Loan"
 msgid "Download All Current Loan"
 msgstr "Pinjaman Terkini"
 
-#: lib/contents/member.inc.php:621
-#, fuzzy
-#| msgid "Your Loan History"
+#: lib/contents/member.inc.php:589
 msgid "Download All Loan History"
-msgstr "Sejarah Peminjaman Anda"
+msgstr "Download semua Riwayat pinjaman"
 
-#: lib/contents/member.inc.php:648
+#: lib/contents/member.inc.php:616
 msgid "Reservation e-mail sent successfully!"
-msgstr "Surel untuk reservasi berhasil dikirim!"
+msgstr "Email untuk reservasi berhasil dikirim!"
 
-#: lib/contents/member.inc.php:697
+#: lib/contents/member.inc.php:665
 msgid "Member Detail"
 msgstr "Data Anggota"
 
-#: lib/contents/member.inc.php:717
+#: lib/contents/member.inc.php:685
 msgid "Your Title Basket"
 msgstr "Keranjang Judul Anda"
 
-#: lib/contents/news.inc.php:25 template/default-dz/partials/nav.php:6
-#: template/default/partials/nav.php:6 template/lightweight/partials/nav.php:6
+#: lib/contents/news.inc.php:25 template/lightweight/partials/nav.php:6
 msgid "Library News"
 msgstr "Warta Perpustakaan"
 
-#: lib/contents/news.inc.php:38
+#: lib/contents/news.inc.php:38 template/default/index_template.inc.php:260
 msgid "Sorry, we don't have any news for you yet."
 msgstr "Maaf, belum ada berita yang tersedia"
 
-#: lib/contents/peta.inc.php:28 template/default-dz/partials/nav.php:8
-#: template/default/partials/nav.php:8 template/lightweight/partials/nav.php:8
+#: lib/contents/peta.inc.php:28 template/lightweight/partials/nav.php:8
 msgid "Library Location"
 msgstr "Lokasi Perpustakaan"
 
@@ -7259,11 +7494,8 @@ msgid "FAILED to strore you comment. Please Contact System Administrator"
 msgstr "Komentar gagal disimpan. Harap hubungi Administrator Sistem"
 
 #: lib/contents/show_detail.inc.php:106
-#: template/classic-dz/biblio_list_template.php:79
-#: template/classic/biblio_list_template.php:79
-#: template/default-dz/biblio_list_template.php:79
-#: template/default-dz/index_template.inc.php:85
 #: template/default/biblio_list_template.php:79
+#: template/default/index_template.inc.php:83
 #: template/lightweight/biblio_list_template.php:79
 #: template/lightweight/index_template.inc.php:83
 msgid "Record Detail"
@@ -7274,26 +7506,16 @@ msgid "Back To Previous"
 msgstr "Kembali ke sebelumnya"
 
 #: lib/contents/show_detail.inc.php:111
-#, fuzzy
-#| msgid "Detail Information"
 msgid "Show detail in XML format"
-msgstr "Informasi Detil"
+msgstr "Tunjukan detil dalam format XML"
 
 #: lib/contents/show_detail.inc.php:111
-#: template/classic-dz/biblio_list_template.php:81
-#: template/classic/biblio_list_template.php:81
-#: template/default-dz/biblio_list_template.php:81
 #: template/default/biblio_list_template.php:81
 #: template/lightweight/biblio_list_template.php:81
-#, fuzzy
-#| msgid "OPAC XML Detail"
 msgid "XML Detail"
-msgstr "Detil XML OPAC"
+msgstr "Detil XML"
 
 #: lib/contents/show_detail.inc.php:112
-#: template/classic-dz/biblio_list_template.php:85
-#: template/classic/biblio_list_template.php:85
-#: template/default-dz/biblio_list_template.php:85
 #: template/default/biblio_list_template.php:85
 #: template/lightweight/biblio_list_template.php:85
 msgid "Citation for: {title}"
@@ -7302,6 +7524,66 @@ msgstr ""
 #: lib/contents/show_detail.inc.php:112
 msgid "Cite this"
 msgstr ""
+
+#: lib/contents/struktur-organisasi.inc.php:2
+msgid "Organizational Structure"
+msgstr "Struktur Organisasi"
+
+#: lib/contents/struktur-organisasi.inc.php:16
+msgid "ORGANIZATIONAL STRUCTURE OF STATE LIBRARY POLITECHNIC JAKARTA"
+msgstr "STRUKTUR ORGANISASI UPT PERPUSTAKAAN POLITEKNIK NEGERI JAKARTA"
+
+#: lib/contents/struktur-organisasi.inc.php:17
+msgid "Download File"
+msgstr "Unduh berkas"
+
+#: lib/contents/undangan-seminar.inc.php:2 template/default/partials/nav.php:33
+#: template/default/partials/nav2.php:36
+msgid "National Seminar and Workshop"
+msgstr "Seminar Nasional dan Workshop"
+
+#: lib/contents/undangan-seminar.inc.php:16
+msgid ""
+"In the context of efforts to improve and develop the quality of human "
+"resources, UPT Jakarta State Polytechnic Library will hold seminars and "
+"workshops on the use of e-resources and scientific publications in "
+"international journals. The theme in this scientific seminar is \"Optimizing "
+"Library Collections to Support the Writing of Scientific Papers and "
+"Deliberation on the Plan to Establish a Collaborative Polytechnic Library "
+"Forum in Indonesia\"."
+msgstr ""
+"Dalam rangka upaya peningkatan dan pengembangan kualitas sumber daya "
+"manusia, UPT Perpustakaan Politeknik Negeri Jakarta akan mengadakan kegiatan "
+"seminar dan workshop tentang pemanfaatan e-resources dan publikasi ilmiah ke "
+"jurnal internasional. Tema dalam seminar ilmiah ini adalah &quot; "
+"Optimalisasi Koleksi Perpustakaan untuk Mendukung Penulisan Karya Ilmiah dan "
+"Musyawarah Rencana Pembentukan Forum Kerjasama Perpustakaan Politeknik se-"
+"Indonesia."
+
+#: lib/contents/visi.inc.php:2 template/default/partials/nav.php:17
+#: template/default/partials/nav2.php:20
+msgid "Vision and Mission"
+msgstr "Visi dan Misi"
+
+#: lib/contents/visi.inc.php:16
+msgid "Vision"
+msgstr "Visi"
+
+#: lib/contents/visi.inc.php:17
+msgid "Become an Information Outlet (as an information resource center)"
+msgstr "Menjadi Gerai Informasi (as an information resource center)"
+
+#: lib/contents/visi.inc.php:18
+msgid "Mission"
+msgstr "Misi"
+
+#: lib/contents/visi.inc.php:19
+msgid ""
+"Can meet the information needs of the civitas, PNJ academics for the needs "
+"of the education, research and community service processes"
+msgstr ""
+"Dapat memenuhi kebutuhan informasi civitas, academika PNJ guna keperluan "
+"proses pendidikan, penelitian dan pengabdian masyarakat"
 
 #: lib/contents/visitor.inc.php:161
 msgid ", thank you for inserting your data to our visitor log"
@@ -7315,10 +7597,8 @@ msgstr ""
 "Masa berlaku keanggotaan sudah BERAKHIR! Harap perpanjang keanggotaan anda"
 
 #: lib/contents/visitor.inc.php:166
-#, fuzzy
-#| msgid "Move back"
 msgid "Welcome back"
-msgstr "Mundur"
+msgstr "Selamat datang kembali"
 
 #: lib/contents/visitor.inc.php:168
 msgid "Sorry, Please fill institution field if you are not library member"
@@ -7346,10 +7626,7 @@ msgstr "Klik disini untuk mencari dokumen lain dari pengarang ini"
 msgid "Click to view others documents with this subject"
 msgstr "Klik di sini untuk mencari dokumen lain dengan subjek ini"
 
-#: lib/detail.inc.php:354 template/classic-dz/biblio_list_template.php:166
-#: template/classic/biblio_list_template.php:166
-#: template/default-dz/biblio_list_template.php:166
-#: template/default/biblio_list_template.php:166
+#: lib/detail.inc.php:354 template/default/biblio_list_template.php:166
 #: template/lightweight/biblio_list_template.php:166
 msgid "Share to"
 msgstr "Bagikan"
@@ -7362,14 +7639,16 @@ msgstr "English"
 msgid "Indonesian"
 msgstr "Indonesia"
 
-#: lib/module.inc.php:40 template/classic-dz/part/content/nav.php:30
-#: template/classic/part/content/nav.php:30
-#: template/default-dz/partials/footer.php:51
-#: template/default-dz/partials/nav.php:5 template/default/partials/nav.php:5
+#: lib/module.inc.php:40 template/default/elibrary_template.inc.php:53
+#: template/default/erepository_template.inc.php:65
+#: template/default/forgot_password_template.inc.php:66
+#: template/default/member_template.inc.php:66
+#: template/default/register_template.inc.php:66
+#: template/default/unggah_mandiri_template.inc.php:36
 #: template/lightweight/partials/footer.php:51
 #: template/lightweight/partials/nav.php:5
 msgid "Home"
-msgstr "Beranda depan"
+msgstr "Beranda"
 
 #: lib/module.inc.php:40
 msgid "View OPAC in New Window"
@@ -7437,92 +7716,86 @@ msgstr "Halaman Akhir"
 msgid "No Data"
 msgstr "Tidak Ada Data"
 
-#: sysconfig.inc.php:623
+#: sysconfig.inc.php:631
 msgid "Personal Name"
 msgstr "Nama Orang"
 
-#: sysconfig.inc.php:624
+#: sysconfig.inc.php:632
 msgid "Organizational Body"
 msgstr "Badan Organisasi"
 
-#: sysconfig.inc.php:625
+#: sysconfig.inc.php:633
 msgid "Conference"
 msgstr "Konferensi"
 
-#: sysconfig.inc.php:628
+#: sysconfig.inc.php:636
 msgid "Topic"
 msgstr "Topik"
 
-#: sysconfig.inc.php:629
+#: sysconfig.inc.php:637
 msgid "Geographic"
 msgstr "Geografis"
 
-#: sysconfig.inc.php:631
+#: sysconfig.inc.php:639
 msgid "Temporal"
 msgstr "Masa"
 
-#: sysconfig.inc.php:632
+#: sysconfig.inc.php:640
 msgid "Genre"
 msgstr "Aliran"
 
-#: sysconfig.inc.php:633
+#: sysconfig.inc.php:641
 msgid "Occupation"
 msgstr "Pekerjaan"
 
-#: sysconfig.inc.php:636
+#: sysconfig.inc.php:644
 msgid "Primary Author"
 msgstr "Pengarang Utama"
 
-#: sysconfig.inc.php:637
+#: sysconfig.inc.php:645
 msgid "Additional Author"
 msgstr "Pengarang Tambahan"
 
-#: sysconfig.inc.php:638
+#: sysconfig.inc.php:646
 msgid "Editor"
 msgstr "Penyunting"
 
-#: sysconfig.inc.php:639
+#: sysconfig.inc.php:647
 msgid "Translator"
 msgstr "Penerjemah"
 
-#: sysconfig.inc.php:640
+#: sysconfig.inc.php:648
 msgid "Director"
 msgstr "Direktur"
 
-#: sysconfig.inc.php:641
+#: sysconfig.inc.php:649
 msgid "Producer"
 msgstr "Produser"
 
-#: sysconfig.inc.php:642
+#: sysconfig.inc.php:650
 msgid "Composer"
 msgstr "Penggubah"
 
-#: sysconfig.inc.php:643
+#: sysconfig.inc.php:651
 msgid "Illustrator"
 msgstr "Ilustrator"
 
-#: sysconfig.inc.php:644
+#: sysconfig.inc.php:652
 msgid "Creator"
 msgstr "Pencipta"
 
-#: sysconfig.inc.php:645
+#: sysconfig.inc.php:653
 msgid "Contributor"
 msgstr "Kontributor"
 
-#: sysconfig.inc.php:649
+#: sysconfig.inc.php:657
 msgid "Senior Librarian"
 msgstr "Pustakawan"
 
-#: sysconfig.inc.php:650
+#: sysconfig.inc.php:658
 msgid "Library Staff"
 msgstr "Staf Perpustakaan"
 
-#: template/classic-dz/biblio_list_template.php:50
-#: template/classic-dz/biblio_list_template.php:79
-#: template/classic/biblio_list_template.php:50
-#: template/classic/biblio_list_template.php:79
-#: template/default-dz/biblio_list_template.php:50
-#: template/default-dz/biblio_list_template.php:79
 #: template/default/biblio_list_template.php:50
 #: template/default/biblio_list_template.php:79
 #: template/lightweight/biblio_list_template.php:50
@@ -7530,132 +7803,86 @@ msgstr "Staf Perpustakaan"
 msgid "View record detail description for this title"
 msgstr "Tampilkan penjelasan lengkap untuk judul ini"
 
-#: template/classic-dz/biblio_list_template.php:81
-#: template/classic/biblio_list_template.php:81
-#: template/default-dz/biblio_list_template.php:81
 #: template/default/biblio_list_template.php:81
 #: template/lightweight/biblio_list_template.php:81
 msgid "View record detail description in XML Format"
 msgstr "Tampilkan penjelasan lengkap dalam format XML"
 
-#: template/classic-dz/biblio_list_template.php:149
-#: template/classic/biblio_list_template.php:149
-#: template/default-dz/biblio_list_template.php:144
+#: template/default/biblio_list_template.php:85
+#: template/lightweight/biblio_list_template.php:85
+msgid "Cite"
+msgstr ""
+
 #: template/default/biblio_list_template.php:144
 #: template/lightweight/biblio_list_template.php:144
 msgid "none copy available"
 msgstr "tidak ada kopi yang tersedia"
 
-#: template/classic-dz/biblio_list_template.php:151
-#: template/classic/biblio_list_template.php:151
-#: template/default-dz/biblio_list_template.php:146
 #: template/default/biblio_list_template.php:146
 #: template/lightweight/biblio_list_template.php:146
 msgid "{numberAvailable} copies available for loan"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:167
-#: template/classic/biblio_list_template.php:167
-#: template/default-dz/biblio_list_template.php:167
-#: template/default/biblio_list_template.php:167
-#: template/lightweight/biblio_list_template.php:167
-msgid "Share this title to Facebook"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:168
-#: template/classic/biblio_list_template.php:168
-#: template/default-dz/biblio_list_template.php:168
-#: template/default/biblio_list_template.php:168
-#: template/lightweight/biblio_list_template.php:168
-msgid "Share this title to Twitter"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:169
-#: template/classic/biblio_list_template.php:169
-#: template/default-dz/biblio_list_template.php:169
-#: template/default/biblio_list_template.php:169
-#: template/lightweight/biblio_list_template.php:169
-msgid "Share this title to Google Plus"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:170
-#: template/classic/biblio_list_template.php:170
-#: template/default-dz/biblio_list_template.php:170
-#: template/default/biblio_list_template.php:170
-#: template/lightweight/biblio_list_template.php:170
-msgid "Share this title to Digg It"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:171
-#: template/classic/biblio_list_template.php:171
-#: template/default-dz/biblio_list_template.php:171
-#: template/default/biblio_list_template.php:171
-#: template/lightweight/biblio_list_template.php:171
-msgid "Share this title to Reddit"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:172
-#: template/classic/biblio_list_template.php:172
-#: template/default-dz/biblio_list_template.php:172
-#: template/default/biblio_list_template.php:172
-#: template/lightweight/biblio_list_template.php:172
-msgid "Share this title to LinkedIn"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:173
-#: template/classic/biblio_list_template.php:173
-#: template/default-dz/biblio_list_template.php:173
-#: template/default/biblio_list_template.php:173
-#: template/lightweight/biblio_list_template.php:173
-msgid "Share this title to StumbleUpon"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:181
-#: template/classic/biblio_list_template.php:181
-#: template/default-dz/biblio_list_template.php:158
 #: template/default/biblio_list_template.php:158
 #: template/lightweight/biblio_list_template.php:158
 msgid "mark this"
 msgstr "tandai ini"
 
-#: template/classic-dz/citation/apa_style_template.php:20
-#: template/classic/citation/apa_style_template.php:20
-#: template/default-dz/citation/apa_style_template.php:20
+#: template/default/biblio_list_template.php:167
+#: template/lightweight/biblio_list_template.php:167
+msgid "Share this title to Facebook"
+msgstr ""
+
+#: template/default/biblio_list_template.php:168
+#: template/lightweight/biblio_list_template.php:168
+msgid "Share this title to Twitter"
+msgstr ""
+
+#: template/default/biblio_list_template.php:169
+#: template/lightweight/biblio_list_template.php:169
+msgid "Share this title to Google Plus"
+msgstr ""
+
+#: template/default/biblio_list_template.php:170
+#: template/lightweight/biblio_list_template.php:170
+msgid "Share this title to Digg It"
+msgstr ""
+
+#: template/default/biblio_list_template.php:171
+#: template/lightweight/biblio_list_template.php:171
+msgid "Share this title to Reddit"
+msgstr ""
+
+#: template/default/biblio_list_template.php:172
+#: template/lightweight/biblio_list_template.php:172
+msgid "Share this title to LinkedIn"
+msgstr ""
+
+#: template/default/biblio_list_template.php:173
+#: template/lightweight/biblio_list_template.php:173
+msgid "Share this title to StumbleUpon"
+msgstr ""
+
 #: template/default/citation/apa_style_template.php:20
 #: template/lightweight/citation/apa_style_template.php:20
 msgid "APA Style"
 msgstr ""
 
-#: template/classic-dz/citation/chicago_style_template.php:20
-#: template/classic/citation/chicago_style_template.php:20
-#: template/default-dz/citation/chicago_style_template.php:20
 #: template/default/citation/chicago_style_template.php:20
 #: template/lightweight/citation/chicago_style_template.php:20
 msgid "Chicago Style"
 msgstr ""
 
-#: template/classic-dz/citation/mla_style_template.php:20
-#: template/classic/citation/mla_style_template.php:20
-#: template/default-dz/citation/mla_style_template.php:20
 #: template/default/citation/mla_style_template.php:20
 #: template/lightweight/citation/mla_style_template.php:20
 msgid "MLA Style"
 msgstr ""
 
-#: template/classic-dz/citation/turabian_style_template.php:23
-#: template/classic/citation/turabian_style_template.php:23
-#: template/default-dz/citation/turabian_style_template.php:23
 #: template/default/citation/turabian_style_template.php:23
 #: template/lightweight/citation/turabian_style_template.php:23
 msgid "Turabian Style"
 msgstr ""
 
-#: template/classic-dz/custom_frontpage_record.inc.php:11
-#: template/classic-dz/detail_template.php:38
-#: template/classic/custom_frontpage_record.inc.php:11
-#: template/classic/detail_template.php:38
-#: template/default-dz/custom_frontpage_record.inc.php:11
-#: template/default-dz/detail_template.php:37
 #: template/default/custom_frontpage_record.inc.php:11
 #: template/default/detail_template.php:37
 #: template/lightweight/custom_frontpage_record.inc.php:11
@@ -7663,292 +7890,590 @@ msgstr ""
 msgid "Availability"
 msgstr "Ketersediaan"
 
-#: template/classic-dz/detail_template.php:30
-#: template/classic/detail_template.php:30
-#: template/default-dz/detail_template.php:30
 #: template/default/detail_template.php:30
 #: template/lightweight/detail_template.php:30
 msgid "Description Not Available"
 msgstr "Tidak Tersedia Deskripsi"
 
-#: template/classic-dz/detail_template.php:44
-#: template/classic/detail_template.php:44
-#: template/default-dz/detail_template.php:38
 #: template/default/detail_template.php:38
 #: template/lightweight/detail_template.php:38
 msgid "No copy data"
 msgstr "Tidak ada salinan data"
 
-#: template/classic-dz/detail_template.php:53
-#: template/classic-dz/detail_template.php:101
-#: template/classic/detail_template.php:53
-#: template/classic/detail_template.php:101
-#: template/default-dz/detail_template.php:43
-#: template/default/detail_template.php:43
-#: template/lightweight/detail_template.php:43
-msgid "Detail Information"
-msgstr "Informasi Detil"
-
-#: template/classic-dz/detail_template.php:147
-#: template/classic/detail_template.php:147
-#: template/default-dz/detail_template.php:163
 #: template/default/detail_template.php:163
 #: template/lightweight/detail_template.php:163
 msgid "Other version/related"
 msgstr "Versi lain/terkait"
 
-#: template/classic-dz/detail_template.php:155
-#: template/classic/detail_template.php:155
-#: template/default-dz/detail_template.php:164
 #: template/default/detail_template.php:164
 #: template/lightweight/detail_template.php:164
 msgid "No other version available"
 msgstr "Tidak tersedia versi lain"
 
-#: template/classic-dz/detail_template.php:177
-#: template/classic/detail_template.php:177
-#: template/default-dz/detail_template.php:181
 #: template/default/detail_template.php:181
 #: template/lightweight/detail_template.php:181
 msgid "Comments"
 msgstr "Komentar"
 
-#: template/classic-dz/login_template.inc.php:59
-#: template/classic-dz/part/content/nav.php:60
-#: template/classic/login_template.inc.php:59
-#: template/classic/part/content/nav.php:60
-#: template/default-dz/partials/nav.php:12 template/default/partials/nav.php:12
-#: template/lightweight/partials/nav.php:12
-msgid "Librarian LOGIN"
-msgstr "MASUK Pustakawan"
+#: template/default/elibrary_template.inc.php:56
+#, fuzzy
+#| msgid "Reference"
+msgid "Add Reference"
+msgstr "Referensi"
 
-#: template/classic-dz/news_template.php:10
-#: template/classic/news_template.php:10
-#: template/default-dz/news_template.php:10
-#: template/default/news_template.php:10
-#: template/lightweight/news_template.php:10
-msgid "Read More"
-msgstr "Lanjutkan Membaca"
+#: template/default/elibrary_template.inc.php:83
+#: template/default/erepository_template.inc.php:106
+#: template/default/forgot_password_template.inc.php:99
+#: template/default/login_template.inc.php:74
+#: template/default/member_template.inc.php:106
+#: template/default/register_template.inc.php:107
+#: template/default/unggah_mandiri_template.inc.php:65
+#: template/lightweight/login_template.inc.php:84
+msgid "Back To Home"
+msgstr "Kembali ke Beranda"
 
-#: template/classic-dz/part/content/advance-search.php:13
-#: template/classic/part/content/advance-search.php:13
-#: template/default/partials/advsearch.php:10
-#: template/default/partials/header.php:18
-msgid "Advanced Search"
-msgstr "Pencarian Spesifik"
-
-#: template/classic-dz/part/content/language.php:13
-#: template/classic/part/content/language.php:13
-#: template/default-dz/partials/nav.php:20 template/default/partials/nav.php:20
-#: template/lightweight/partials/nav.php:20
-msgid "Select Language"
-msgstr "Pilih Bahasa"
-
-#: template/classic-dz/part/content/license.php:13
-#: template/classic/part/content/license.php:13
-msgid "License"
+#: template/default/erepository_template.inc.php:68
+msgid "Unggah Mandiri"
 msgstr ""
 
-#: template/classic-dz/part/content/nav.php:34
-#: template/classic/part/content/nav.php:34
-#: template/default-dz/partials/nav.php:7 template/default/partials/nav.php:7
-#: template/lightweight/partials/nav.php:7
-msgid "Library Information"
-msgstr "Info Perpustakaan"
+#: template/default/index_template.inc.php:82
+#: template/default/index_template.inc.php:88
+#: template/lightweight/index_template.inc.php:82
+#: template/lightweight/index_template.inc.php:88
+msgid "Collections"
+msgstr "Koleksi"
 
-#: template/classic-dz/part/content/nav.php:38
-#: template/classic/part/content/nav.php:38
-#: template/default-dz/index_template.inc.php:86
-#: template/default-dz/index_template.inc.php:87
-#: template/default-dz/partials/nav.php:9 template/default/partials/nav.php:9
+#: template/default/index_template.inc.php:84
+#: template/default/index_template.inc.php:85
+#: template/default/partials/header.php:43
 #: template/lightweight/index_template.inc.php:84
 #: template/lightweight/index_template.inc.php:85
 #: template/lightweight/partials/nav.php:9
 msgid "Member Area"
 msgstr "Area Anggota"
 
-#: template/classic-dz/part/content/nav.php:46
-#: template/classic/part/content/nav.php:46
-#: template/default-dz/partials/nav.php:11 template/default/partials/nav.php:11
-#: template/lightweight/partials/nav.php:11
-msgid "Help on Search"
-msgstr "Bantuan pencarian"
-
-#: template/classic-dz/part/content/nav.php:51
-#: template/classic/part/content/nav.php:51
-#, fuzzy
-#| msgid "Read More"
-msgid "More"
-msgstr "Lanjutkan Membaca"
-
-#: template/classic-dz/part/content/nav.php:56
-#: template/classic/part/content/nav.php:56
-#: template/default/index_template.inc.php:195
-msgid "News"
-msgstr "Berita"
-
-#: template/classic-dz/part/content/new-books.php:9
-#: template/classic/part/content/new-books.php:9
-msgid "New Books"
-msgstr "Buku-Buku Baru"
-
-#: template/classic-dz/part/content/promoted-books.php:9
-#: template/classic/part/content/promoted-books.php:9
-#, fuzzy
-#| msgid "Promote"
-msgid "Promoted Books"
-msgstr "Promosikan"
-
-#: template/classic-dz/part/content/simple-search.php:13
-#: template/classic/part/content/simple-search.php:13
-#: template/default-dz/index_template.inc.php:186
-#: template/lightweight/index_template.inc.php:184
-msgid "SEARCH"
-msgstr "CARI"
-
-#: template/classic-dz/part/content/simple-search.php:18
-#: template/classic/part/content/simple-search.php:18
-#: template/default-dz/index_template.inc.php:189
-#: template/lightweight/index_template.inc.php:187
-msgid "start it by typing one or more keywords for title, author or subject"
-msgstr "masukkan satu atau lebih kata kunci dari judul, pengarang, atau subyek"
-
-#: template/classic-dz/part/content/simple-search.php:20
-#: template/classic/part/content/simple-search.php:20
-#: template/default-dz/index_template.inc.php:191
-#: template/lightweight/index_template.inc.php:189
-msgid "use logical search \"title=library AND author=robert\""
-msgstr "gunakan logika pencarian \"judul=perpustakaan AND pengarang=robert\""
-
-#: template/classic-dz/part/content/simple-search.php:21
-#: template/classic/part/content/simple-search.php:21
-#: template/default-dz/index_template.inc.php:192
-#: template/lightweight/index_template.inc.php:190
-msgid "just click on the Search button to see all collections"
-msgstr "Tekan tombol Cari untuk melihat seluruh koleksi"
-
-#: template/classic-dz/part/sidebar.php:23 template/classic/part/sidebar.php:23
-#: template/default-dz/index_template.inc.php:150
-#: template/default/index_template.inc.php:126
+#: template/default/index_template.inc.php:110
 #: template/lightweight/index_template.inc.php:148
 msgid "Search Cluster"
 msgstr "Gugus Pencarian"
 
-#: template/classic-dz/part/sidebar.php:27 template/classic/part/sidebar.php:27
-#: template/default-dz/index_template.inc.php:155
-#: template/default/index_template.inc.php:131
+#: template/default/index_template.inc.php:115
 #: template/lightweight/index_template.inc.php:153
 msgid "Generating search cluster..."
 msgstr "Membuat gugus pencarian ..."
 
-#: template/classic-dz/visitor_template.php:39
-#: template/classic/visitor_template.php:39
-#: template/default-dz/visitor_template.php:32
+#: template/default/index_template.inc.php:135
+#: template/lightweight/index_template.inc.php:111
+msgid "No Result"
+msgstr "Tidak ada hasil"
+
+#: template/default/index_template.inc.php:135
+#: template/lightweight/index_template.inc.php:111
+msgid "Please try again"
+msgstr "Mohon coba kembali"
+
+#: template/default/index_template.inc.php:137
+#: template/lightweight/index_template.inc.php:129
+msgid "Search Result"
+msgstr "Hasil Pencarian"
+
+#: template/default/index_template.inc.php:168
+msgid "ARE YOU SEARCHING A BOOK?"
+msgstr "Apa Anda Sedang Mencari Buku?"
+
+#: template/default/index_template.inc.php:169
+msgid "BIGGEST LIBRARY"
+msgstr "Perpustakaan Terbesar"
+
+#: template/default/index_template.inc.php:185
+msgid "Welcome to Library of"
+msgstr "Selamat Datang di Perpustakaan"
+
+#: template/default/index_template.inc.php:196
+msgid "Department / Study Book Catalog"
+msgstr "Katalog Buku Jurusan / Prodi"
+
+#: template/default/index_template.inc.php:197
+msgid "Collection of library books by majors / study programs."
+msgstr "Koleksi buku perpustakaan berdasarkan kategori jurusan/prodi."
+
+#: template/default/index_template.inc.php:206
+msgid ""
+"Online catalog search of the central library collection Jakarta State "
+"Polytechnic."
+msgstr ""
+"Katalog online pencarian koleksi perpustakaan pusat Politeknik Negeri "
+"Jakarta."
+
+#: template/default/index_template.inc.php:215
+msgid ""
+"A collection of articles, journals, theses, theses and scientific works."
+msgstr "Kumpulan artikel, jurnal, skripsi, tesis dan karya ilmiah."
+
+#: template/default/index_template.inc.php:224
+msgid ""
+"One door to search for all public collections from libraries, museums, "
+"archives, and electronic sources in Indonesia."
+msgstr ""
+"Satu pintu pencarian untuk semua koleksi publik dari perpustakaan, museum, "
+"arsip, dan sumber elektronik di Indonesia."
+
+#: template/default/index_template.inc.php:242
+#: template/default/partials/nav.php:31 template/default/partials/nav2.php:34
+msgid "News"
+msgstr "Berita"
+
+#: template/default/index_template.inc.php:276
+msgid "Other news"
+msgstr "Berita lainnya"
+
+#: template/default/index_template.inc.php:287
+msgid "Are you satisfied with library services?"
+msgstr "Apakah Anda puas dengan layanan perpustakaan?"
+
+#: template/default/index_template.inc.php:302
+msgid "Thanks for voting!"
+msgstr "Terima Kasih Telah Memvoting!"
+
+#: template/default/index_template.inc.php:319
+msgid "Submit"
+msgstr "Kirim"
+
+#: template/default/index_template.inc.php:350
+msgid "Library Service Rating"
+msgstr "Rating Layanan Perpustakaan"
+
+#: template/default/index_template.inc.php:366
+#: template/default/partials/nav.php:35
+msgid "Announcement"
+msgstr "Pengumuman"
+
+#: template/default/index_template.inc.php:408
+msgid "Data Recapitulation of Jakarta State Polytechnic Library"
+msgstr "Rekapitulasi Data Perpustakaan Politeknik Negeri Jakarta"
+
+#: template/default/index_template.inc.php:427
+msgid "Reference"
+msgstr "Referensi"
+
+#: template/default/index_template.inc.php:441
+msgid "Activities"
+msgstr "Aktivitas"
+
+#: template/default/index_template.inc.php:442
+msgid "Exploring E-Resources Activities"
+msgstr "Aktivitas Eksplorasi E-Resources"
+
+#: template/default/index_template.inc.php:444
+msgid "Every Teusday 10 A.M. - Done"
+msgstr "Setiap Selasa 10:00 - Selesai"
+
+#: template/default/index_template.inc.php:445
+msgid "Multipurpose Room Library Floor"
+msgstr "Ruang Serbaguna Lantai Perpustakaan"
+
+#: template/default/index_template.inc.php:446
+msgid "Library information section"
+msgstr "Info Perpustakaan"
+
+#: template/default/index_template.inc.php:473
+msgid "Follow"
+msgstr "Ikuti"
+
+#: template/default/news_template.php:10
+#: template/lightweight/news_template.php:10
+msgid "Read More"
+msgstr "Lanjutkan Membaca"
+
+#: template/default/partials/advsearch.php:10
+msgid "Advanced Search"
+msgstr "Pencarian Spesifik"
+
+#: template/default/partials/footer.php:5
+msgid "Related Links"
+msgstr "Tautan Terkait"
+
+#: template/default/partials/footer.php:33
+msgid "Majors"
+msgstr "Jurusan"
+
+#: template/default/partials/footer.php:47
+msgid "Application Portal"
+msgstr "Portal Aplikasi"
+
+#: template/default/partials/footer.php:61
+msgid "Student"
+msgstr "Mahasiswa"
+
+#: template/default/partials/header.php:44
+msgid "Don't have an account? <br>"
+msgstr "Belum mempunyai akun? <br>"
+
+#: template/default/partials/nav.php:14 template/default/partials/nav2.php:17
+msgid "Profile"
+msgstr "Profil"
+
+#: template/default/partials/nav.php:18 template/default/partials/nav2.php:21
+msgid "Organization Structure"
+msgstr "Struktur Organisasi"
+
+#: template/default/partials/nav.php:23 template/default/partials/nav2.php:26
+msgid "Facility"
+msgstr "Fasilitas"
+
+#: template/default/partials/nav.php:25 template/default/partials/nav2.php:28
+msgid "Correction"
+msgstr "Koreksi"
+
+#: template/default/partials/nav.php:26 template/default/partials/nav2.php:29
+msgid "Reading Room"
+msgstr "Ruang Baca"
+
+#: template/default/partials/nav.php:34 template/default/partials/nav2.php:37
+msgid "Agenda"
+msgstr "Agenda"
+
+#: template/default/partials/nav.php:40 template/default/partials/nav2.php:42
+msgid "Catalog"
+msgstr "Katalog"
+
+#: template/default/partials/nav.php:43 template/default/partials/nav2.php:45
+#: template/default/partials/nav2.php:68
+msgid "One Search"
+msgstr ""
+
+#: template/default/partials/nav.php:44 template/default/partials/nav2.php:46
+msgid "Major Book Catalog"
+msgstr "Katalog Buku Jurusan"
+
+#: template/default/partials/nav.php:46 template/default/partials/nav2.php:48
+msgid "D3 Accountant"
+msgstr "D3 Akuntan"
+
+#: template/default/partials/nav.php:47 template/default/partials/nav2.php:49
+msgid "Commerce Administration"
+msgstr "Administrasi Niaga"
+
+#: template/default/partials/nav.php:48 template/default/partials/nav2.php:50
+msgid "MICE"
+msgstr ""
+
+#: template/default/partials/nav.php:49 template/default/partials/nav2.php:51
+msgid "Electrical Engineering"
+msgstr "Teknik Elektro"
+
+#: template/default/partials/nav.php:50 template/default/partials/nav.php:110
+#: template/default/partials/nav2.php:52 template/default/partials/nav2.php:113
+msgid "Machine Engineering"
+msgstr "Teknik Mesin"
+
+#: template/default/partials/nav.php:52 template/default/partials/nav.php:99
+#: template/default/partials/nav.php:119 template/default/partials/nav2.php:54
+#: template/default/partials/nav2.php:102
+#: template/default/partials/nav2.php:122
+msgid "Makara Journal of Technology"
+msgstr ""
+
+#: template/default/partials/nav.php:55 template/default/partials/nav2.php:57
+msgid "Civil Engineering"
+msgstr "Teknik Sipil"
+
+#: template/default/partials/nav.php:56 template/default/partials/nav2.php:58
+msgid "Informatics and Computer Engineering"
+msgstr "Teknik Informatika & Komputer"
+
+#: template/default/partials/nav.php:57 template/default/partials/nav2.php:59
+msgid "Graphic Publishing Engineering"
+msgstr "Teknik Grafika & Penerbitan"
+
+#: template/default/partials/nav.php:64 template/default/partials/nav2.php:66
+msgid "Digital Collection"
+msgstr "Koleksi Digital"
+
+#: template/default/partials/nav.php:66 template/default/partials/nav2.php:69
+msgid "Cambridge"
+msgstr ""
+
+#: template/default/partials/nav.php:67 template/default/partials/nav2.php:70
+msgid "E-Resources PERPUSNAS"
+msgstr ""
+
+#: template/default/partials/nav.php:68 template/default/partials/nav2.php:71
+msgid "Proquest"
+msgstr ""
+
+#: template/default/partials/nav.php:69 template/default/partials/nav2.php:72
+msgid "EBSCO"
+msgstr ""
+
+#: template/default/partials/nav.php:74 template/default/partials/nav2.php:77
+msgid "Journal of Accreditation"
+msgstr "Jurnal Akreditasi"
+
+#: template/default/partials/nav.php:76 template/default/partials/nav2.php:79
+msgid "Computer Science"
+msgstr ""
+
+#: template/default/partials/nav.php:78 template/default/partials/nav2.php:81
+msgid "PROSTEL"
+msgstr ""
+
+#: template/default/partials/nav.php:79 template/default/partials/nav2.php:82
+msgid "Jurnal Comm IT"
+msgstr ""
+
+#: template/default/partials/nav.php:80 template/default/partials/nav2.php:83
+msgid "INKOM: Jurnal Informatika, Sistem Kendali, dan Komputer"
+msgstr ""
+
+#: template/default/partials/nav.php:81 template/default/partials/nav2.php:84
+msgid "Jurnal Ilmu Komputer dan Informasi (JIKI)"
+msgstr ""
+
+#: template/default/partials/nav.php:82 template/default/partials/nav2.php:85
+msgid "Jurnal Ilmu Pengetahuan dan Teknologi Komputasi"
+msgstr ""
+
+#: template/default/partials/nav.php:83 template/default/partials/nav2.php:86
+msgid "Jurnal Sistem Informasi"
+msgstr ""
+
+#: template/default/partials/nav.php:86 template/default/partials/nav2.php:89
+msgid "Management and Business"
+msgstr "Bisnis dan Manajemen"
+
+#: template/default/partials/nav.php:88 template/default/partials/nav2.php:91
+msgid "Journal JIEB"
+msgstr ""
+
+#: template/default/partials/nav.php:89 template/default/partials/nav2.php:92
+msgid "Jurnal Manajemen Teknologi"
+msgstr ""
+
+#: template/default/partials/nav.php:90 template/default/partials/nav2.php:93
+msgid "Jurnal Manajemen Untar"
+msgstr ""
+
+#: template/default/partials/nav.php:91 template/default/partials/nav2.php:94
+msgid "MIX: Jurnal Ilmiah Manajemen"
+msgstr ""
+
+#: template/default/partials/nav.php:94 template/default/partials/nav2.php:97
+msgid "Industry Engineering and Manufacture"
+msgstr ""
+
+#: template/default/partials/nav.php:96 template/default/partials/nav2.php:99
+msgid "Journal of Industrial Research Dynamics (JDPI)"
+msgstr ""
+
+#: template/default/partials/nav.php:97 template/default/partials/nav2.php:100
+msgid "Jurnal Riset Industri"
+msgstr ""
+
+#: template/default/partials/nav.php:98 template/default/partials/nav2.php:101
+msgid "Jurnal Riset Teknologi Pencegahan Pencemaran Industri"
+msgstr ""
+
+#: template/default/partials/nav.php:102 template/default/partials/nav2.php:105
+msgid "Banking Finance, Accounting"
+msgstr "Keuangan Perbankan, Akuntansi"
+
+#: template/default/partials/nav.php:104 template/default/partials/nav2.php:107
+msgid "Indonesian Financial and Accounting Journal (JAKI)"
+msgstr ""
+
+#: template/default/partials/nav.php:105 template/default/partials/nav2.php:108
+msgid "Journal of Accounting and Investment (JAI)"
+msgstr ""
+
+#: template/default/partials/nav.php:106 template/default/partials/nav2.php:109
+msgid "Jurnal Akuntansi dan Auditing Indonesia (JAAI)"
+msgstr ""
+
+#: template/default/partials/nav.php:107 template/default/partials/nav2.php:110
+msgid "Jurnal Keuangan dan Perbankan (JKP)"
+msgstr ""
+
+#: template/default/partials/nav.php:112 template/default/partials/nav2.php:115
+msgid "Journal of Mechantronics, Electrical Power (MEV)"
+msgstr ""
+
+#: template/default/partials/nav.php:115 template/default/partials/nav2.php:118
+msgid "Civil Engineering, Architecture, Construction"
+msgstr ""
+
+#: template/default/partials/nav.php:117 template/default/partials/nav2.php:120
+msgid "Civil Engineering Journal ITB"
+msgstr ""
+
+#: template/default/partials/nav.php:118 template/default/partials/nav2.php:121
+msgid "Journal of Islamic Architecture (JIA)"
+msgstr ""
+
+#: template/default/partials/nav.php:122 template/default/partials/nav2.php:125
+msgid "Tourism"
+msgstr "Pariwisata"
+
+#: template/default/partials/nav.php:124 template/default/partials/nav2.php:127
+msgid "Humanities"
+msgstr "Humaniora"
+
+#: template/default/partials/nav.php:127 template/default/partials/nav2.php:130
+msgid "Electrical Engineering and TELKOM"
+msgstr "Teknik Elektro dan TELKOM"
+
+#: template/default/partials/nav.php:129 template/default/partials/nav2.php:132
+msgid "Journal of Electrical Engineering"
+msgstr "Jurnal Rekayasa Elektrika (JRE)"
+
+#: template/default/partials/nav.php:130 template/default/partials/nav2.php:133
+msgid "Buletin Pos dan Telekomunikasi (BPOSTEL)"
+msgstr ""
+
+#: template/default/partials/nav.php:137 template/default/partials/nav2.php:140
+msgid "Proceedings"
+msgstr "Prosiding"
+
+#: template/default/partials/nav.php:139 template/default/partials/nav2.php:142
+msgid "Proceedings SNTE 2014"
+msgstr "Prosiding SNTE 2014"
+
+#: template/default/partials/nav.php:140 template/default/partials/nav2.php:143
+msgid "Proceedings SNTE 2015"
+msgstr "Prosiding SNTE 2015"
+
+#: template/default/partials/nav.php:141 template/default/partials/nav2.php:144
+msgid "Proceedings SNTE 2016"
+msgstr "Prosiding SNTE 2016"
+
+#: template/default/partials/nav.php:142 template/default/partials/nav2.php:145
+msgid "Proceedings SNTE 2017"
+msgstr "Prosiding SNTE 2017"
+
+#: template/default/partials/nav.php:156 template/default/partials/nav2.php:159
+msgid "E-Book User Guide"
+msgstr ""
+
+#: template/default/partials/nav.php:163 template/default/partials/nav2.php:166
+msgid "Submitting Final Report for Student 2019"
+msgstr "Penyerahan Laporan Akhir untuk Mahasiswa 2019"
+
+#: template/default/unggah_mandiri_template.inc.php:39
+#, fuzzy
+#| msgid "Repository ROOT"
+msgid "Erepository"
+msgstr "Repositori ROOT"
+
 #: template/default/visitor_template.php:32
 #: template/lightweight/visitor_template.php:32
 msgid "Visitor Counter"
 msgstr "Penghitung Jumlah Pengunjung"
 
-#: template/classic-dz/visitor_template.php:47
-#: template/classic/visitor_template.php:47
-#: template/default-dz/visitor_template.php:33
 #: template/default/visitor_template.php:33
 #: template/lightweight/visitor_template.php:33
 msgid "Please insert your library member ID otherwise your full name instead"
 msgstr "Silahkan masukkan nomor anggota Anda atau masukkan nama lengkap Anda"
 
-#: template/classic-dz/visitor_template.php:50
-#: template/classic/visitor_template.php:50
-#: template/default-dz/visitor_template.php:46
 #: template/default/visitor_template.php:46
 #: template/lightweight/visitor_template.php:46
 msgid "Member ID / Visitor Name"
 msgstr "ID Anggota / Nama Pengunjung"
 
-#: template/default-dz/biblio_list_template.php:85
-#: template/default/biblio_list_template.php:85
-#: template/lightweight/biblio_list_template.php:85
-msgid "Cite"
-msgstr ""
-
-#: template/default-dz/index_template.inc.php:84
-#: template/default-dz/index_template.inc.php:90
-#: template/lightweight/index_template.inc.php:82
-#: template/lightweight/index_template.inc.php:88
-msgid "Collections"
-msgstr "Koleksi"
-
-#: template/default-dz/index_template.inc.php:113
-#: template/default/index_template.inc.php:89
-#: template/lightweight/index_template.inc.php:111
-msgid "No Result"
-msgstr "Tidak ada hasil"
-
-#: template/default-dz/index_template.inc.php:113
-#: template/default/index_template.inc.php:89
-#: template/lightweight/index_template.inc.php:111
-msgid "Please try again"
-msgstr "Mohon coba kembali"
-
-#: template/default-dz/index_template.inc.php:131
-#: template/default/index_template.inc.php:107
-#: template/lightweight/index_template.inc.php:129
-msgid "Search Result"
-msgstr "Hasil Pencarian"
-
-#: template/default-dz/index_template.inc.php:140
-#: template/default/index_template.inc.php:116
-#: template/lightweight/index_template.inc.php:138
-msgid "Information"
-msgstr "Informasi"
-
-#: template/default-dz/login_template.inc.php:84
-#: template/default/login_template.inc.php:84
-#: template/lightweight/login_template.inc.php:84
-msgid "Back To Home"
-msgstr "Kembali ke Beranda"
-
-#: template/default-dz/partials/nav.php:13 template/default/partials/nav.php:13
-#: template/lightweight/partials/nav.php:13
-msgid "About SLiMS"
-msgstr "Tentang SLiMS"
-
-#: template/default/index_template.inc.php:186
-msgid "History"
-msgstr "Sejarah"
-
-#: template/default/index_template.inc.php:187
-msgid "Vision and Mission"
-msgstr "Visi dan Misi"
-
-#: template/default/index_template.inc.php:188
-msgid "Organization Structure"
-msgstr "Struktur Organisasi"
-
-#: template/default/index_template.inc.php:198
-msgid "Catalog"
-msgstr "Katalog"
-
-#: template/default/index_template.inc.php:201
-msgid "Digital Collection"
-msgstr "Koleksi Digital"
-
-#: template/default/index_template.inc.php:204
-msgid "Journal of Accreditation"
-msgstr "Jurnal Akreditasi"
-
-#: template/default/index_template.inc.php:207
-msgid "Proceedings"
-msgstr "Prosiding"
-
-#: template/default/index_template.inc.php:213
-msgid "Download"
-msgstr "Unduh"
-
 #: template/lightweight/index_template.inc.php:93
 #: template/lightweight/index_template.inc.php:194
 msgid "Put some keyword(s)..."
 msgstr "Masukkan kata kunci..."
+
+#: template/lightweight/index_template.inc.php:184
+msgid "SEARCH"
+msgstr "CARI"
+
+#: template/lightweight/index_template.inc.php:187
+msgid "start it by typing one or more keywords for title, author or subject"
+msgstr "masukkan satu atau lebih kata kunci dari judul, pengarang, atau subyek"
+
+#: template/lightweight/index_template.inc.php:189
+msgid "use logical search \"title=library AND author=robert\""
+msgstr "gunakan logika pencarian \"judul=perpustakaan AND pengarang=robert\""
+
+#: template/lightweight/index_template.inc.php:190
+msgid "just click on the Search button to see all collections"
+msgstr "Tekan tombol Cari untuk melihat seluruh koleksi"
+
+#: template/lightweight/partials/nav.php:7
+msgid "Library Information"
+msgstr "Info Perpustakaan"
+
+#: template/lightweight/partials/nav.php:11
+msgid "Help on Search"
+msgstr "Bantuan pencarian"
+
+#: template/lightweight/partials/nav.php:12
+msgid "Librarian LOGIN"
+msgstr "MASUK Pustakawan"
+
+#: template/lightweight/partials/nav.php:13
+msgid "About SLiMS"
+msgstr "Tentang SLiMS"
+
+#: template/lightweight/partials/nav.php:20
+msgid "Select Language"
+msgstr "Pilih Bahasa"
+
+#~ msgid "Update Password"
+#~ msgstr "Perbarui Kata Sandi"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#~ msgid "Full Name"
+#~ msgstr "Nama Lengkap"
+
+#~ msgid "Birthdate"
+#~ msgstr "Tanggal Lahir"
+
+#~ msgid "Please input your birthdate"
+#~ msgstr "Masukkan tanggal lahir Anda"
+
+#~ msgid "There is no seminar agenda at this time"
+#~ msgstr "Tidak ada agenda seminar saat ini"
+
+#~ msgid "Major"
+#~ msgstr "Jurusan"
+
+#~ msgid "Other announcements"
+#~ msgstr "Pengumuman lainnya"
+
+#~ msgid "Full Name as In Attendance List"
+#~ msgstr "Nama Lengkap Seperti pada Absen"
+
+#~ msgid "Study Program"
+#~ msgstr "Program Studi"
+
+#~ msgid "Please input your study program"
+#~ msgstr "Masukkan program studi Anda"
+
+#~ msgid "Online Member Registration"
+#~ msgstr "Pendaftaran Online Anggota"
+
+#~ msgid "Without period."
+#~ msgstr "Tanpa tanda titik."
+
+#~ msgid "Library Member Login"
+#~ msgstr "Masuk Anggota Perpustakaan"
+
+#~ msgid "Gender"
+#~ msgstr "Jenis Kelamin"
+
+#, fuzzy
+#~| msgid "Read More"
+#~ msgid "More"
+#~ msgstr "Lanjutkan Membaca"
+
+#, fuzzy
+#~| msgid "Promote"
+#~ msgid "Promoted Books"
+#~ msgstr "Promosikan"
 
 #~ msgid "Panel"
 #~ msgstr "Panel"
@@ -8006,9 +8531,6 @@ msgstr "Masukkan kata kunci..."
 #~ msgid "No Attachment"
 #~ msgstr "Tidak ada Lampiran"
 
-#~ msgid "There is no item/copy for this title yet"
-#~ msgstr "Tidak ada eksemplar/kopi untuk judul ini"
-
 #~ msgid "Chinese"
 #~ msgstr "Cina"
 
@@ -8023,9 +8545,6 @@ msgstr "Masukkan kata kunci..."
 
 #~ msgid "User Login"
 #~ msgstr "Masuk Pengguna"
-
-#~ msgid "Download this file"
-#~ msgstr "Unduh berkas ini"
 
 #~ msgid "Available Modules"
 #~ msgstr "Modul Tersedia"

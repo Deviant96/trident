@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Senayan3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-10 15:48+0700\n"
-"PO-Revision-Date: 2020-06-10 15:51+0700\n"
+"POT-Creation-Date: 2020-06-17 02:17+0700\n"
+"PO-Revision-Date: 2020-06-17 02:21+0700\n"
 "Last-Translator: Arif Syamsudin <buitenzorg812@gmail.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -45,6 +45,7 @@ msgstr ""
 
 #: admin/admin_template/default-dz/function.php:65
 #: admin/admin_template/default/function.php:69 lib/module.inc.php:40
+#: template/default/partials/nav2.php:47
 msgid "OPAC"
 msgstr ""
 
@@ -101,10 +102,8 @@ msgstr ""
 msgid "Members"
 msgstr ""
 
-#: admin/chat.php:15 lib/contents/chat.php:88 sysconfig.inc.php:648
-#: template/classic-dz/part/content/nav.php:42
-#: template/classic/part/content/nav.php:42
-#: template/default-dz/partials/nav.php:10 template/default/partials/nav.php:10
+#: admin/chat.php:15 lib/contents/chat.php:88 sysconfig.inc.php:655
+#: template/default/partials/nav.php:10
 #: template/lightweight/partials/nav.php:10
 msgid "Librarian"
 msgstr ""
@@ -388,12 +387,6 @@ msgstr ""
 #: admin/modules/system/module.php:151 admin/modules/system/sys_log.php:85
 #: admin/modules/system/sys_log.php:87 admin/modules/system/user_group.php:175
 #: admin/modules/system/user_group.php:177
-#: template/classic-dz/part/content/advance-search.php:71
-#: template/classic-dz/part/content/simple-search.php:26
-#: template/classic/part/content/advance-search.php:71
-#: template/classic/part/content/simple-search.php:26
-#: template/default-dz/index_template.inc.php:96
-#: template/default-dz/index_template.inc.php:197
 #: template/default/partials/advsearch.php:89
 #: template/lightweight/index_template.inc.php:94
 #: template/lightweight/index_template.inc.php:195
@@ -506,8 +499,6 @@ msgstr ""
 #: lib/contents/download_loan_history.inc.php:62
 #: lib/contents/member.inc.php:453 lib/contents/member.inc.php:571
 #: lib/contents/member.inc.php:606 lib/detail.inc.php:226
-#: template/classic-dz/part/content/advance-search.php:19
-#: template/classic/part/content/advance-search.php:19
 #: template/default/partials/advsearch.php:16
 msgid "Title"
 msgstr ""
@@ -683,12 +674,6 @@ msgstr ""
 #: admin/modules/reporting/customs/titles_list.php:300
 #: admin/modules/stock_take/current.php:108
 #: admin/modules/stock_take/lost_item_list.php:152
-#: template/classic-dz/custom_frontpage_record.inc.php:10
-#: template/classic-dz/detail_template.php:62
-#: template/classic/custom_frontpage_record.inc.php:10
-#: template/classic/detail_template.php:62
-#: template/default-dz/custom_frontpage_record.inc.php:10
-#: template/default-dz/detail_template.php:57
 #: template/default/custom_frontpage_record.inc.php:10
 #: template/default/detail_template.php:57
 #: template/lightweight/custom_frontpage_record.inc.php:10
@@ -701,9 +686,6 @@ msgstr ""
 #: admin/modules/bibliography/marcexport.php:261
 #: admin/modules/bibliography/printed_card.php:375
 #: admin/modules/membership/member_card_generator.php:325
-#: template/classic-dz/visitor_template.php:57
-#: template/classic/visitor_template.php:57
-#: template/default-dz/visitor_template.php:60
 #: template/default/visitor_template.php:60
 #: template/lightweight/visitor_template.php:60
 msgid "Add"
@@ -1134,14 +1116,6 @@ msgstr ""
 #: admin/modules/reporting/customs/titles_list.php:174
 #: admin/modules/reporting/customs/titles_list.php:300
 #: admin/modules/serial_control/index.php:65
-#: template/classic-dz/custom_frontpage_record.inc.php:7
-#: template/classic-dz/detail_template.php:88
-#: template/classic-dz/part/content/advance-search.php:41
-#: template/classic/custom_frontpage_record.inc.php:7
-#: template/classic/detail_template.php:88
-#: template/classic/part/content/advance-search.php:41
-#: template/default-dz/custom_frontpage_record.inc.php:7
-#: template/default-dz/detail_template.php:87
 #: template/default/custom_frontpage_record.inc.php:7
 #: template/default/detail_template.php:87
 #: template/default/partials/advsearch.php:45
@@ -1157,9 +1131,6 @@ msgstr ""
 #: admin/modules/master_file/submenu.php:31
 #: admin/modules/reporting/customs/titles_list.php:173
 #: admin/modules/reporting/customs/titles_list.php:299
-#: template/classic-dz/detail_template.php:67
-#: template/classic/detail_template.php:67
-#: template/default-dz/detail_template.php:64
 #: template/default/detail_template.php:64
 #: template/lightweight/detail_template.php:64
 msgid "Publisher"
@@ -1226,8 +1197,8 @@ msgstr ""
 #: admin/modules/serial_control/subscription.php:178
 #: admin/modules/system/app_user.php:307 admin/modules/system/content.php:188
 #: admin/modules/system/holiday.php:204 admin/modules/system/module.php:182
-#: admin/modules/system/user_group.php:208 lib/contents/login.inc.php:202
-#: lib/contents/member.inc.php:148
+#: admin/modules/system/user_group.php:208 lib/contents/login.php:202
+#: lib/contents/member.inc.php:148 lib/contents/nih.inc.php:202
 msgid "Update"
 msgstr ""
 
@@ -1248,16 +1219,11 @@ msgstr ""
 #: admin/modules/bibliography/index.php:591
 #: admin/modules/serial_control/index.php:65
 #: lib/contents/clustering.inc.php:120
-#: template/classic-dz/part/content/advance-search.php:27
-#: template/classic/part/content/advance-search.php:27
 #: template/default/partials/advsearch.php:25
 msgid "Author(s)"
 msgstr ""
 
 #: admin/modules/bibliography/index.php:595
-#: template/classic-dz/detail_template.php:135
-#: template/classic/detail_template.php:135
-#: template/default-dz/detail_template.php:150
 #: template/default/detail_template.php:150
 #: template/lightweight/detail_template.php:150
 msgid "Statement of Responsibility"
@@ -1270,12 +1236,6 @@ msgid ""
 msgstr ""
 
 #: admin/modules/bibliography/index.php:599 lib/detail.inc.php:227
-#: template/classic-dz/custom_frontpage_record.inc.php:6
-#: template/classic-dz/detail_template.php:120
-#: template/classic/custom_frontpage_record.inc.php:6
-#: template/classic/detail_template.php:120
-#: template/default-dz/custom_frontpage_record.inc.php:6
-#: template/default-dz/detail_template.php:129
 #: template/default/custom_frontpage_record.inc.php:6
 #: template/default/detail_template.php:129
 #: template/lightweight/custom_frontpage_record.inc.php:6
@@ -1288,9 +1248,6 @@ msgid "A version of publication having substantial changes or additions."
 msgstr ""
 
 #: admin/modules/bibliography/index.php:601
-#: template/classic-dz/detail_template.php:130
-#: template/classic/detail_template.php:130
-#: template/default-dz/detail_template.php:143
 #: template/default/detail_template.php:143
 #: template/lightweight/detail_template.php:143
 msgid "Specific Detail Info"
@@ -1345,8 +1302,6 @@ msgstr ""
 #: admin/modules/stock_take/lost_item_list.php:151
 #: admin/modules/stock_take/st_report.php:169
 #: lib/contents/clustering.inc.php:79
-#: template/classic-dz/part/content/advance-search.php:57
-#: template/classic/part/content/advance-search.php:57
 #: template/default/partials/advsearch.php:56
 msgid "Collection Type"
 msgstr ""
@@ -1365,8 +1320,6 @@ msgstr ""
 #: admin/modules/stock_take/init.php:184
 #: admin/modules/stock_take/lost_item_list.php:115
 #: admin/modules/system/sys_log.php:108
-#: template/classic-dz/part/content/advance-search.php:64
-#: template/classic/part/content/advance-search.php:64
 #: template/default/partials/advsearch.php:65
 msgid "Location"
 msgstr ""
@@ -1397,8 +1350,6 @@ msgstr ""
 #: admin/modules/stock_take/lost_item_list.php:87
 #: admin/modules/stock_take/lost_item_list.php:149
 #: lib/contents/clustering.inc.php:60
-#: template/classic-dz/part/content/advance-search.php:50
-#: template/classic/part/content/advance-search.php:50
 #: template/default/partials/advsearch.php:76
 msgid "GMD"
 msgstr ""
@@ -1454,12 +1405,6 @@ msgid "Publishing Place"
 msgstr ""
 
 #: admin/modules/bibliography/index.php:709
-#: template/classic-dz/custom_frontpage_record.inc.php:8
-#: template/classic-dz/detail_template.php:76
-#: template/classic/custom_frontpage_record.inc.php:8
-#: template/classic/detail_template.php:76
-#: template/default-dz/custom_frontpage_record.inc.php:8
-#: template/default-dz/detail_template.php:73
 #: template/default/custom_frontpage_record.inc.php:8
 #: template/default/detail_template.php:73
 #: template/lightweight/custom_frontpage_record.inc.php:8
@@ -1474,12 +1419,6 @@ msgid ""
 msgstr ""
 
 #: admin/modules/bibliography/index.php:711
-#: template/classic-dz/custom_frontpage_record.inc.php:9
-#: template/classic-dz/detail_template.php:57
-#: template/classic/custom_frontpage_record.inc.php:9
-#: template/classic/detail_template.php:57
-#: template/default-dz/custom_frontpage_record.inc.php:9
-#: template/default-dz/detail_template.php:50
 #: template/default/custom_frontpage_record.inc.php:9
 #: template/default/detail_template.php:50
 #: template/lightweight/custom_frontpage_record.inc.php:9
@@ -1505,9 +1444,6 @@ msgstr ""
 #: admin/modules/stock_take/lost_item_list.php:79
 #: admin/modules/stock_take/lost_item_list.php:150
 #: admin/modules/stock_take/st_report.php:131
-#: template/classic-dz/detail_template.php:93
-#: template/classic/detail_template.php:93
-#: template/default-dz/detail_template.php:94
 #: template/default/detail_template.php:94
 #: template/lightweight/detail_template.php:94
 msgid "Classification"
@@ -1527,11 +1463,6 @@ msgstr ""
 
 #: admin/modules/bibliography/index.php:724
 #: admin/modules/serial_control/index.php:65 lib/contents/clustering.inc.php:98
-#: template/classic-dz/detail_template.php:125
-#: template/classic-dz/part/content/advance-search.php:34
-#: template/classic/detail_template.php:125
-#: template/classic/part/content/advance-search.php:34
-#: template/default-dz/detail_template.php:136
 #: template/default/detail_template.php:136
 #: template/default/partials/advsearch.php:36
 #: template/lightweight/detail_template.php:136
@@ -1548,9 +1479,6 @@ msgstr ""
 #: admin/modules/reporting/customs/class_recap.php:77
 #: admin/modules/reporting/customs/class_recap.php:136
 #: admin/modules/reporting/customs/titles_list.php:117 lib/detail.inc.php:228
-#: template/classic-dz/detail_template.php:81
-#: template/classic/detail_template.php:81
-#: template/default-dz/detail_template.php:80
 #: template/default/detail_template.php:80
 #: template/lightweight/detail_template.php:80
 msgid "Language"
@@ -1692,9 +1620,6 @@ msgstr ""
 #: admin/modules/bibliography/index.php:773
 #: admin/modules/master_file/label.php:202
 #: admin/modules/master_file/label.php:207
-#: template/classic-dz/detail_template.php:165
-#: template/classic/detail_template.php:165
-#: template/default-dz/detail_template.php:170
 #: template/default/detail_template.php:170
 #: template/lightweight/detail_template.php:170
 msgid "File Attachment"
@@ -2286,8 +2211,6 @@ msgid "Add Subject"
 msgstr ""
 
 #: admin/modules/bibliography/pop_topic.php:147
-#: template/classic-dz/part/content/simple-search.php:25
-#: template/classic/part/content/simple-search.php:25
 msgid "Keyword"
 msgstr ""
 
@@ -2778,7 +2701,7 @@ msgstr ""
 #: admin/modules/reporting/customs/overdued_list.php:71
 #: admin/modules/reporting/customs/reserve_list.php:70
 #: admin/modules/reporting/customs/reserve_list.php:127
-#: lib/contents/form.inc.php:75 lib/contents/member.inc.php:512
+#: lib/contents/form.inc.php:130 lib/contents/member.inc.php:512
 msgid "Member Name"
 msgstr ""
 
@@ -3981,7 +3904,7 @@ msgstr ""
 #: admin/modules/master_file/rda_cmc.php:189
 #: admin/modules/master_file/rda_cmc.php:209
 #: admin/modules/master_file/rda_cmc.php:213 lib/contents/librarian.inc.php:47
-#: sysconfig.inc.php:630
+#: sysconfig.inc.php:637
 msgid "Name"
 msgstr ""
 
@@ -3998,9 +3921,6 @@ msgid "General Material Designation"
 msgstr ""
 
 #: admin/modules/master_file/submenu.php:28
-#: template/classic-dz/detail_template.php:105
-#: template/classic/detail_template.php:105
-#: template/default-dz/detail_template.php:101
 #: template/default/detail_template.php:101
 #: template/lightweight/detail_template.php:101
 msgid "Content Type"
@@ -4011,9 +3931,6 @@ msgid "RDA Content Type"
 msgstr ""
 
 #: admin/modules/master_file/submenu.php:29
-#: template/classic-dz/detail_template.php:110
-#: template/classic/detail_template.php:110
-#: template/default-dz/detail_template.php:115
 #: template/default/detail_template.php:115
 #: template/lightweight/detail_template.php:115
 msgid "Media Type"
@@ -4024,9 +3941,6 @@ msgid "RDA Media Type"
 msgstr ""
 
 #: admin/modules/master_file/submenu.php:30
-#: template/classic-dz/detail_template.php:115
-#: template/classic/detail_template.php:115
-#: template/default-dz/detail_template.php:122
 #: template/default/detail_template.php:122
 #: template/lightweight/detail_template.php:122
 msgid "Carrier Type"
@@ -4142,14 +4056,16 @@ msgstr ""
 #: admin/modules/membership/index.php:430
 #: admin/modules/membership/member_card_generator.php:219
 #: admin/modules/reporting/customs/member_list.php:104
-#: lib/contents/form.inc.php:132
 msgid "Address"
 msgstr ""
 
 #: admin/modules/master_file/supplier.php:187
 #: admin/modules/master_file/supplier.php:211
 #: admin/modules/master_file/supplier.php:217 lib/contents/contact.inc.php:3
-#: template/default/partials/nav2.php:63
+#: template/default/erepository_template.inc.php:73
+#: template/default/member_template.inc.php:72
+#: template/default/partials/nav2.php:155
+#: template/default/register_template.inc.php:72
 msgid "Contact"
 msgstr ""
 
@@ -4161,7 +4077,7 @@ msgstr ""
 #: admin/modules/reporting/customs/due_date_warning.php:156
 #: admin/modules/reporting/customs/member_loan_list.php:196
 #: admin/modules/reporting/customs/overdued_list.php:179
-#: lib/contents/form.inc.php:150
+#: lib/contents/form.inc.php:160
 msgid "Phone Number"
 msgstr ""
 
@@ -4263,7 +4179,7 @@ msgid "Member ID and Name can't be empty"
 msgstr ""
 
 #: admin/modules/membership/index.php:89 admin/modules/system/app_user.php:90
-#: lib/contents/login.inc.php:140
+#: lib/contents/login.php:140 lib/contents/nih.inc.php:140
 msgid "Password confirmation does not match. See if your Caps Lock key is on!"
 msgstr ""
 
@@ -4336,11 +4252,7 @@ msgstr ""
 #: admin/modules/reporting/customs/visitor_list.php:94
 #: admin/modules/reporting/customs/visitor_list.php:140
 #: admin/modules/reporting/customs/visitor_list.php:182
-#: lib/contents/form.inc.php:96 lib/contents/member.inc.php:524
-#: template/classic-dz/visitor_template.php:54
-#: template/classic/visitor_template.php:54
-#: template/default-dz/visitor_template.php:53
-#: template/default/visitor_template.php:53
+#: lib/contents/member.inc.php:524 template/default/visitor_template.php:53
 #: template/lightweight/visitor_template.php:53
 msgid "Institution"
 msgstr ""
@@ -4361,7 +4273,6 @@ msgstr ""
 #: admin/modules/reporting/customs/visitor_list.php:73
 #: admin/modules/reporting/customs/visitor_list.php:139
 #: admin/modules/reporting/customs/visitor_list.php:181
-#: lib/contents/form.inc.php:105
 msgid "Membership Type"
 msgstr ""
 
@@ -4380,7 +4291,7 @@ msgstr ""
 msgid "Sex"
 msgstr ""
 
-#: admin/modules/membership/index.php:432 lib/contents/form.inc.php:141
+#: admin/modules/membership/index.php:432
 msgid "Postal Code"
 msgstr ""
 
@@ -4404,6 +4315,7 @@ msgstr ""
 #: admin/modules/membership/index.php:476
 #: admin/modules/stock_take/finish.php:183 admin/modules/system/content.php:196
 #: admin/modules/system/index.php:229
+#: template/default/index_template.inc.php:291
 msgid "Yes"
 msgstr ""
 
@@ -4434,14 +4346,15 @@ msgid "E-mail"
 msgstr ""
 
 #: admin/modules/membership/index.php:518 admin/modules/system/app_user.php:373
-#: lib/contents/login.inc.php:177 lib/contents/member.inc.php:139
+#: lib/contents/login.php:177 lib/contents/member.inc.php:139
 #: lib/contents/member.inc.php:140 lib/contents/member.inc.php:294
+#: lib/contents/nih.inc.php:177
 msgid "New Password"
 msgstr ""
 
 #: admin/modules/membership/index.php:520 admin/modules/system/app_user.php:375
-#: lib/contents/login.inc.php:179 lib/contents/member.inc.php:143
-#: lib/contents/member.inc.php:144
+#: lib/contents/login.php:179 lib/contents/member.inc.php:143
+#: lib/contents/member.inc.php:144 lib/contents/nih.inc.php:179
 msgid "Confirm New Password"
 msgstr ""
 
@@ -5995,6 +5908,7 @@ msgid "Content Title"
 msgstr ""
 
 #: admin/modules/system/content.php:195
+#: template/default/index_template.inc.php:294
 msgid "No"
 msgstr ""
 
@@ -6689,42 +6603,49 @@ msgstr ""
 msgid "Your Loan History"
 msgstr ""
 
+#: lib/contents/erepository.inc.php:25 lib/contents/erepository.inc.php:26
 #: lib/contents/form.inc.php:25 lib/contents/form.inc.php:26
+#: template/default/register_template.inc.php:84
 msgid "Registration"
 msgstr ""
 
-#: lib/contents/form.inc.php:70
+#: lib/contents/form.inc.php:119 lib/contents/member.inc.php:221
+msgid "Wrong Captcha Code entered, Please write the right code!"
+msgstr ""
+
+#: lib/contents/form.inc.php:125
 msgid "Online Member Registration"
 msgstr ""
 
-#: lib/contents/form.inc.php:84
+#: lib/contents/form.inc.php:139
 msgid "NIM"
 msgstr ""
 
-#: lib/contents/form.inc.php:89
+#: lib/contents/form.inc.php:144
 msgid "Without period."
 msgstr ""
 
-#: lib/contents/form.inc.php:120
-msgid "Gender"
+#: lib/contents/form.inc.php:151
+msgid "Major"
 msgstr ""
 
-#: lib/contents/form.inc.php:159
+#: lib/contents/form.inc.php:169
 msgid "Email"
 msgstr ""
 
-#: lib/contents/form.inc.php:168 lib/contents/login.inc.php:212
-#: lib/contents/member.inc.php:233
+#: lib/contents/form.inc.php:178 lib/contents/login.php:212
+#: lib/contents/member.inc.php:233 lib/contents/nih.inc.php:212
 msgid "Password"
 msgstr ""
 
-#: lib/contents/form.inc.php:178 lib/contents/member.inc.php:265
+#: lib/contents/form.inc.php:210 lib/contents/member.inc.php:265
 #: template/default/partials/header.php:45
 msgid "Register"
 msgstr ""
 
 #: lib/contents/kuesioner.inc.php:2 lib/contents/kuesioner.inc.php:3
-#: lib/contents/kuesioner.inc.php:18 template/default/partials/nav2.php:54
+#: lib/contents/kuesioner.inc.php:18 template/default/partials/nav2.php:132
+#: template/default/partials/nav2.php:135
 msgid "Questionnaire"
 msgstr ""
 
@@ -6740,7 +6661,7 @@ msgstr ""
 msgid "Submission of Student Final Report 2019"
 msgstr ""
 
-#: lib/contents/laporan_akhir.inc.php:3 template/default/partials/nav2.php:60
+#: lib/contents/laporan_akhir.inc.php:3 template/default/partials/nav2.php:148
 msgid "Submitting Final Report"
 msgstr ""
 
@@ -6777,47 +6698,50 @@ msgstr ""
 msgid "Social"
 msgstr ""
 
-#: lib/contents/login.inc.php:58
+#: lib/contents/login.php:58 lib/contents/nih.inc.php:58
 msgid "Please supply valid username and password"
 msgstr ""
 
-#: lib/contents/login.inc.php:99
+#: lib/contents/login.php:99 lib/contents/nih.inc.php:99
 msgid "Welcome to Library Automation, "
 msgstr ""
 
-#: lib/contents/login.inc.php:119
+#: lib/contents/login.php:119 lib/contents/nih.inc.php:119
 msgid "Wrong Username or Password. ACCESS DENIED"
 msgstr ""
 
-#: lib/contents/login.inc.php:138
+#: lib/contents/login.php:138 lib/contents/nih.inc.php:138
 msgid "Current password can not be empty!"
 msgstr ""
 
-#: lib/contents/login.inc.php:167
+#: lib/contents/login.php:167 lib/contents/nih.inc.php:167
 msgid ""
 "Your browser does not support Javascript or Javascript is disabled. "
 "Application won't run without Javascript!"
 msgstr ""
 
-#: lib/contents/login.inc.php:174
+#: lib/contents/login.php:174 lib/contents/nih.inc.php:174
 msgid "Hi {username}, please update your password!"
 msgstr ""
 
-#: lib/contents/login.inc.php:175 lib/contents/member.inc.php:135
+#: lib/contents/login.php:175 lib/contents/member.inc.php:135
 #: lib/contents/member.inc.php:136 lib/contents/member.inc.php:290
+#: lib/contents/nih.inc.php:175
 msgid "Current Password"
 msgstr ""
 
-#: lib/contents/login.inc.php:210 lib/contents/member.inc.php:131
-#: lib/contents/member.inc.php:132
+#: lib/contents/login.php:210 lib/contents/member.inc.php:131
+#: lib/contents/member.inc.php:132 lib/contents/nih.inc.php:210
 msgid "Username"
 msgstr ""
 
-#: lib/contents/login.inc.php:235 lib/contents/member.inc.php:262
+#: lib/contents/login.php:235 lib/contents/member.inc.php:262
+#: lib/contents/nih.inc.php:235 template/default/member_template.inc.php:83
 msgid "Login"
 msgstr ""
 
-#: lib/contents/login.inc.php:248
+#: lib/contents/login.php:248 lib/contents/member.inc.php:788
+#: lib/contents/nih.inc.php:248
 msgid "Library Automation Login"
 msgstr ""
 
@@ -6859,10 +6783,6 @@ msgstr ""
 
 #: lib/contents/member.inc.php:217
 msgid "Library Member Login"
-msgstr ""
-
-#: lib/contents/member.inc.php:221
-msgid "Wrong Captcha Code entered, Please write the right code!"
 msgstr ""
 
 #: lib/contents/member.inc.php:271
@@ -6930,17 +6850,17 @@ msgstr ""
 msgid "Your Title Basket"
 msgstr ""
 
-#: lib/contents/news.inc.php:25 template/default-dz/partials/nav.php:6
-#: template/default/partials/nav.php:6 template/lightweight/partials/nav.php:6
+#: lib/contents/news.inc.php:25 template/default/partials/nav.php:6
+#: template/lightweight/partials/nav.php:6
 msgid "Library News"
 msgstr ""
 
-#: lib/contents/news.inc.php:38
+#: lib/contents/news.inc.php:38 template/default/index_template.inc.php:261
 msgid "Sorry, we don't have any news for you yet."
 msgstr ""
 
-#: lib/contents/peta.inc.php:28 template/default-dz/partials/nav.php:8
-#: template/default/partials/nav.php:8 template/lightweight/partials/nav.php:8
+#: lib/contents/peta.inc.php:28 template/default/partials/nav.php:8
+#: template/lightweight/partials/nav.php:8
 msgid "Library Location"
 msgstr ""
 
@@ -6953,10 +6873,6 @@ msgid "FAILED to strore you comment. Please Contact System Administrator"
 msgstr ""
 
 #: lib/contents/show_detail.inc.php:106
-#: template/classic-dz/biblio_list_template.php:79
-#: template/classic/biblio_list_template.php:79
-#: template/default-dz/biblio_list_template.php:79
-#: template/default-dz/index_template.inc.php:85
 #: template/default/biblio_list_template.php:79
 #: template/default/index_template.inc.php:83
 #: template/lightweight/biblio_list_template.php:79
@@ -6973,18 +6889,12 @@ msgid "Show detail in XML format"
 msgstr ""
 
 #: lib/contents/show_detail.inc.php:111
-#: template/classic-dz/biblio_list_template.php:81
-#: template/classic/biblio_list_template.php:81
-#: template/default-dz/biblio_list_template.php:81
 #: template/default/biblio_list_template.php:81
 #: template/lightweight/biblio_list_template.php:81
 msgid "XML Detail"
 msgstr ""
 
 #: lib/contents/show_detail.inc.php:112
-#: template/classic-dz/biblio_list_template.php:85
-#: template/classic/biblio_list_template.php:85
-#: template/default-dz/biblio_list_template.php:85
 #: template/default/biblio_list_template.php:85
 #: template/lightweight/biblio_list_template.php:85
 msgid "Citation for: {title}"
@@ -7032,10 +6942,7 @@ msgstr ""
 msgid "Click to view others documents with this subject"
 msgstr ""
 
-#: lib/detail.inc.php:354 template/classic-dz/biblio_list_template.php:166
-#: template/classic/biblio_list_template.php:166
-#: template/default-dz/biblio_list_template.php:166
-#: template/default/biblio_list_template.php:166
+#: lib/detail.inc.php:354 template/default/biblio_list_template.php:166
 #: template/lightweight/biblio_list_template.php:166
 msgid "Share to"
 msgstr ""
@@ -7048,10 +6955,10 @@ msgstr ""
 msgid "Indonesian"
 msgstr ""
 
-#: lib/module.inc.php:40 template/classic-dz/part/content/nav.php:30
-#: template/classic/part/content/nav.php:30
-#: template/default-dz/partials/footer.php:51
-#: template/default-dz/partials/nav.php:5 template/default/partials/nav.php:5
+#: lib/module.inc.php:40 template/default/erepository_template.inc.php:67
+#: template/default/member_template.inc.php:66
+#: template/default/partials/nav.php:5
+#: template/default/register_template.inc.php:66
 #: template/lightweight/partials/footer.php:51
 #: template/lightweight/partials/nav.php:5
 msgid "Home"
@@ -7121,92 +7028,86 @@ msgstr ""
 msgid "No Data"
 msgstr ""
 
-#: sysconfig.inc.php:623
+#: sysconfig.inc.php:630
 msgid "Personal Name"
 msgstr ""
 
-#: sysconfig.inc.php:624
+#: sysconfig.inc.php:631
 msgid "Organizational Body"
 msgstr ""
 
-#: sysconfig.inc.php:625
+#: sysconfig.inc.php:632
 msgid "Conference"
 msgstr ""
 
-#: sysconfig.inc.php:628
+#: sysconfig.inc.php:635
 msgid "Topic"
 msgstr ""
 
-#: sysconfig.inc.php:629
+#: sysconfig.inc.php:636
 msgid "Geographic"
 msgstr ""
 
-#: sysconfig.inc.php:631
+#: sysconfig.inc.php:638
 msgid "Temporal"
 msgstr ""
 
-#: sysconfig.inc.php:632
+#: sysconfig.inc.php:639
 msgid "Genre"
 msgstr ""
 
-#: sysconfig.inc.php:633
+#: sysconfig.inc.php:640
 msgid "Occupation"
 msgstr ""
 
-#: sysconfig.inc.php:636
+#: sysconfig.inc.php:643
 msgid "Primary Author"
 msgstr ""
 
-#: sysconfig.inc.php:637
+#: sysconfig.inc.php:644
 msgid "Additional Author"
 msgstr ""
 
-#: sysconfig.inc.php:638
+#: sysconfig.inc.php:645
 msgid "Editor"
 msgstr ""
 
-#: sysconfig.inc.php:639
+#: sysconfig.inc.php:646
 msgid "Translator"
 msgstr ""
 
-#: sysconfig.inc.php:640
+#: sysconfig.inc.php:647
 msgid "Director"
 msgstr ""
 
-#: sysconfig.inc.php:641
+#: sysconfig.inc.php:648
 msgid "Producer"
 msgstr ""
 
-#: sysconfig.inc.php:642
+#: sysconfig.inc.php:649
 msgid "Composer"
 msgstr ""
 
-#: sysconfig.inc.php:643
+#: sysconfig.inc.php:650
 msgid "Illustrator"
 msgstr ""
 
-#: sysconfig.inc.php:644
+#: sysconfig.inc.php:651
 msgid "Creator"
 msgstr ""
 
-#: sysconfig.inc.php:645
+#: sysconfig.inc.php:652
 msgid "Contributor"
 msgstr ""
 
-#: sysconfig.inc.php:649
+#: sysconfig.inc.php:656
 msgid "Senior Librarian"
 msgstr ""
 
-#: sysconfig.inc.php:650
+#: sysconfig.inc.php:657
 msgid "Library Staff"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:50
-#: template/classic-dz/biblio_list_template.php:79
-#: template/classic/biblio_list_template.php:50
-#: template/classic/biblio_list_template.php:79
-#: template/default-dz/biblio_list_template.php:50
-#: template/default-dz/biblio_list_template.php:79
 #: template/default/biblio_list_template.php:50
 #: template/default/biblio_list_template.php:79
 #: template/lightweight/biblio_list_template.php:50
@@ -7214,132 +7115,86 @@ msgstr ""
 msgid "View record detail description for this title"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:81
-#: template/classic/biblio_list_template.php:81
-#: template/default-dz/biblio_list_template.php:81
 #: template/default/biblio_list_template.php:81
 #: template/lightweight/biblio_list_template.php:81
 msgid "View record detail description in XML Format"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:149
-#: template/classic/biblio_list_template.php:149
-#: template/default-dz/biblio_list_template.php:144
+#: template/default/biblio_list_template.php:85
+#: template/lightweight/biblio_list_template.php:85
+msgid "Cite"
+msgstr ""
+
 #: template/default/biblio_list_template.php:144
 #: template/lightweight/biblio_list_template.php:144
 msgid "none copy available"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:151
-#: template/classic/biblio_list_template.php:151
-#: template/default-dz/biblio_list_template.php:146
 #: template/default/biblio_list_template.php:146
 #: template/lightweight/biblio_list_template.php:146
 msgid "{numberAvailable} copies available for loan"
 msgstr ""
 
-#: template/classic-dz/biblio_list_template.php:167
-#: template/classic/biblio_list_template.php:167
-#: template/default-dz/biblio_list_template.php:167
-#: template/default/biblio_list_template.php:167
-#: template/lightweight/biblio_list_template.php:167
-msgid "Share this title to Facebook"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:168
-#: template/classic/biblio_list_template.php:168
-#: template/default-dz/biblio_list_template.php:168
-#: template/default/biblio_list_template.php:168
-#: template/lightweight/biblio_list_template.php:168
-msgid "Share this title to Twitter"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:169
-#: template/classic/biblio_list_template.php:169
-#: template/default-dz/biblio_list_template.php:169
-#: template/default/biblio_list_template.php:169
-#: template/lightweight/biblio_list_template.php:169
-msgid "Share this title to Google Plus"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:170
-#: template/classic/biblio_list_template.php:170
-#: template/default-dz/biblio_list_template.php:170
-#: template/default/biblio_list_template.php:170
-#: template/lightweight/biblio_list_template.php:170
-msgid "Share this title to Digg It"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:171
-#: template/classic/biblio_list_template.php:171
-#: template/default-dz/biblio_list_template.php:171
-#: template/default/biblio_list_template.php:171
-#: template/lightweight/biblio_list_template.php:171
-msgid "Share this title to Reddit"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:172
-#: template/classic/biblio_list_template.php:172
-#: template/default-dz/biblio_list_template.php:172
-#: template/default/biblio_list_template.php:172
-#: template/lightweight/biblio_list_template.php:172
-msgid "Share this title to LinkedIn"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:173
-#: template/classic/biblio_list_template.php:173
-#: template/default-dz/biblio_list_template.php:173
-#: template/default/biblio_list_template.php:173
-#: template/lightweight/biblio_list_template.php:173
-msgid "Share this title to StumbleUpon"
-msgstr ""
-
-#: template/classic-dz/biblio_list_template.php:181
-#: template/classic/biblio_list_template.php:181
-#: template/default-dz/biblio_list_template.php:158
 #: template/default/biblio_list_template.php:158
 #: template/lightweight/biblio_list_template.php:158
 msgid "mark this"
 msgstr ""
 
-#: template/classic-dz/citation/apa_style_template.php:20
-#: template/classic/citation/apa_style_template.php:20
-#: template/default-dz/citation/apa_style_template.php:20
+#: template/default/biblio_list_template.php:167
+#: template/lightweight/biblio_list_template.php:167
+msgid "Share this title to Facebook"
+msgstr ""
+
+#: template/default/biblio_list_template.php:168
+#: template/lightweight/biblio_list_template.php:168
+msgid "Share this title to Twitter"
+msgstr ""
+
+#: template/default/biblio_list_template.php:169
+#: template/lightweight/biblio_list_template.php:169
+msgid "Share this title to Google Plus"
+msgstr ""
+
+#: template/default/biblio_list_template.php:170
+#: template/lightweight/biblio_list_template.php:170
+msgid "Share this title to Digg It"
+msgstr ""
+
+#: template/default/biblio_list_template.php:171
+#: template/lightweight/biblio_list_template.php:171
+msgid "Share this title to Reddit"
+msgstr ""
+
+#: template/default/biblio_list_template.php:172
+#: template/lightweight/biblio_list_template.php:172
+msgid "Share this title to LinkedIn"
+msgstr ""
+
+#: template/default/biblio_list_template.php:173
+#: template/lightweight/biblio_list_template.php:173
+msgid "Share this title to StumbleUpon"
+msgstr ""
+
 #: template/default/citation/apa_style_template.php:20
 #: template/lightweight/citation/apa_style_template.php:20
 msgid "APA Style"
 msgstr ""
 
-#: template/classic-dz/citation/chicago_style_template.php:20
-#: template/classic/citation/chicago_style_template.php:20
-#: template/default-dz/citation/chicago_style_template.php:20
 #: template/default/citation/chicago_style_template.php:20
 #: template/lightweight/citation/chicago_style_template.php:20
 msgid "Chicago Style"
 msgstr ""
 
-#: template/classic-dz/citation/mla_style_template.php:20
-#: template/classic/citation/mla_style_template.php:20
-#: template/default-dz/citation/mla_style_template.php:20
 #: template/default/citation/mla_style_template.php:20
 #: template/lightweight/citation/mla_style_template.php:20
 msgid "MLA Style"
 msgstr ""
 
-#: template/classic-dz/citation/turabian_style_template.php:23
-#: template/classic/citation/turabian_style_template.php:23
-#: template/default-dz/citation/turabian_style_template.php:23
 #: template/default/citation/turabian_style_template.php:23
 #: template/lightweight/citation/turabian_style_template.php:23
 msgid "Turabian Style"
 msgstr ""
 
-#: template/classic-dz/custom_frontpage_record.inc.php:11
-#: template/classic-dz/detail_template.php:38
-#: template/classic/custom_frontpage_record.inc.php:11
-#: template/classic/detail_template.php:38
-#: template/default-dz/custom_frontpage_record.inc.php:11
-#: template/default-dz/detail_template.php:37
 #: template/default/custom_frontpage_record.inc.php:11
 #: template/default/detail_template.php:37
 #: template/lightweight/custom_frontpage_record.inc.php:11
@@ -7347,104 +7202,55 @@ msgstr ""
 msgid "Availability"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:30
-#: template/classic/detail_template.php:30
-#: template/default-dz/detail_template.php:30
 #: template/default/detail_template.php:30
 #: template/lightweight/detail_template.php:30
 msgid "Description Not Available"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:44
-#: template/classic/detail_template.php:44
-#: template/default-dz/detail_template.php:38
 #: template/default/detail_template.php:38
 #: template/lightweight/detail_template.php:38
 msgid "No copy data"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:53
-#: template/classic-dz/detail_template.php:101
-#: template/classic/detail_template.php:53
-#: template/classic/detail_template.php:101
-#: template/default-dz/detail_template.php:43
 #: template/default/detail_template.php:43
 #: template/lightweight/detail_template.php:43
 msgid "Detail Information"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:147
-#: template/classic/detail_template.php:147
-#: template/default-dz/detail_template.php:163
 #: template/default/detail_template.php:163
 #: template/lightweight/detail_template.php:163
 msgid "Other version/related"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:155
-#: template/classic/detail_template.php:155
-#: template/default-dz/detail_template.php:164
 #: template/default/detail_template.php:164
 #: template/lightweight/detail_template.php:164
 msgid "No other version available"
 msgstr ""
 
-#: template/classic-dz/detail_template.php:177
-#: template/classic/detail_template.php:177
-#: template/default-dz/detail_template.php:181
 #: template/default/detail_template.php:181
 #: template/lightweight/detail_template.php:181
 msgid "Comments"
 msgstr ""
 
-#: template/classic-dz/login_template.inc.php:59
-#: template/classic-dz/part/content/nav.php:60
-#: template/classic/login_template.inc.php:59
-#: template/classic/part/content/nav.php:60
-#: template/default-dz/partials/nav.php:12 template/default/partials/nav.php:12
-#: template/lightweight/partials/nav.php:12
-msgid "Librarian LOGIN"
+#: template/default/erepository_template.inc.php:70
+msgid "Unggah Mandiri"
 msgstr ""
 
-#: template/classic-dz/news_template.php:10
-#: template/classic/news_template.php:10
-#: template/default-dz/news_template.php:10
-#: template/default/news_template.php:10
-#: template/lightweight/news_template.php:10
-msgid "Read More"
+#: template/default/erepository_template.inc.php:104
+#: template/default/login_template.inc.php:84
+#: template/default/member_template.inc.php:109
+#: template/default/register_template.inc.php:111
+#: template/lightweight/login_template.inc.php:84
+msgid "Back To Home"
 msgstr ""
 
-#: template/classic-dz/part/content/advance-search.php:13
-#: template/classic/part/content/advance-search.php:13
-#: template/default/partials/advsearch.php:10
-#: template/default/partials/header.php:37
-msgid "Advanced Search"
+#: template/default/index_template.inc.php:82
+#: template/default/index_template.inc.php:88
+#: template/lightweight/index_template.inc.php:82
+#: template/lightweight/index_template.inc.php:88
+msgid "Collections"
 msgstr ""
 
-#: template/classic-dz/part/content/language.php:13
-#: template/classic/part/content/language.php:13
-#: template/default-dz/partials/nav.php:20 template/default/partials/nav.php:20
-#: template/lightweight/partials/nav.php:20
-msgid "Select Language"
-msgstr ""
-
-#: template/classic-dz/part/content/license.php:13
-#: template/classic/part/content/license.php:13
-msgid "License"
-msgstr ""
-
-#: template/classic-dz/part/content/nav.php:34
-#: template/classic/part/content/nav.php:34
-#: template/default-dz/partials/nav.php:7 template/default/partials/nav.php:7
-#: template/lightweight/partials/nav.php:7
-msgid "Library Information"
-msgstr ""
-
-#: template/classic-dz/part/content/nav.php:38
-#: template/classic/part/content/nav.php:38
-#: template/default-dz/index_template.inc.php:86
-#: template/default-dz/index_template.inc.php:87
-#: template/default-dz/partials/nav.php:9
 #: template/default/index_template.inc.php:84
 #: template/default/index_template.inc.php:85
 #: template/default/partials/header.php:44 template/default/partials/nav.php:9
@@ -7454,186 +7260,361 @@ msgstr ""
 msgid "Member Area"
 msgstr ""
 
-#: template/classic-dz/part/content/nav.php:46
-#: template/classic/part/content/nav.php:46
-#: template/default-dz/partials/nav.php:11 template/default/partials/nav.php:11
-#: template/lightweight/partials/nav.php:11
-msgid "Help on Search"
-msgstr ""
-
-#: template/classic-dz/part/content/nav.php:51
-#: template/classic/part/content/nav.php:51
-msgid "More"
-msgstr ""
-
-#: template/classic-dz/part/content/nav.php:56
-#: template/classic/part/content/nav.php:56
-#: template/default/partials/nav2.php:39
-msgid "News"
-msgstr ""
-
-#: template/classic-dz/part/content/new-books.php:9
-#: template/classic/part/content/new-books.php:9
-msgid "New Books"
-msgstr ""
-
-#: template/classic-dz/part/content/promoted-books.php:9
-#: template/classic/part/content/promoted-books.php:9
-msgid "Promoted Books"
-msgstr ""
-
-#: template/classic-dz/part/content/simple-search.php:13
-#: template/classic/part/content/simple-search.php:13
-#: template/default-dz/index_template.inc.php:186
-#: template/lightweight/index_template.inc.php:184
-msgid "SEARCH"
-msgstr ""
-
-#: template/classic-dz/part/content/simple-search.php:18
-#: template/classic/part/content/simple-search.php:18
-#: template/default-dz/index_template.inc.php:189
-#: template/lightweight/index_template.inc.php:187
-msgid "start it by typing one or more keywords for title, author or subject"
-msgstr ""
-
-#: template/classic-dz/part/content/simple-search.php:20
-#: template/classic/part/content/simple-search.php:20
-#: template/default-dz/index_template.inc.php:191
-#: template/lightweight/index_template.inc.php:189
-msgid "use logical search \"title=library AND author=robert\""
-msgstr ""
-
-#: template/classic-dz/part/content/simple-search.php:21
-#: template/classic/part/content/simple-search.php:21
-#: template/default-dz/index_template.inc.php:192
-#: template/lightweight/index_template.inc.php:190
-msgid "just click on the Search button to see all collections"
-msgstr ""
-
-#: template/classic-dz/part/sidebar.php:23 template/classic/part/sidebar.php:23
-#: template/default-dz/index_template.inc.php:150
 #: template/default/index_template.inc.php:107
 #: template/lightweight/index_template.inc.php:148
 msgid "Search Cluster"
 msgstr ""
 
-#: template/classic-dz/part/sidebar.php:27 template/classic/part/sidebar.php:27
-#: template/default-dz/index_template.inc.php:155
 #: template/default/index_template.inc.php:112
 #: template/lightweight/index_template.inc.php:153
 msgid "Generating search cluster..."
 msgstr ""
 
-#: template/classic-dz/visitor_template.php:39
-#: template/classic/visitor_template.php:39
-#: template/default-dz/visitor_template.php:32
-#: template/default/visitor_template.php:32
-#: template/lightweight/visitor_template.php:32
-msgid "Visitor Counter"
-msgstr ""
-
-#: template/classic-dz/visitor_template.php:47
-#: template/classic/visitor_template.php:47
-#: template/default-dz/visitor_template.php:33
-#: template/default/visitor_template.php:33
-#: template/lightweight/visitor_template.php:33
-msgid "Please insert your library member ID otherwise your full name instead"
-msgstr ""
-
-#: template/classic-dz/visitor_template.php:50
-#: template/classic/visitor_template.php:50
-#: template/default-dz/visitor_template.php:46
-#: template/default/visitor_template.php:46
-#: template/lightweight/visitor_template.php:46
-msgid "Member ID / Visitor Name"
-msgstr ""
-
-#: template/default-dz/biblio_list_template.php:85
-#: template/default/biblio_list_template.php:85
-#: template/lightweight/biblio_list_template.php:85
-msgid "Cite"
-msgstr ""
-
-#: template/default-dz/index_template.inc.php:84
-#: template/default-dz/index_template.inc.php:90
-#: template/default/index_template.inc.php:82
-#: template/default/index_template.inc.php:88
-#: template/lightweight/index_template.inc.php:82
-#: template/lightweight/index_template.inc.php:88
-msgid "Collections"
-msgstr ""
-
-#: template/default-dz/index_template.inc.php:113
 #: template/default/index_template.inc.php:132
 #: template/lightweight/index_template.inc.php:111
 msgid "No Result"
 msgstr ""
 
-#: template/default-dz/index_template.inc.php:113
 #: template/default/index_template.inc.php:132
 #: template/lightweight/index_template.inc.php:111
 msgid "Please try again"
 msgstr ""
 
-#: template/default-dz/index_template.inc.php:131
 #: template/default/index_template.inc.php:134
 #: template/lightweight/index_template.inc.php:129
 msgid "Search Result"
 msgstr ""
 
-#: template/default-dz/index_template.inc.php:140
-#: template/lightweight/index_template.inc.php:138
-msgid "Information"
+#: template/default/index_template.inc.php:169
+msgid "ARE YOU SEARCHING A BOOK?"
 msgstr ""
 
-#: template/default-dz/login_template.inc.php:84
-#: template/default/login_template.inc.php:84
-#: template/lightweight/login_template.inc.php:84
-msgid "Back To Home"
+#: template/default/index_template.inc.php:170
+msgid "BIGGEST LIBRARY"
 msgstr ""
 
-#: template/default-dz/partials/nav.php:13 template/default/partials/nav.php:13
+#: template/default/index_template.inc.php:187
+msgid "Welcome to Library of"
+msgstr ""
+
+#: template/default/index_template.inc.php:199
+msgid "Department / Study Book Catalog"
+msgstr ""
+
+#: template/default/index_template.inc.php:200
+msgid "Collection of library books by majors / study programs."
+msgstr ""
+
+#: template/default/index_template.inc.php:209
+msgid ""
+"Online catalog search of the central library collection Jakarta State "
+"Polytechnic."
+msgstr ""
+
+#: template/default/index_template.inc.php:218
+msgid ""
+"A collection of articles, journals, theses, theses and scientific works."
+msgstr ""
+
+#: template/default/index_template.inc.php:227
+msgid ""
+"One door to search for all public collections from libraries, museums, "
+"archives, and electronic sources in Indonesia."
+msgstr ""
+
+#: template/default/index_template.inc.php:243
+#: template/default/partials/nav2.php:36
+msgid "News"
+msgstr ""
+
+#: template/default/index_template.inc.php:277
+msgid "Other news"
+msgstr ""
+
+#: template/default/index_template.inc.php:288
+msgid "Are you satisfied with library services?"
+msgstr ""
+
+#: template/default/index_template.inc.php:302
+msgid "Library Service Rating"
+msgstr ""
+
+#: template/default/index_template.inc.php:316
+#: template/default/partials/nav2.php:41
+msgid "Announcement"
+msgstr ""
+
+#: template/default/member_template.inc.php:69
+#: template/default/register_template.inc.php:69
+msgid "Profile"
+msgstr ""
+
+#: template/default/news_template.php:10
+#: template/lightweight/news_template.php:10
+msgid "Read More"
+msgstr ""
+
+#: template/default/partials/advsearch.php:10
+#: template/default/partials/header.php:37
+msgid "Advanced Search"
+msgstr ""
+
+#: template/default/partials/header.php:45
+msgid "Don't have an account?"
+msgstr ""
+
+#: template/default/partials/nav.php:7 template/lightweight/partials/nav.php:7
+msgid "Library Information"
+msgstr ""
+
+#: template/default/partials/nav.php:11
+#: template/lightweight/partials/nav.php:11
+msgid "Help on Search"
+msgstr ""
+
+#: template/default/partials/nav.php:12
+#: template/lightweight/partials/nav.php:12
+msgid "Librarian LOGIN"
+msgstr ""
+
+#: template/default/partials/nav.php:13
 #: template/lightweight/partials/nav.php:13
 msgid "About SLiMS"
 msgstr ""
 
-#: template/default/partials/nav2.php:20 template/default/partials/nav2.php:33
+#: template/default/partials/nav.php:20
+#: template/lightweight/partials/nav.php:20
+msgid "Select Language"
+msgstr ""
+
+#: template/default/partials/nav2.php:20
 msgid "History"
 msgstr ""
 
-#: template/default/partials/nav2.php:21 template/default/partials/nav2.php:34
+#: template/default/partials/nav2.php:21
 msgid "Vision and Mission"
 msgstr ""
 
-#: template/default/partials/nav2.php:22 template/default/partials/nav2.php:35
+#: template/default/partials/nav2.php:22
 msgid "Organization Structure"
 msgstr ""
 
-#: template/default/partials/nav2.php:26
+#: template/default/partials/nav2.php:27
 msgid "Facility"
-msgstr "Fasilitas"
+msgstr ""
 
-#: template/default/partials/nav2.php:42
-msgid "Catalog"
+#: template/default/partials/nav2.php:30
+msgid "Correction"
+msgstr ""
+
+#: template/default/partials/nav2.php:31
+msgid "Reading Room"
+msgstr ""
+
+#: template/default/partials/nav2.php:39
+msgid "National Seminar and Workshop"
+msgstr ""
+
+#: template/default/partials/nav2.php:40
+msgid "Agenda"
 msgstr ""
 
 #: template/default/partials/nav2.php:45
-msgid "Digital Collection"
+msgid "Catalog"
 msgstr ""
 
 #: template/default/partials/nav2.php:48
-msgid "Journal of Accreditation"
+msgid "One Search"
+msgstr ""
+
+#: template/default/partials/nav2.php:49
+msgid "Major Book Catalog"
 msgstr ""
 
 #: template/default/partials/nav2.php:51
-msgid "Proceedings"
+msgid "D3 Accountant"
+msgstr ""
+
+#: template/default/partials/nav2.php:52
+msgid "Commerce Administration"
+msgstr ""
+
+#: template/default/partials/nav2.php:53
+msgid "MICE"
+msgstr ""
+
+#: template/default/partials/nav2.php:54
+msgid "Electrical Engineering"
+msgstr ""
+
+#: template/default/partials/nav2.php:55 template/default/partials/nav2.php:97
+msgid "Machine Engineering"
+msgstr ""
+
+#: template/default/partials/nav2.php:56
+msgid "Civil Engineering"
 msgstr ""
 
 #: template/default/partials/nav2.php:57
+msgid "Informatics and Computer Engineering"
+msgstr ""
+
+#: template/default/partials/nav2.php:58
+msgid "Graphic Publishing Engineering"
+msgstr ""
+
+#: template/default/partials/nav2.php:65
+msgid "Digital Collection"
+msgstr ""
+
+#: template/default/partials/nav2.php:68
+msgid "Cambridge"
+msgstr ""
+
+#: template/default/partials/nav2.php:69
+msgid "E-Resources PERPUSNAS"
+msgstr ""
+
+#: template/default/partials/nav2.php:70
+msgid "Proquest"
+msgstr ""
+
+#: template/default/partials/nav2.php:71
+msgid "EBSCO"
+msgstr ""
+
+#: template/default/partials/nav2.php:75
+msgid "Journal of Accreditation"
+msgstr ""
+
+#: template/default/partials/nav2.php:77
+msgid "Computer Science"
+msgstr ""
+
+#: template/default/partials/nav2.php:79
+msgid "PROSTEL"
+msgstr ""
+
+#: template/default/partials/nav2.php:82
+msgid "Management and Business"
+msgstr ""
+
+#: template/default/partials/nav2.php:84
+msgid "Journal JIEB"
+msgstr ""
+
+#: template/default/partials/nav2.php:87
+msgid "Industry Engineering and Manufacture"
+msgstr ""
+
+#: template/default/partials/nav2.php:89
+msgid "Journal of Industrial Research Dynamics (JDPI)"
+msgstr ""
+
+#: template/default/partials/nav2.php:92
+msgid "Banking Finance, Accounting"
+msgstr ""
+
+#: template/default/partials/nav2.php:94
+msgid "Indonesian Financial and Accounting Journal (JAKI)"
+msgstr ""
+
+#: template/default/partials/nav2.php:99
+msgid "Journal of Mechantronics, Electrical Power (MEV)"
+msgstr ""
+
+#: template/default/partials/nav2.php:102
+msgid "Civil Engineering, Architecture, Construction"
+msgstr ""
+
+#: template/default/partials/nav2.php:104
+msgid "Civil Engineering Journal ITB"
+msgstr ""
+
+#: template/default/partials/nav2.php:107
+msgid "Tourism"
+msgstr ""
+
+#: template/default/partials/nav2.php:109
+msgid "Humanities"
+msgstr ""
+
+#: template/default/partials/nav2.php:112
+msgid "Electrical Engineering and TELKOM"
+msgstr ""
+
+#: template/default/partials/nav2.php:114
+msgid "Journal of Electrical Engineering"
+msgstr ""
+
+#: template/default/partials/nav2.php:121
+msgid "Proceedings"
+msgstr ""
+
+#: template/default/partials/nav2.php:124
+msgid "Proceedings SNTE 2014"
+msgstr ""
+
+#: template/default/partials/nav2.php:125
+msgid "Proceedings SNTE 2015"
+msgstr ""
+
+#: template/default/partials/nav2.php:126
+msgid "Proceedings SNTE 2016"
+msgstr ""
+
+#: template/default/partials/nav2.php:127
+msgid "Proceedings SNTE 2017"
+msgstr ""
+
+#: template/default/partials/nav2.php:140
 msgid "Download"
+msgstr ""
+
+#: template/default/partials/nav2.php:143
+msgid "E-Book User Guide"
+msgstr ""
+
+#: template/default/partials/nav2.php:151
+msgid "Submitting Final Report for Student 2019"
+msgstr ""
+
+#: template/default/visitor_template.php:32
+#: template/lightweight/visitor_template.php:32
+msgid "Visitor Counter"
+msgstr ""
+
+#: template/default/visitor_template.php:33
+#: template/lightweight/visitor_template.php:33
+msgid "Please insert your library member ID otherwise your full name instead"
+msgstr ""
+
+#: template/default/visitor_template.php:46
+#: template/lightweight/visitor_template.php:46
+msgid "Member ID / Visitor Name"
 msgstr ""
 
 #: template/lightweight/index_template.inc.php:93
 #: template/lightweight/index_template.inc.php:194
 msgid "Put some keyword(s)..."
+msgstr ""
+
+#: template/lightweight/index_template.inc.php:138
+msgid "Information"
+msgstr ""
+
+#: template/lightweight/index_template.inc.php:184
+msgid "SEARCH"
+msgstr ""
+
+#: template/lightweight/index_template.inc.php:187
+msgid "start it by typing one or more keywords for title, author or subject"
+msgstr ""
+
+#: template/lightweight/index_template.inc.php:189
+msgid "use logical search \"title=library AND author=robert\""
+msgstr ""
+
+#: template/lightweight/index_template.inc.php:190
+msgid "just click on the Search button to see all collections"
 msgstr ""
