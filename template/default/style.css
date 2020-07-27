@@ -2,6 +2,7 @@
 @import "css/font-awesome.min.css";
 @import "css/font.min.css";
 @import "css/hamburgers.css";
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
 
 
 :root{
@@ -15,6 +16,16 @@
 
 .bg-secondary-color {
   background-color: var(--color2);
+}
+
+.btn-pnj {
+  background-color: var(--color2);
+  color:#fff;
+}
+
+.btn-pnj:hover {
+  background-color: var(--color1);
+  color:#fff;
 }
 
 /* Scroll
@@ -154,17 +165,23 @@ b, strong {
 }
 .s-brand h1 {
   text-transform: uppercase;
-  font-size: 19pt;
+  font-size: 20pt;
   margin: 0;
   font-weight: lighter;
+  margin-top: 1.3rem;
 }
 .s-brand-tagline {
-  font-size: 10pt;
+  font-size: 18pt;
+  text-transform: capitalize;
+  font-family: 'Charm', cursive;
 }
 .s-logo {
   display: block;
   padding: 0;
   margin: 10px auto;
+}
+.s-logo img {
+  width:115px;
 }
 @media only screen and (min-width: 768px) {
   .s-logo {
@@ -1663,7 +1680,7 @@ keyframes coverUp 100% {
 .tagline {
   font-size: 30px;
   border-bottom: solid 1px #f2f2f2;
-  padding-top: 53px;
+  padding-top: 8px;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -1795,15 +1812,27 @@ keyframes coverUp 100% {
   margin-top: 200px;
   position: relative;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .s-main-page {
-    margin-top: 250px;
+    margin-top: 265px;
     min-height: 100%;
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .s-main-page {
+    margin-top: 350px;
+    min-height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .s-main-page {
+    margin-top: 80px;
+  }
+}
 .s-main-page .s-main-search {
-  top: -175px;
+  top: -195px;
   left: 0;
   margin: 0 auto;
   text-align: center;
@@ -1831,10 +1860,12 @@ keyframes coverUp 100% {
 }
 @media only screen and (min-width: 768px) {
   .s-main-page .s-main-title {
-    max-width: 50%;
-    top: 40px;
+    max-width: 80%;
+    top: 70px;
     text-align: left;
     padding-left: 50px;
+    font-weight: 700;
+    font-size: 2rem;
   }
 }
 .s-main-page form h1,
@@ -1844,9 +1875,26 @@ keyframes coverUp 100% {
 .s-main-page .s-main-content {
   line-height: 24pt;
 }
+.s-main-page .s-main-content img {
+  width: 100%!important;
+}
+@media only screen and (max-width: 480px) {
+  .s-main-page .s-main-content img {
+    width: 100%!important;
+  }
+}
+.s-main-page .s-main-search .s-search {
+  width: 100%;
+}
 @media only screen and (max-width: 480px) {
   .s-main-page .s-main-content {
-    margin-top: -90px;
+    /*margin-top: -90px;*/
+  }
+  .s-main .s-main-search h2 {
+    font-size:1.5rem;
+  }
+  .s-main .s-main-search p {
+    font-size:2.4rem;
   }
 }
 .s-main-page .s-main-search .s-search {
@@ -1860,6 +1908,9 @@ keyframes coverUp 100% {
   .s-main-page .s-main-search .s-search {
     width: 300px;
   }
+}
+.s-main-page .s-main-content h2 {
+  margin-bottom:50px;
 }
 /*Cluster*/
 .cluster-list {
@@ -1998,7 +2049,7 @@ keyframes coverUp 100% {
 @media only screen and (min-width: 768px) {
   #loginForm {
     border-radius: 4px;
-    width: 300px;
+    width: 350px;
   }
 }
 .s-login-content {
@@ -2091,10 +2142,10 @@ keyframes coverUp 100% {
 .s-main-content .col-lg-4 a,
 .s-detail .btn,
 .xmlResultLink {
-  border-radius: 0;
+  border-radius: 4px;
   border: none;
-  background-color: #282828;
-  font-size: 8px;
+  background-color: var(--color1);
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -2109,6 +2160,9 @@ keyframes coverUp 100% {
 .xmlResultLink:hover {
   background-color: #f00;
   color: #000;
+}
+.memberInfoHead, .memberLoanHistInfo, .memberLoanListInfo {
+  color:#fff;
 }
 /*Recaptch*/
 #loginForm #recaptcha_area {
@@ -2528,6 +2582,10 @@ input.search_bar{
 }
 input.search_bar:focus{width: 100%; background-position: calc(100% - 35px) center}
 
+@media screen and (max-width: 992px) {
+  input.search_bar{width: 100%; background-position: calc(100% - 35px) center}
+}
+
 /*Removes default x in search fields (webkit only i guess)*/
 input[type=search]::-webkit-search-cancel-button{-webkit-appearance: none;}
 /*Changes the color of the placeholder*/
@@ -2585,27 +2643,37 @@ display: inline;
 }
 
 
-
-
-
-
-
-
-
-
-
 .dv-intro {
   top: 150px;
 }
 
 
 
+@media only screen and (min-width: 1000px) {
+  #berita {
+    /*padding-top: 2rem;
+    /padding-bottom: 2rem;*/
+  }
+}
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-
+.elibrary-search, .add-reference-box {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  background-color: #FFF;
+}
 
 #rekap {
-  background: linear-gradient(rgba(0,118,131,.7), rgba(0,118,131,.7)), url("../img/rekap-bg.jpg");
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("img/rekap-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2651,11 +2719,12 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
 }
 
 #menu a {
-  color:#fff;
+  color:rgb(100, 100, 100);
 }
 
 #menu a:hover {
-  color:rgb(182, 182, 182);
+  color:#000;
+  font-weight: 600;
 }
 
 #feature h3 {
@@ -2663,17 +2732,19 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
 }
 
 #weblink{
-  background-color: var(--color1);
   font-family: "PT Sans",'Helvetica Neue',Arial,Helvetica,sans-serif;
   text-align: left;
-  color:#FFFFFF;
+  margin-top: 0;
+  padding-top: 1em;
+  color: #fff;
+  background:linear-gradient(180deg, #00b8cc, #007683);
 }
 
 #weblink h2{
-  color:#FFFFFF;
   font-size:1.125em;
   font-weight: 400;
   text-transform: uppercase;
+  color:#fff;
 }
 
 #weblink ul, #kontak ul{
@@ -2690,9 +2761,14 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   font-size: 0.813em;
   display: inline-block;
   line-height: 1.2em;
-  color:#FFFFFF;
+  color:#fafafa;
   opacity: 0.75;
   text-decoration: none;
+}
+
+#weblink ul li a:hover{
+  color:var(--color1);
+  text-decoration: underline!important;
 }
 
 
@@ -2700,24 +2776,19 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   float: left;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  border-left: 1px solid #007683;
-  width: 25%;
+  border-left: 1px solid #cccccc;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #kontak{
-  background-color: #fafafa;
 }
 
 #kontak ul li {
   list-style-type: none;
   line-height: 2rem;
 }
-
-
-
 
 .pnjForm .btn {
   font-weight: bold;
@@ -2852,11 +2923,6 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   background-clip: padding-box;
 }
 
-.dropdown .dropdown-menu {
-  transition: all 0.5s;
-  overflow: hidden;
-  transform-origin: top center;
-  transform: scale(1, 0);
 /* PNJ FORM */
 .pnjForm {
   padding-bottom: 50px;
@@ -2872,6 +2938,18 @@ box-shadow: 0px 0px 72px -9px rgba(0,0,0,0.75);
   font-size: 1rem;
   color:#fff;
 }
+
+.loginPage{
+  background:url('../../images/pnj2.jpg') no-repeat right top;
+  background-size:cover;
+}
+
+.formOverlay {
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius:10px;
+}
+
+
 .pcss3t .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: var(--color1);
 }
@@ -3974,10 +4052,15 @@ display: block;
   display: block;
   text-align: justify !important;
 }
-.dropdown:hover .dropdown-menu {
-  transform: scale(1);
+
+.book-view .book-detail label{
+  font-weight: bold;
 }
 
-.dropdown .dropdown-menu .dropdown-item {
-  color:#000!important;
+.book-result .card-text{
+  margin-bottom: 0.2rem;
+}
+
+.book-result .card-text span{
+  font-size:13px;
 }
