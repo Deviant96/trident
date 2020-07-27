@@ -124,24 +124,32 @@ if (isset($_POST['logMeIn']) && !$is_member_login) {
                 $_member_d = $_member_q->fetch_row();
                 $msg  = '';
                 $msg .= '<div class="panel panel-danger">';
-                $msg .= '<div class="panel-heading">Hi, '. $_member_d[0] .'! '.__('Please update your password!').'</div>';
+                $msg .= '<div class="panel-heading mb-3 text-center text-light">Hi, '. $_member_d[0] .'! '.__('Please update your password!').'</div>';
                 $msg .= '<div class="panel-body">';
                 $msg .= '<form method="post" action="index.php?p=member">';
-                $msg .= '<div class="form-group">';
-                $msg .= '<label for="isusername">'.__('Username').'</label>';
-                $msg .= '<input type="text" class="form-control" id="isusername" name="isusername" placeholder="'.__('Username').'">';
+                $msg .= '<div class="form-group row">';
+                $msg .= '<label for="isusername" class="col-sm-3 col-form-label text-light">'.__('NIM/NIP').'</label>';
+                $msg .= '<div class="col">
+                <div class="login_input"><input type="text" class="form-control" id="isusername" name="isusername" placeholder="'.__('NIM/NIP').'"></div>
+                </div>';
                 $msg .= '</div>';
-                $msg .= '<div class="form-group">';
-                $msg .= '<label for="isoldpassword">'.__('Current Password').'</label>';
-                $msg .= '<input type="password" class="form-control" id="isoldpassword" name="isoldpassword" placeholder="'.__('Current Password').'">';
+                $msg .= '<div class="form-group row">';
+                $msg .= '<label for="isoldpassword" class="col-sm-3 col-form-label text-light">'.__('Current Password').'</label>';
+                $msg .= '<div class="col">
+                <div class="login_input"><input type="password" class="form-control" id="isoldpassword" name="isoldpassword" placeholder="'.__('Current Password').'"></div>
+                </div>';
                 $msg .= '</div>';
-                $msg .= '<div class="form-group">';
-                $msg .= '<label for="isnewpassword">'.__('New Password').'</label>';
-                $msg .= '<input type="password" class="form-control" id="isnewpassword" name="isnewpassword" placeholder="'.__('New Password').'">';
+                $msg .= '<div class="form-group row">';
+                $msg .= '<label for="isnewpassword" class="col-sm-3 col-form-label text-light">'.__('New Password').'</label>';
+                $msg .= '<div class="col">
+                <div class="login_input"><input type="password" class="form-control" id="isnewpassword" name="isnewpassword" placeholder="'.__('New Password').'"></div>
+                </div>';
                 $msg .= '</div>';
-                $msg .= '<div class="form-group">';
-                $msg .= '<label for="isconfirmnewpassword">'.__('Confirm New Password').'</label>';
-                $msg .= '<input type="password" class="form-control" id="isconfirmnewpassword" name="isconfirmnewpassword" placeholder="'.__('Confirm New Password').'">';
+                $msg .= '<div class="form-group row">';
+                $msg .= '<label for="isconfirmnewpassword" class="col-sm-3 col-form-label text-light">'.__('Confirm New Password').'</label>';
+                $msg .= '<div class="col">
+                <div class="login_input"><input type="password" class="form-control" id="isconfirmnewpassword" name="isconfirmnewpassword" placeholder="'.__('Confirm New Password').'"></div>
+                </div>';
                 $msg .= '</div>';
                 $msg .= '</div>';
                 $msg .= '<div class="panel-footer">';
@@ -152,7 +160,7 @@ if (isset($_POST['logMeIn']) && !$is_member_login) {
                 // write log
                 utility::writeLogs($dbs, 'member', $username, 'Login', 'Login FAILED for member '.$username.' from address '.$_SERVER['REMOTE_ADDR']);
                 // message
-                $msg = '<div class="errorBox">'.__('Login FAILED! Wrong username or password!').'</div>';
+                $msg = '<div class="errorBox">'.__('Login FAILED! Wrong NIM/NIP or password!').'</div>';
                 simbio_security::destroySessionCookie($msg, MEMBER_COOKIES_NAME, SWB, false);                
             }
         }
@@ -214,65 +222,44 @@ if (!$is_member_login) {
     }
 
 ?>
-    <div class="tagline"><?php echo __('Library Member Login'); ?></div>
 	<?php
 	// captcha invalid warning
 	if (isset($_GET['captchaInvalid']) && $_GET['captchaInvalid'] === 'true') {
 		echo '<div class="errorBox">'.__('Wrong Captcha Code entered, Please write the right code!').'</div>';
 	}
 	?>
-    <div class="loginInfo">
-    <form action="index.php?p=member&destination=<?php echo $destination; ?>" method="post">
-    <div class="form-group row">
-    <label for="memberID" class="col-sm-2 col-form-label"><?php echo __('Member ID'); ?></label>
-    <div class="col-sm-6">
-    <div class="login_input"><input type="text" class="form-control" name="memberID" id="memberID"></div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="memberPassWord" class="col-sm-2 col-form-label"><?php echo __('Password'); ?></label>
-    <div class="col-sm-6">
-    <div class="login_input"><input type="password" class="form-control" name="memberPassWord" id="memberPassWord"></div>
-    </div>
-  </div>
-    <!-- Captcha in form - start -->
-    <div>
-    <?php if ($sysconf['captcha']['member']['enable']) { ?>
-      <?php if ($sysconf['captcha']['member']['type'] == "recaptcha") { ?>
-      <div class="captchaMember">
-      <?php
-        require_once LIB.$sysconf['captcha']['member']['folder'].'/'.$sysconf['captcha']['member']['incfile'];
-        $publickey = $sysconf['captcha']['member']['publickey'];
-        echo recaptcha_get_html($publickey);
-      ?>
-      </div>
-      <!-- <div><input type="text" name="captcha_code" id="captcha-form" style="width: 80%;" /></div> -->
-    <?php
-      } elseif ($sysconf['captcha']['member']['type'] == "others") {
-
-      }
-      #debugging
-      #echo SWB.'lib/'.$sysconf['captcha']['folder'].'/'.$sysconf['captcha']['webfile'];
-    } ?>
-    </div>
-    <!-- Captcha in form - end -->
-    <div class="form-group row">
-        <div class="col-sm-2 centeri"></div>
-        <div class="col-sm-3 centeri">
-            <input type="submit" name="logMeIn" value="<?php echo __('Login'); ?>" class="memberButton" />
-        </div>
-        <div class="col-sm-3 centeri">
-            <a href="index.php?p=form" class="memberButton"><?php echo __('Register'); ?></a>
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-2 centeri"></div>
-        <div class="col-sm-6 centeri">
-            <a href="index.php?p=forgot" class="memberButton"><?php echo __('Forgot Password'); ?></a>
-        </div>
-    </div>
-    </form>
-    </div>
+    <div class="pnjForm text-left">
+        <form action="index.php?p=member&destination=<?php echo $destination; ?>" method="post">
+            <div class="form-group row">
+                <label for="memberID" class="col-sm-3 col-form-label"><?php echo __('NIM/NIP'); ?></label>
+                <div class="col">
+                    <div class="login_input">
+                        <input type="text" class="form-control" name="memberID" id="memberID" placeholder="<?php echo __('Please input your NIM');?>">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="memberPassWord" class="col-sm-3 col-form-label"><?php echo __('Password'); ?></label>
+                <div class="col">
+                    <div class="login_input"><input type="password" class="form-control" name="memberPassWord" id="memberPassWord" placeholder="<?php echo __('Please input your password');?>"></div>
+                </div>
+            </div>    
+            <div class="form-group row">
+                <div class="col-sm-3 centeri"></div>
+                <div class="col-sm centeri my-1">
+                    <input type="submit" class="btn btn-primary btn-block" name="logMeIn" value="<?php echo __('Login'); ?>" class="memberButton" />
+                </div>
+                <div class="col-sm centeri my-1">
+                    <a href="index.php?p=form" class="btn btn-primary btn-block btn-border"><?php echo __('Register'); ?></a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3 centeri"></div>
+                <div class="col-sm centeri">
+                    <a href="index.php?p=forgot_password" class="btn btn-primary btn-block btn-border"><?php echo __('Forgot Password'); ?></a>
+                </div>
+            </div>
+        </form>
     </div>
 <?php
 } else {
@@ -780,3 +767,23 @@ if (!$is_member_login) {
     </script>
     <?php
 }
+
+// main content
+$main_content = ob_get_clean();
+
+// page title
+$page_title = __('Library Automation Login').' | '.$sysconf['library_name'];
+
+if ($sysconf['template']['base'] == 'html') {
+    // create the template object
+    $template = new simbio_template_parser($sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/member_template.html');
+    // assign content to markers
+    $template->assign('<!--PAGE_TITLE-->', $page_title);
+    $template->assign('<!--CSS-->', $sysconf['template']['css']);
+    $template->assign('<!--MAIN_CONTENT-->', $main_content);
+    // print out the template
+    $template->printOut();
+} else if ($sysconf['template']['base'] == 'php') {
+    require_once $sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/member_template.inc.php';
+}
+exit();
