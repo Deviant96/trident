@@ -1,11 +1,10 @@
 <?php
 $page_title = __('Book View');
-
 ?> 
 
   
-  <div class="book-view container bg-light pt-2 pb-5" style="max-width:900px;">
-    <a href="index.php?p=elibrary" class="btn btn-info"><?php echo __("Back to search");?></a>
+  <div class="book-view container bg-light pt-2 pb-5 mb-5" style="max-width:900px;">
+    <a href="index.php?p=elibrary" class="btn btn-info mb-2"><?php echo __("Back to search");?></a>
 
     <div class="row">
 
