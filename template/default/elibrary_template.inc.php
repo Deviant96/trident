@@ -11,7 +11,6 @@ define('INDEX_AUTH', '1');
 include "partials/meta.php"; ?>
 <style>
 body {
-  background-color: #f3f3f3;
   color:#000;
 }
 .form-control:focus {
