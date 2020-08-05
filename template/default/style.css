@@ -170,10 +170,17 @@ b, strong {
   font-weight: lighter;
   margin-top: 1.3rem;
 }
+.elibrary .s-brand h1 {
+  margin-top: 0.8rem;
+  font-size: 15pt;
+}
 .s-brand-tagline {
   font-size: 18pt;
   text-transform: capitalize;
   font-family: 'Charm', cursive;
+}
+.elibrary .s-brand-tagline {
+  font-size: 13pt;
 }
 .s-logo {
   display: block;
@@ -189,6 +196,14 @@ b, strong {
     padding: 0 20px 0 0;
     margin: -7px 0 0 0;
   }
+  .elibrary .s-logo {
+    max-width: 100px;
+    margin: -2px 0 0 0;
+  }
+}
+.ml-auto {
+  left: auto !important;
+  right: 0px;
 }
 /* Menu
  ================================ */
@@ -3946,9 +3961,18 @@ display: block;
   background-color: aliceblue!important;
 }
 
+.elibrary > nav {
+  background-color: #18626A;
+}
+
 .elibrary-search label {
   display: unset;
   margin-bottom: unset;
+}
+
+.elibrary .book-view .book-detail input {
+  font-weight: 600;
+  color:#6c6c6c;
 }
 
 .card-counter{
@@ -4055,6 +4079,7 @@ display: block;
 
 .book-view .book-detail label{
   font-weight: bold;
+  color:#919191;
 }
 
 .book-result .card-text{

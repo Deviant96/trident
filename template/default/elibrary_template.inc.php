@@ -32,28 +32,30 @@ body {
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary-color justify-content-between">
-    <a href="index.php" class="s-brand">
-      <img class="s-logo animated flipInY delay7" src="<?php echo $sysconf['template']['dir']; ?>/default/img/logo.png" alt="<?php echo $sysconf['library_name']; ?>" />
-      <h1 class="animated fadeInUp delay2"><?php echo $sysconf['library_name']; ?></h1>
-      <div class="s-brand-tagline animated fadeInUp delay3"><?php echo $sysconf['library_subname']; ?></div>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto font-weight-bold">
-        <li class="nav-item active">
-          <a class="nav-link text-white mr-3 ml-3" href="index.php"><?php echo __('Home'); ?> <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white mr-3 ml-3" href="index.php?p=add-reference"><?php echo __('Add Reference'); ?></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white mr-3 ml-3" href="index.php?p=contact"><?php echo __('Contact'); ?></a>
-        </li>
-      </ul>
+<body itemscope itemtype="http://schema.org/WebPage" class="elibrary">
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+    <div class="container">
+      <a href="index.php" class="s-brand">
+        <img class="s-logo animated flipInY delay7" src="<?php echo $sysconf['template']['dir']; ?>/default/img/logo.png" alt="<?php echo $sysconf['library_name']; ?>" />
+        <h1 class="animated fadeInUp delay2"><?php echo $page_title; ?></h1>
+        <div class="s-brand-tagline animated fadeInUp delay3"><?php echo $sysconf['library_name']; ?></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-100" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white mr-3 ml-3" href="index.php"><?php echo __('Home'); ?> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white mr-3 ml-3" href="index.php?p=add-reference"><?php echo __('Add Reference'); ?></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white mr-3 ml-3" href="index.php?p=contact"><?php echo __('Contact'); ?></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -61,7 +63,7 @@ body {
 
 
   // Footer
-include "partials/footer.php"; 
+//include "partials/footer.php"; 
 
   // Background
   // ================================================
