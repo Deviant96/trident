@@ -2,19 +2,19 @@ images/barcodes/*
 images/persons/*
 images/docs/*
 images/labels/*
-files/*
-repository/*
-config/*
-cache/*
+#files/*
+#repository/*
+#config/*
+#cache/*
 .DS_Store
 ._.*
 ._*
 .project
-sysconfig.local.inc.php
-config/sysconfig.local.inc.php
-sysconfig.inc.php
-slims8_akasia.sublime-project
-slims8_akasia.sublime-workspace
+#sysconfig.local.inc.php
+#config/sysconfig.local.inc.php
+#sysconfig.inc.php
+#slims8_akasia.sublime-project
+#slims8_akasia.sublime-workspace
 
 # Windows image file caches
 Thumbs.db
